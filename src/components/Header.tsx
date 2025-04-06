@@ -1,4 +1,7 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faRightToBracket} from "@fortawesome/free-solid-svg-icons";
 import ufabcLogo from "../assets/logo-ufabc.png";
+import Button from "./Button.tsx";
 
 function Header() {
     return (
@@ -12,6 +15,9 @@ function Header() {
                     />
                     <h1 className="text-2xl font-bold text-green-800">Lynkz</h1>
                 </div>
+                <Button label="Entrar" className="py-2 px-4 bg-black text-white font-medium rounded-md">
+                    <FontAwesomeIcon icon={faRightToBracket} style={{color: "#ffffff"}}/>
+                </Button>
             </div>
         </header>
     )
