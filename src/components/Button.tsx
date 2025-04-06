@@ -14,7 +14,7 @@ function Button({
                     ...props
                 }: ButtonProps) {
     return (
-        <button {...props} className={`flex items-center gap-2 ${className}`}>
+        <button {...props} className={`py-2 px-4 rounded-md flex items-center gap-2 ${className}`}>
             {children}
             {label}
         </button>
