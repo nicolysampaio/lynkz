@@ -15,7 +15,7 @@ function Header() {
                     />
                     <h1 className="text-2xl font-bold text-green-800">Lynkz</h1>
                 </div>
-                <Button label="Entrar" className="py-2 px-4 bg-black text-white font-medium rounded-md">
+                <Button label="Entrar" className="bg-green-800 text-white font-medium">
                     <FontAwesomeIcon icon={faRightToBracket} style={{color: "#ffffff"}}/>
                 </Button>
             </div>
