@@ -1,9 +1,9 @@
-import Home from "./pages/Home.tsx";
+import Login from "./pages/Login.tsx";
 
 function App() {
     return (
         <>
-            <Home/>
+            <Login/>
         </>
     )
 }
