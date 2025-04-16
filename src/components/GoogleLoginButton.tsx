@@ -18,6 +18,9 @@ function GoogleLoginButton() {
 
             localStorage.setItem('googleUser', JSON.stringify(user));
 
+            let userInfo: any = localStorage.getItem('googleUser');
+            console.log('Usuário logado:', JSON.parse(userInfo));
+
             navigate('/cursos');
         }
     }
