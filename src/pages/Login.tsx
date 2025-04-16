@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 import ufabcLogo from "../assets/logo-ufabc.png";
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
@@ -7,8 +5,6 @@ import Button from "../components/Button.tsx";
 import GoogleLoginButton from "../components/GoogleLoginButton.tsx";
 
 function Login() {
-    const navigate = useNavigate();
-
     return (
         <div className="min-h-screen flex flex-col bg-gray-50">
             <Header />
