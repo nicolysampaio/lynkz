@@ -7,7 +7,7 @@ import DisciplineSelection from "./pages/DisciplineSelection.tsx";
 
 function App() {
   return (
-    //TODO: adicionar variáveis de ambiente e atulizar o client id
+    //TODO: adicionar variáveis de ambiente e atualizar o client id
     <GoogleOAuthProvider clientId="672860559215-km24kctijodjb48k8tnsvhat1em68jj5.apps.googleusercontent.com">
       <BrowserRouter>
         <Routes>
