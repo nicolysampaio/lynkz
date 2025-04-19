@@ -1,6 +1,4 @@
 import {useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import Button from "../components/Button.tsx";
@@ -157,9 +155,7 @@ function Course() {
                     </div>
 
                     <div className="w-full flex justify-end">
-                        <Button label="Confirmar seleção" className={`bg-green-800 text-white text-sm ${selectedCourse === null ? "opacity-25 cursor-not-allowed" : "cursor-pointer"}`}>
-                            <FontAwesomeIcon icon={faArrowRight}/>
-                        </Button>
+                        <Button label="Confirmar seleção" className={`bg-green-800 text-white text-sm ${selectedCourse === null ? "opacity-25 cursor-not-allowed" : "cursor-pointer"}`} onClick={() => console.log("Confirmar")} />
                     </div>
                 </div>
             </main>
