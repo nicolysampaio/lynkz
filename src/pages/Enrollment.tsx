@@ -15,7 +15,6 @@ import {
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
 import enrollmentData from "../../db/enrollment.json";
-import discipline from "../../db/disciplines.json";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import DisciplineEnrollment from "../types/DisciplineEnrollment";
@@ -149,18 +148,18 @@ function Enrollment() {
     }
   };
 
-  const getCategoryColor = (
-    category: "obrigatoria" | "optativa" | "livre"
-  ): string => {
-    switch (category) {
-      case "obrigatoria":
-        return "bg-gray-200";
-      case "optativa":
-        return "bg-yellow-200";
-      default:
-        return "bg-red-200";
-    }
-  };
+  // const getCategoryColor = (
+  //   category: "obrigatoria" | "optativa" | "livre"
+  // ): string => {
+  //   switch (category) {
+  //     case "obrigatoria":
+  //       return "bg-gray-200";
+  //     case "optativa":
+  //       return "bg-yellow-200";
+  //     default:
+  //       return "bg-red-200";
+  //   }
+  // };
 
   const getCategoryIcon = (category: "obrigatoria" | "optativa" | "livre") => {
     switch (category) {
