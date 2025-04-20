@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import disciplines from "../../db/disciplines.json";
-import Discipline from "../components/Subjects/Discipline.ts";
+import Discipline from "../types/Discipline.ts";
 import Header from "../components/Header.tsx";
 import Button from "../components/Button.tsx";
 import Footer from "../components/Footer.tsx";
@@ -168,7 +168,7 @@ function DisciplineSelection() {
             <Button
               label="Confirmar seleção"
               className="bg-green-800 text-white text-sm"
-              onClick={() => console.log(Array.from(disciplinesSelected))}
+              route="/disciplinas-matricula"
               icon={faCheck}
             />
           </div>
