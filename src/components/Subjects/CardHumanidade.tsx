@@ -53,7 +53,13 @@ function CardHumanidade(
             {open && (
                 <div className="absolute top-full left-0 z-10 bg-white border rounded mt-1 shadow-lg">
                     {availableHumanities.map((discipline) => (
-                        <div key={discipline.id} className="p-2 hover:bg-gray-100 cursor-pointer">
+                        <div
+                            key={discipline.id}
+                            className={`p-2 hover:bg-gray-100 cursor-pointer ${
+                                selected === discipline.id ? 'bg-green-800 text-white' : ''
+                            }`}
+                            onClick={() => handleSelect(discipline.id === selected ? null : discipline.id)}
+                        >
                             {discipline.name}
                         </div>
                     ))}
