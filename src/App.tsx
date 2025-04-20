@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import Home from "./pages/Home.tsx";
 import Course from "./pages/Course.tsx";
 import Login from "./pages/Login.tsx";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import DisciplineSelection from "./pages/DisciplineSelection.tsx";
+import Enrollment from "./pages/Enrollment.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cursos" element={<Course />} />
           <Route path="/disciplinas-cursadas" element={<DisciplineSelection />} />
+          <Route path="/disciplinas-matricula" element={<Enrollment />} />
         </Routes>
       </BrowserRouter>
     </GoogleOAuthProvider>
