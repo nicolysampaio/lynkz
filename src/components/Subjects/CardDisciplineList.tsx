@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import disciplines from "../../../db/disciplines.json";
-import Discipline from "./Discipline";
+import Discipline from "../../types/Discipline";
 
 interface CardDisciplineListProps {
   category: "optativa" | "livre";
