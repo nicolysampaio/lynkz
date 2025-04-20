@@ -13,20 +13,22 @@ import {
   faChevronDown,
   faList,
   faTable,
+  IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
+import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import enrollmentData from "../../db/enrollment.json";
+import disciplines from "../../db/disciplines.json";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import DisciplineEnrollment from "../types/DisciplineEnrollment";
 
 function Enrollment() {
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
   const [showTurnoDropdown, setShowTurnoDropdown] = useState(false);
-  const [selectedDisciplines, setSelectedDisciplines] = useState<DisciplineEnrollment[]>(
-    []
-  );
+  const [selectedDisciplines, setSelectedDisciplines] = useState<
+    DisciplineEnrollment[]
+  >([]);
   const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
 
   const campi = [
@@ -45,11 +47,7 @@ function Enrollment() {
   ];
 
   const icons = [
-    {
-      name: "Disciplina Obrigatória",
-      icon: faCheckCircle,
-      color: "text-red-500",
-    },
+    { name: "Disciplina Obrigatória", icon: faCheckCircle, color: "text-red-500"},
     { name: "Disciplina Limitada", icon: faLock, color: "text-blue-500" },
     { name: "Disciplina Livre", icon: faUnlock, color: "text-green-500" },
     { name: "Disciplina Concluída", icon: faMedal, color: "text-yellow-500" },
@@ -128,54 +126,81 @@ function Enrollment() {
     setSelectedDisciplines((prev) => [...prev, discipline]);
   };
 
-  const getDisciplineCategory = (
-    discipline: DisciplineEnrollment
-  ): "obrigatoria" | "optativa" | "livre" => {
-    if (
-      discipline.courseCategory?.includes(
-        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
-      )
-    ) {
-      return "obrigatoria";
-    } else if (
-      discipline.courseCategory?.includes(
-        "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
-      )
-    ) {
-      return "optativa";
-    } else {
-      return "livre";
+  const getCategoryColor = (
+    category: "BCT" | "BCC" | "OPTATIVA" | "LIVRE" | "CONCLUÍDA"
+  ): string => {
+    switch (category) {
+      case "BCT":
+        return "bg-gray-200";
+      case "BCC":
+        return "bg-blue-200";
+      case "OPTATIVA":
+        return "bg-yellow-200";
+      case "LIVRE":
+        return "bg-red-200";
+      case "CONCLUÍDA":
+        return "bg-green-500";
+      default:
+        return "bg-red-200";
     }
   };
 
-  // const getCategoryColor = (
-  //   category: "obrigatoria" | "optativa" | "livre"
-  // ): string => {
-  //   switch (category) {
-  //     case "obrigatoria":
-  //       return "bg-gray-200";
-  //     case "optativa":
-  //       return "bg-yellow-200";
-  //     default:
-  //       return "bg-red-200";
-  //   }
-  // };
-
-  const getCategoryIcon = (category: "obrigatoria" | "optativa" | "livre") => {
+  const getCategoryIcon = (
+    category: "obrigatoria" | "optativa" | "livre" | "concluida"
+  ) => {
     switch (category) {
       case "obrigatoria":
-        return faCheckCircle;
+        return { name: faCheckCircle, color: "text-red-500" };
       case "optativa":
-        return faLock;
+        return { name: faLock, color: "text-blue-500" };
+      case "livre":
+        return { name: faUnlock, color: "text-green-500" };
       default:
-        return faUnlock;
+        return { name: faMedal, color: "text-yellow-500" };
     }
   };
 
-  // Função para obter a cor da categoria com base na legenda
-  const getDisciplineColor = (category: string): string => {
-    const foundCategory = categories.find((cat) => cat.id === category);
-    return foundCategory ? foundCategory.color : "bg-gray-200"; // Cor padrão caso não encontre
+  const getDisciplineCategory = (
+    name: string
+  ): { icon: {name: IconDefinition, color: string}; color: string } => {
+    const categories: string[] = disciplines
+      .filter((disc) => disc.name === name)
+      .flatMap((disc) => disc.courseCategory || []);
+
+    if (
+      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
+    ) {
+      return {
+        icon: getCategoryIcon("obrigatoria"),
+        color: getCategoryColor("BCT"),
+      };
+    } else if (
+      categories.includes("BCC - Bacharelado em Ciências da Computação (OBR)")
+    ) {
+      return {
+        icon: getCategoryIcon("obrigatoria"),
+        color: getCategoryColor("BCC"),
+      };
+    } else if (
+      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
+    ) {
+      return {
+        icon: getCategoryIcon("optativa"),
+        color: getCategoryColor("BCT"),
+      };
+    } else if (
+      categories.includes("BCC - Bacharelado em Ciências da Computação (OL)")
+    ) {
+      return {
+        icon: getCategoryIcon("optativa"),
+        color: getCategoryColor("BCC"),
+      };
+    } else {
+      return {
+        icon: getCategoryIcon("livre"),
+        color: getCategoryColor("LIVRE"),
+      };
+    }
   };
 
   const filteredDisciplines = enrollmentData.disciplines.filter(
@@ -281,10 +306,10 @@ function Enrollment() {
                 Limpar Filtros
               </button>
 
-              <div className="flex items-center justify-center gap-2 border-t pt-4 mt-4">
+              <div className="flex items-center justify-center gap-2 pt-4 mt-4">
                 <button
                   onClick={() => setViewMode("list")}
-                  className={`flex items-center px-4 py-2 rounded ${
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
                     viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
                   }`}
                 >
@@ -293,7 +318,7 @@ function Enrollment() {
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`flex items-center px-4 py-2 rounded ${
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
                     viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
                   }`}
                 >
@@ -303,30 +328,30 @@ function Enrollment() {
               </div>
 
               {viewMode === "grid" && (
-                <div className="mt-8 border-t pt-6">
-                  <h4 className="font-semibold text-lg mb-4">Legenda:</h4>
+                <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-md">
+                  <h4 className="font-semibold text-sm mb-4">Legenda:</h4>
 
                   <div className="space-y-4">
                     <div>
-                      <h5 className="font-medium mb-2">Categorias:</h5>
-                      <div className="flex flex-wrap gap-2">
+                      <h5 className="text-xs font-medium mb-2">Categorias:</h5>
+                      <div className="flex flex-wrap gap-3">
                         {categories.map((category) => (
                           <div
                             key={category.id}
-                            className="flex items-center gap-1"
+                            className="flex items-center gap-1.5"
                           >
                             <div
                               className={`w-4 h-4 rounded ${category.color}`}
                             ></div>
-                            <span className="text-sm">{category.name}</span>
+                            <span className="text-xs">{category.name}</span>
                           </div>
                         ))}
                       </div>
                     </div>
 
                     <div>
-                      <h5 className="font-medium mb-2">Ícones:</h5>
-                      <div className="flex flex-col gap-2">
+                      <h5 className="text-xs font-medium mb-2">Ícones:</h5>
+                      <div className="grid grid-cols-1 gap-2.5 text-xs">
                         {icons.map((item) => (
                           <div
                             key={item.name}
@@ -336,7 +361,7 @@ function Enrollment() {
                               icon={item.icon}
                               className={`${item.color} w-4 h-4`}
                             />
-                            <span className="text-sm">{item.name}</span>
+                            <span className="text-xs">{item.name}</span>
                           </div>
                         ))}
                       </div>
@@ -364,7 +389,7 @@ function Enrollment() {
                 }`}
               >
                 {filteredDisciplines.map((discipline) => {
-                  const category = getDisciplineCategory(discipline);
+                  const category = getDisciplineCategory(discipline.name);
                   const isSelected = selectedDisciplines.some(
                     (d) => d.code === discipline.code
                   );
@@ -378,7 +403,7 @@ function Enrollment() {
                           ? "bg-gray-100 opacity-50 cursor-not-allowed"
                           : isSelected
                           ? "bg-green-50 border-2 border-green-500"
-                          : getDisciplineColor(category) // Aplica a cor da legenda
+                          : category.color // Cor de fundo do card
                       }`}
                       onClick={() =>
                         !isUnavailable && handleDisciplineClick(discipline)
@@ -387,18 +412,10 @@ function Enrollment() {
                       <div className="flex flex-col gap-3">
                         <div>
                           <div className="flex items-center justify-between">
-                            <h5 className="font-mono text-sm">
-                              {discipline.code}
-                            </h5>
+                            <h5 className="text-xs">{discipline.code}</h5>
                             <FontAwesomeIcon
-                              icon={getCategoryIcon(category)}
-                              className={`${
-                                category === "obrigatoria"
-                                  ? "text-red-500"
-                                  : category === "optativa"
-                                  ? "text-blue-500"
-                                  : "text-green-500"
-                              }`}
+                              icon={category.icon.name}
+                              className={`${category.icon.color} w-4 h-4`}
                             />
                           </div>
                           <h4 className="text-base font-medium mt-1">
@@ -421,7 +438,7 @@ function Enrollment() {
                               className="text-gray-600 w-3.5"
                             />
                             <span className="text-sm text-gray-800">
-                              {discipline.room}
+                              {discipline.campus}
                             </span>
                           </div>
                           <div className="flex items-center gap-2">

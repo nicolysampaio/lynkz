@@ -9,8 +9,6 @@ interface DisciplineEnrollment {
   slots: number;
   filled: number;
   turn: string;
-  type: string;
-  category: string;
   credits: number;
   period: string;
   quadrimester: number;
