@@ -251,16 +251,28 @@ function Enrollment() {
     }
   };
 
-  // Disciplinas após filtro de turno e disponibilidade
+  // mapeamento nome → código
+  const campusMap: Record<string, string> = {
+    "Santo André": "SA",
+    "São Bernardo do Campo": "SB",
+  };
 
+  // Disciplinas após filtro de campus, turno e disponibilidade
   const filteredDisciplines = enrollmentData.disciplines.filter(
     (discipline: DisciplineEnrollment) => {
+      // filtro de campus
+      const matchesCampus =
+        selectedCampus === "Todos" ||
+        discipline.campus === campusMap[selectedCampus];
+      // filtro de turno
       const matchesTurn =
         selectedTurno === "Todos" || discipline.turn === selectedTurno;
       const isAvailable = !isDisciplineUnavailable(discipline);
-      return matchesTurn && isAvailable;
+
+      return matchesCampus && matchesTurn && isAvailable;
     }
   );
+
   // Índices de horários a serem exibidos na grade
 
   const visibleSlotIndexes = timeSlots
