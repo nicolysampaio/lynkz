@@ -155,7 +155,7 @@ function Course() {
                     </div>
 
                     <div className="w-full flex justify-end">
-                        <Button label="Confirmar seleção" className={`bg-green-800 text-white text-sm ${selectedCourse === null ? "opacity-25 cursor-not-allowed" : "cursor-pointer"}`} route="/disciplinas-cursadas" />
+                        <Button label="Confirmar seleção" className={`bg-green-800 text-white text-sm ${selectedCourse === null ? "opacity-25 cursor-not-allowed" : "cursor-pointer"}`} route="/pageDisciplineSelection" />
                     </div>
                 </div>
             </main>
