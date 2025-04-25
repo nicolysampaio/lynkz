@@ -119,24 +119,6 @@ function DisciplineSelection() {
                         />
                       )}
                       {disciplines.map((discipline) => {
-                        let category: "optativa" | "obrigatoria" | "livre";
-
-                        if (
-                          discipline.courseCategory.includes(
-                            "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
-                          )
-                        ) {
-                          category = "optativa";
-                        } else if (
-                          discipline.courseCategory.includes(
-                            "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
-                          )
-                        ) {
-                          category = "obrigatoria";
-                        } else {
-                          category = "livre";
-                        }
-
                         return (
                           <CardDiscipline
                             key={discipline.id}
@@ -144,7 +126,7 @@ function DisciplineSelection() {
                             discipline={discipline.name}
                             credits={discipline.credits}
                             selected={disciplinesSelected.has(discipline.id)}
-                            category={category}
+                            courseCategory={discipline.courseCategory}
                             toggleDiscipline={toggleDisciplineSelection}
                           />
                         );

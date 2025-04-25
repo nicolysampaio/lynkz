@@ -424,15 +424,7 @@
       "BCC - Bacharelado em Ciências da Computação (OBR)"
     ]
   },
-  {
-    "id": 27,
-    "code": "BCC8OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "8º quadrimestre",
-    "quarter": 8,
-    "courseCategory": []
-  },
+
   {
     "id": 28,
     "code": "MCTA004-17",
@@ -476,15 +468,7 @@
       "BM - Bacharelado em Matemática (OL)"
     ]
   },
-  {
-    "id": 31,
-    "code": "BCC9OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "9º quadrimestre",
-    "quarter": 9,
-    "courseCategory": []
-  },
+
   {
     "id": 32,
     "code": "MCTA022-17",
@@ -541,15 +525,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ]
   },
-  {
-    "id": 36,
-    "code": "BCC10OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 10,
-    "courseCategory": []
-  },
+
   {
     "id": 37,
     "code": "MCTA009-13",
@@ -589,24 +565,8 @@
       "BCC - Bacharelado em Ciências da Computação (OBR)"
     ]
   },
-  {
-    "id": 40,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 10,
-    "courseCategory": []
-  },
-  {
-    "id": 41,
-    "code": "BCC11OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "11º quadrimestre",
-    "quarter": 11,
-    "courseCategory": []
-  },
+
+
   {
     "id": 42,
     "code": "MCCC012-23",
@@ -649,15 +609,7 @@
       "BCC - Bacharelado em Ciências da Computação (OBR)"
     ]
   },
-  {
-    "id": 45,
-    "code": "BCC11OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "11º quadrimestre",
-    "quarter": 12,
-    "courseCategory": []
-  },
+
   {
     "id": 46,
     "code": "BCC1201",
@@ -693,15 +645,7 @@
       "BN - Bacharelado em Neurociência (OL)"
     ]
   },
-  {
-    "id": 49,
-    "code": "BCC13OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "13º quadrimestre",
-    "quarter": 13,
-    "courseCategory": []
-  },
+  
   {
     "id": 50,
     "code": "MCCC006-23",
@@ -722,15 +666,7 @@
     "quarter": 13,
     "courseCategory": []
   },
-  {
-    "id": 52,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 14,
-    "courseCategory": []
-  },
+ 
   {
     "id": 53,
     "code": "MCTA025-13",
@@ -753,16 +689,7 @@
     "quarter": 14,
     "courseCategory": []
   },
-  {
-    "id": 55,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 15,
-    "courseCategory": []
-  },
-  {
+   {
     "id": 56,
     "code": "MCTA023-17",
     "name": "Segurança de Dados",

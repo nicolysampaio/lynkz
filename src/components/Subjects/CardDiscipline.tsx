@@ -3,7 +3,7 @@ interface CardDisciplineProps {
   discipline: string;
   credits: number | null;
   selected?: boolean;
-  category: "optativa" | "obrigatoria" | "livre";
+  courseCategory: string[];
   toggleDiscipline: (disciplineId: number) => void;
 }
 
@@ -12,19 +12,40 @@ function CardDiscipline({
   discipline,
   credits,
   selected = false,
-  category,
+  courseCategory,
   toggleDiscipline,
 }: CardDisciplineProps) {
-  const categoryClass = {
-    optativa: "bg-blue-200",
-    obrigatoria: "bg-gray-200",
-    livre: "bg-yellow-200",
-  };
+  // mapeamento conforme solicitado:
+  // BCC‑OBR         → bg-blue-200
+  // BCC‑OL          → bg-yellow-200
+  // BC&T‑OBR        → bg-gray-200
+  // (qualquer outro)→ bg-red-200
+  let bgClass = "bg-red-200";
+
+  if (
+    courseCategory.includes(
+      "BCC - Bacharelado em Ciências da Computação (OBR)"
+    )
+  ) {
+    bgClass = "bg-blue-200";
+  } else if (
+    courseCategory.includes(
+      "BCC - Bacharelado em Ciências da Computação (OL)"
+    )
+  ) {
+    bgClass = "bg-yellow-200";
+  } else if (
+    courseCategory.includes(
+      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
+    )
+  ) {
+    bgClass = "bg-gray-200";
+  }
 
   return (
     <div
       className={`p-4 rounded-md cursor-pointer ${
-        selected ? "bg-green-800 text-white" : categoryClass[category]
+        selected ? "bg-green-800 text-white" : bgClass
       }`}
       onClick={() => toggleDiscipline(id)}
       role="button"
