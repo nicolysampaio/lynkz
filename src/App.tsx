@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cursos" element={<Course />} />
-          <Route path="/disciplinas-cursadas" element={<DisciplineSelection />} />
-          <Route path="/disciplinas-matricula" element={<Enrollment />} />
+          <Route path="/pageLogin" element={<Login />} />
+          <Route path="/pageCourse" element={<Course />} />
+          <Route path="/pageDisciplineSelection" element={<DisciplineSelection />} />
+          <Route path="/pageEnrollment" element={<Enrollment />} />
         </Routes>
       </BrowserRouter>
     </GoogleOAuthProvider>
