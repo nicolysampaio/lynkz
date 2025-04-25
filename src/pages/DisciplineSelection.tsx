@@ -168,7 +168,7 @@ function DisciplineSelection() {
             <Button
               label="Confirmar seleção"
               className="bg-green-800 text-white text-sm"
-              route="/disciplinas-matricula"
+              route="/pageEnrollment"
               icon={faCheck}
             />
           </div>
