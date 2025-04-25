@@ -14,8 +14,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"],
-      "courseCategory": ["BCC - Bacharelado em Ciências da Computação (OL)"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BN - Bacharelado em Neurociência (OL)",
+        "BCB - Bacharelado em Ciências Biológicas (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "BBT - Bacharelado em Biotecnologia (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 2,
@@ -31,7 +60,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BN - Bacharelado em Neurociência (OL)",
+        "BCB - Bacharelado em Ciências Biológicas (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "BBT - Bacharelado em Biotecnologia (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 3,
@@ -47,7 +106,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 4,
@@ -63,7 +148,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 5,
@@ -79,7 +190,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9", "sex-10", "sex-11", "sex-10", "sex-11"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 6,
@@ -95,7 +242,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9", "sex-10", "sex-11", "sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 7,
@@ -111,7 +294,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "sex-21", "sex-22", "sex-21", "sex-22"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 8,
@@ -127,7 +346,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "sex-21", "sex-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EBIO - Engenharia Biomédica (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 9,
@@ -143,7 +398,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 10,
@@ -159,7 +438,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 11,
@@ -175,7 +478,25 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BRI - Bacharelado em Relações Internacionais (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 12,
@@ -191,7 +512,25 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BRI - Bacharelado em Relações Internacionais (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 13,
@@ -207,7 +546,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 14,
@@ -223,7 +593,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 15,
@@ -239,7 +640,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 16,
@@ -255,7 +680,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 17,
@@ -271,7 +720,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ]
     },
     {
       "id": 18,
@@ -287,7 +760,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ]
     },
     {
       "id": 19,
@@ -303,7 +800,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 20,
@@ -319,7 +842,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 21,
@@ -335,7 +884,35 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-10", "sex-11", "qua-8", "qua-9"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BFIS - Bacharelado em Física (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 22,
@@ -351,7 +928,35 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-10", "sex-11", "qua-10", "qua-11"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BFIS - Bacharelado em Física (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 23,
@@ -367,7 +972,35 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-21", "sex-22", "qua-19", "qua-20"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BFIS - Bacharelado em Física (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 24,
@@ -383,7 +1016,35 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-21", "sex-22", "qua-21", "qua-22"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BFIS - Bacharelado em Física (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 25,
@@ -399,7 +1060,32 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 26,
@@ -415,7 +1101,32 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ]
     },
     {
       "id": 27,
@@ -431,7 +1142,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-8", "qui-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 28,
@@ -447,7 +1182,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-8", "qui-9", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 29,
@@ -463,7 +1222,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-19", "qui-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 30,
@@ -479,7 +1262,31 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-19", "qui-20", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OBR)"
+      ]
     },
     {
       "id": 31,
@@ -495,7 +1302,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "qua-8", "qua-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 32,
@@ -511,7 +1354,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "qua-10", "qua-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 33,
@@ -527,7 +1406,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "qua-19", "qua-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 34,
@@ -543,7 +1458,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "qua-21", "qua-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 35,
@@ -559,7 +1510,24 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BN - Bacharelado em Neurociência (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 36,
@@ -575,7 +1543,24 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BN - Bacharelado em Neurociência (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 37,
@@ -591,7 +1576,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 38,
@@ -607,7 +1619,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 39,
@@ -623,7 +1662,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 40,
@@ -639,7 +1705,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 41,
@@ -655,7 +1748,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 42,
@@ -671,7 +1791,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 43,
@@ -687,7 +1834,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 44,
@@ -703,7 +1877,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 45,
@@ -719,7 +1920,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 46,
@@ -735,7 +1965,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 47,
@@ -751,7 +2010,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-8", "qua-9", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 48,
@@ -767,7 +2055,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-10", "qua-11", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 49,
@@ -783,7 +2100,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-10", "qui-11", "qua-10", "qua-11"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 50,
@@ -799,7 +2145,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-10", "qua-11", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 51,
@@ -815,7 +2190,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 52,
@@ -831,7 +2235,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 53,
@@ -847,7 +2280,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 54,
@@ -863,7 +2325,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-21", "qua-22", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 55,
@@ -879,7 +2370,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-21", "qua-22", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 56,
@@ -895,7 +2415,36 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-21", "qua-22", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OL)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 57,
@@ -911,7 +2460,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 58,
@@ -927,7 +2515,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 59,
@@ -943,7 +2570,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-10", "qua-11", "seg-8", "seg-9", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 60,
@@ -959,7 +2625,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 61,
@@ -975,7 +2680,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 62,
@@ -991,7 +2735,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 63,
@@ -1007,7 +2790,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 64,
@@ -1023,7 +2845,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 65,
@@ -1039,7 +2900,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 66,
@@ -1055,7 +2955,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9", "qua-10", "qua-11", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 67,
@@ -1071,7 +3010,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 68,
@@ -1087,7 +3065,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 69,
@@ -1103,7 +3120,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 70,
@@ -1119,7 +3175,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 71,
@@ -1135,7 +3230,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 72,
@@ -1151,7 +3285,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 73,
@@ -1167,7 +3340,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 74,
@@ -1183,7 +3395,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 75,
@@ -1199,7 +3450,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 76,
@@ -1215,7 +3505,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qua-8", "qua-9", "seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 77,
@@ -1231,7 +3560,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 78,
@@ -1247,7 +3615,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 79,
@@ -1263,7 +3670,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 80,
@@ -1279,7 +3725,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 81,
@@ -1295,7 +3780,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 82,
@@ -1311,7 +3835,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 83,
@@ -1327,7 +3890,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 84,
@@ -1343,7 +3945,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 85,
@@ -1359,7 +4000,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 86,
@@ -1375,7 +4055,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20", "qua-21", "qua-22", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 87,
@@ -1391,7 +4110,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 88,
@@ -1407,7 +4165,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 89,
@@ -1423,7 +4220,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 90,
@@ -1439,7 +4266,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 91,
@@ -1455,7 +4321,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 92,
@@ -1471,7 +4376,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 93,
@@ -1487,7 +4431,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 94,
@@ -1503,7 +4486,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 95,
@@ -1519,7 +4541,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 96,
@@ -1535,7 +4596,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 97,
@@ -1551,7 +4651,46 @@
       "credits": 5,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qua-19", "qua-20", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Quinzenal II"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 98,
@@ -1567,7 +4706,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-16", "ter-17", "sex-14", "sex-15"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 16,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 17,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 14,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 15,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 99,
@@ -1583,7 +4752,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-16", "ter-17", "sex-14", "sex-15"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 16,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 17,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 14,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 15,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 100,
@@ -1599,7 +4798,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 101,
@@ -1615,7 +4844,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 102,
@@ -1631,7 +4890,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "sex-21", "sex-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 103,
@@ -1647,7 +4936,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-21", "sex-22", "ter-19", "ter-20"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BPP - Bacharelado em Políticas Públicas (OL)"
+      ]
     },
     {
       "id": 104,
@@ -1663,7 +4982,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 105,
@@ -1679,7 +5028,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-8", "ter-9", "qui-10", "qui-11"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 106,
@@ -1695,7 +5074,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 107,
@@ -1711,7 +5120,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 108,
@@ -1727,7 +5166,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 109,
@@ -1743,7 +5212,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 110,
@@ -1759,7 +5258,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 111,
@@ -1775,7 +5304,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 112,
@@ -1791,7 +5350,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 113,
@@ -1807,7 +5396,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 114,
@@ -1823,7 +5442,37 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LFIS - Licenciatura em Física (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "LM - Licenciatura em Matemática (OBR)"
+      ]
     },
     {
       "id": 115,
@@ -1839,7 +5488,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 116,
@@ -1855,7 +5520,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-10", "sex-11"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 117,
@@ -1871,7 +5552,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 118,
@@ -1887,7 +5584,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 119,
@@ -1903,7 +5616,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 120,
@@ -1919,7 +5648,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-8", "seg-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 121,
@@ -1935,7 +5680,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 122,
@@ -1951,7 +5712,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-21", "sex-22"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 123,
@@ -1967,7 +5744,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 124,
@@ -1983,7 +5776,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 125,
@@ -1999,7 +5808,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 126,
@@ -2015,7 +5840,23 @@
       "credits": 2,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "LQ - Licenciatura em Química (OL)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)"
+      ]
     },
     {
       "id": 127,
@@ -2031,7 +5872,42 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qui-19", "qui-20", "seg-21", "seg-22"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "EINF - Engenharia de Informação (OL)"
+      ]
     },
     {
       "id": 128,
@@ -2047,7 +5923,43 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22", "ter-19", "ter-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "EINF - Engenharia de Informação (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ]
     },
     {
       "id": 129,
@@ -2063,7 +5975,35 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-21", "qua-22", "seg-19", "seg-20"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BN - Bacharelado em Neurociência (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "EIAR - Engenharia de Instrumentação, Automação e Robótica (OL)",
+        "EINF - Engenharia de Informação (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OL)"
+      ]
     },
     {
       "id": 130,
@@ -2079,7 +6019,34 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-19", "ter-20", "qui-21", "qui-22"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OL)",
+        "LM - Licenciatura em Matemática (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ]
     },
     {
       "id": 131,
@@ -2095,7 +6062,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 132,
@@ -2111,7 +6109,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-10", "ter-11", "sex-8", "sex-9"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 133,
@@ -2127,7 +6156,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 134,
@@ -2143,7 +6203,38 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 135,
@@ -2159,7 +6250,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-10", "seg-11", "qui-8", "qui-9"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 136,
@@ -2175,7 +6292,33 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["ter-21", "ter-22", "sex-19", "sex-20"]
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "ter",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 20,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BM - Bacharelado em Matemática (OBR)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "LM - Licenciatura em Matemática (OL)"
+      ]
     },
     {
       "id": 137,
@@ -2191,7 +6334,46 @@
       "credits": 4,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qua-19", "qua-20", "sex-21", "sex-22"]
+      "timeslots": [
+        {
+          "day": "qua",
+          "time": 19,
+          "week": "Semanal"
+        },
+        {
+          "day": "qua",
+          "time": 20,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "sex",
+          "time": 22,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "EGES - Engenharia de Gestão (OBR)",
+        "EBIO - Engenharia Biomédica (OBR)",
+        "EENE - Engenharia de Energia (OBR)",
+        "BM - Bacharelado em Matemática (OL)",
+        "EMAT - Engenharia de Materiais (OBR)",
+        "EAER - Engenharia Aeroespacial (OBR)",
+        "LM - Licenciatura em Matemática (OBR)",
+        "EINF - Engenharia de Informação (OBR)",
+        "EAU - Engenharia Ambiental e Urbana (OBR)",
+        "BCE - Bacharelado em Ciências Econômicas (OL)",
+        "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
+        "BCC - Bacharelado em Ciências da Computação (OL)",
+        "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+        "BN - Bacharelado em Neurociência (OL)",
+        "BCD - Bacharelado em Ciência de Dados (OBR)"
+      ]
     },
     {
       "id": 138,
@@ -2207,7 +6389,34 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["qui-8", "qui-9", "seg-10", "seg-11"]
+      "timeslots": [
+        {
+          "day": "qui",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 9,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "seg",
+          "time": 10,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 11,
+          "week": "Semanal"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
     },
     {
       "id": 139,
@@ -2223,7 +6432,94 @@
       "credits": 3,
       "period": "Q1",
       "quadrimester": 1,
-      "timeslots": ["seg-21", "seg-22", "qui-19", "qui-20"]
+      "timeslots": [
+        {
+          "day": "seg",
+          "time": 21,
+          "week": "Semanal"
+        },
+        {
+          "day": "seg",
+          "time": 22,
+          "week": "Semanal"
+        },
+        {
+          "day": "qui",
+          "time": 19,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "qui",
+          "time": 20,
+          "week": "Quinzenal I"
+        }
+      ],
+      "courseCategory": [
+        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+        "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+        "LCH - Licenciatura em Ciências Humanas (OBR)"
+      ]
+    },
+    {
+      "id": 1002,
+      "code": "FIL110",
+      "name": "Introdução à Lógica",
+      "professor": "Maria Oliveira",
+      "campus": "SA",
+      "schedule": "terça das 08:00 às 10:00,Quinzenal I",
+      "room": "Sala A1",
+      "slots": 35,
+      "filled": 0,
+      "turn": "Matutino",
+      "credits": 4,
+      "period": "Q1",
+      "quadrimester": 1,
+      "courseCategory": [
+        "BCT - Bacharelado em Ciência e Tecnologia (OPT)"
+      ],
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Quinzenal I"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Quinzenal I"
+        }
+      ]
+    },
+    {
+      "id": 1001,
+      "code": "INF101",
+      "name": "Programação I",
+      "professor": "João Silva",
+      "campus": "SA",
+      "schedule": "terça das 08:00 às 10:00,Semanal",
+      "room": "LAB 1",
+      "slots": 40,
+      "filled": 0,
+      "turn": "Matutino",
+      "credits": 4,
+      "period": "Q1",
+      "quadrimester": 1,
+      "courseCategory": [
+        "BCC - Bacharelado em Ciências da Computação (OL)"
+      ],
+      "timeslots": [
+        {
+          "day": "ter",
+          "time": 8,
+          "week": "Quinzenal II"
+        },
+        {
+          "day": "ter",
+          "time": 9,
+          "week": "Quinzenal II"
+        }
+      ]
     }
   ]
 }
