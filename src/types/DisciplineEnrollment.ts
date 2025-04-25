@@ -1,4 +1,10 @@
-interface DisciplineEnrollment {
+type Timeslot = {
+  day: string;
+  time: number;
+  week: string;
+};
+
+type DisciplineEnrollment = {
   id: number;
   code: string;
   name: string;
@@ -12,8 +18,8 @@ interface DisciplineEnrollment {
   credits: number;
   period: string;
   quadrimester: number;
-  timeslots: string[];
-  courseCategory?: string[];
-}
+  timeslots: Timeslot[]; // <-- Corrigido aqui
+  courseCategory: string[];
+};
 
 export default DisciplineEnrollment;
