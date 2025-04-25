@@ -15,11 +15,11 @@ function CardDiscipline({
   courseCategory,
   toggleDiscipline,
 }: CardDisciplineProps) {
-  // mapeamento conforme solicitado:
+  // mapeamento das cores
   // BCC‑OBR         → bg-blue-200
   // BCC‑OL          → bg-yellow-200
   // BC&T‑OBR        → bg-gray-200
-  // (qualquer outro)→ bg-red-200
+  // (qualquer outro = Livres)→ bg-red-200
   let bgClass = "bg-red-200";
 
   if (
