@@ -21,6 +21,17 @@ import disciplines from "../../db/disciplines.json";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+/**
+ * Limita o comprimento de uma string e adiciona reticências quando excede maxLength.
+ */
+
+const truncate = (text: string, maxLength: number): string =>
+  text.length > maxLength ? text.slice(0, maxLength) + "…" : text;
+
+/**
+ * Componente principal de Matrícula em Disciplinas.
+ */
+
 function Enrollment() {
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
@@ -47,7 +58,7 @@ function Enrollment() {
   ];
 
   const icons = [
-    { name: "Disciplina Obrigatória", icon: faCheckCircle, color: "text-red-500"},
+    { name: "Disciplina Obrigatória", icon: faCheckCircle, color: "text-red-500" },
     { name: "Disciplina Limitada", icon: faLock, color: "text-blue-500" },
     { name: "Disciplina Livre", icon: faUnlock, color: "text-green-500" },
     { name: "Disciplina Concluída", icon: faMedal, color: "text-yellow-500" },
@@ -82,20 +93,42 @@ function Enrollment() {
     { id: "sex", label: "Sexta" },
   ] as const;
 
+  /**
+  * Limpa filtros de campus e turno.
+  */
+
   const clearFilters = () => {
     setSelectedCampus("Todos");
     setSelectedTurno("Todos");
   };
+  /**
+    * Verifica conflito de horário entre uma disciplina candidata e as já selecionadas.
+    */
 
   const checkTimeConflict = (discipline: DisciplineEnrollment) => {
     if (selectedDisciplines.length === 0) return false;
 
     return selectedDisciplines.some((selected) =>
-      discipline.timeslots.some((timeSlot) =>
-        selected.timeslots.includes(timeSlot)
+      discipline.timeslots.some((slot) =>
+        selected.timeslots.some((s) => {
+          const sameDayAndTime = s.day === slot.day && s.time === slot.time;
+          if (!sameDayAndTime) return false;
+
+          if (s.week === "Semanal" || slot.week === "Semanal") {
+            // Semanal conflita com qualquer coisa no mesmo slot
+            return true;
+          }
+          // Quinzenal I só conflita com Quinzenal I ou Semanal
+          // Quinzenal II só conflita com Quinzenal II ou Semanal
+          return s.week === slot.week;
+        })
       )
     );
   };
+
+  /**
+   * Retorna true se a disciplina não puder ser selecionada (já selecionada ou conflita).
+   */
 
   const isDisciplineUnavailable = (discipline: DisciplineEnrollment) => {
     if (selectedDisciplines.some((d) => d.code === discipline.code))
@@ -103,6 +136,10 @@ function Enrollment() {
     if (selectedDisciplines.length === 0) return false;
     return checkTimeConflict(discipline);
   };
+
+  /**
+   * Trata o clique na disciplina: adiciona ou remove da seleção.
+   */
 
   const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
     const isSelected = selectedDisciplines.some(
@@ -126,6 +163,10 @@ function Enrollment() {
     setSelectedDisciplines((prev) => [...prev, discipline]);
   };
 
+  /**
+   * Retorna a cor de fundo de acordo com a categoria da disciplina.
+   */
+
   const getCategoryColor = (
     category: "BCT" | "BCC" | "OPTATIVA" | "LIVRE" | "CONCLUÍDA"
   ): string => {
@@ -145,6 +186,10 @@ function Enrollment() {
     }
   };
 
+  /**
+   * Retorna o ícone correspondente à categoria da disciplina.
+   */
+
   const getCategoryIcon = (
     category: "obrigatoria" | "optativa" | "livre" | "concluida"
   ) => {
@@ -160,21 +205,17 @@ function Enrollment() {
     }
   };
 
+  /**
+   * Determina categoria (obrigatória, optativa, livre) de acordo com courseCategory.
+   */
   const getDisciplineCategory = (
     name: string
-  ): { icon: {name: IconDefinition, color: string}; color: string } => {
+  ): { icon: { name: IconDefinition; color: string }; color: string } => {
     const categories: string[] = disciplines
       .filter((disc) => disc.name === name)
       .flatMap((disc) => disc.courseCategory || []);
 
     if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
-    ) {
-      return {
-        icon: getCategoryIcon("obrigatoria"),
-        color: getCategoryColor("BCT"),
-      };
-    } else if (
       categories.includes("BCC - Bacharelado em Ciências da Computação (OBR)")
     ) {
       return {
@@ -182,18 +223,25 @@ function Enrollment() {
         color: getCategoryColor("BCC"),
       };
     } else if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
-    ) {
-      return {
-        icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("BCT"),
-      };
-    } else if (
       categories.includes("BCC - Bacharelado em Ciências da Computação (OL)")
     ) {
       return {
         icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("BCC"),
+        color: getCategoryColor("OPTATIVA"), // <-- usar OPTATIVA para cor amarela
+      };
+    } else if (
+      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
+    ) {
+      return {
+        icon: getCategoryIcon("obrigatoria"),
+        color: getCategoryColor("BCT"),
+      };
+    } else if (
+      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
+    ) {
+      return {
+        icon: getCategoryIcon("optativa"),
+        color: getCategoryColor("OPTATIVA"), // <-- usar OPTATIVA para cor amarela
       };
     } else {
       return {
@@ -203,6 +251,8 @@ function Enrollment() {
     }
   };
 
+  // Disciplinas após filtro de turno e disponibilidade
+
   const filteredDisciplines = enrollmentData.disciplines.filter(
     (discipline: DisciplineEnrollment) => {
       const matchesTurn =
@@ -211,6 +261,16 @@ function Enrollment() {
       return matchesTurn && isAvailable;
     }
   );
+  // Índices de horários a serem exibidos na grade
+
+  const visibleSlotIndexes = timeSlots
+    .map((_, idx) => idx)
+    .filter((idx) =>
+      selectedDisciplines.some((d) =>
+        d.timeslots.some((slot) => slot.time === idx + 8)
+      )
+    )
+    .sort((a, b) => a - b);
 
   return (
     <div className="min-h-screen flex flex-col flex-1 bg-gray-50">
@@ -309,18 +369,16 @@ function Enrollment() {
               <div className="flex items-center justify-center gap-2 pt-4 mt-4">
                 <button
                   onClick={() => setViewMode("list")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
-                    viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
                   <FontAwesomeIcon icon={faList} className="mr-2" />
                   Lista
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
-                    viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
                   <FontAwesomeIcon icon={faTable} className="mr-2" />
                   Grade
@@ -382,11 +440,10 @@ function Enrollment() {
               </p>
 
               <div
-                className={`grid ${
-                  viewMode === "grid"
-                    ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-                    : "grid-cols-1 gap-2"
-                }`}
+                className={`grid ${viewMode === "grid"
+                  ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+                  : "grid-cols-1 gap-2"
+                  }`}
               >
                 {filteredDisciplines.map((discipline) => {
                   const category = getDisciplineCategory(discipline.name);
@@ -398,13 +455,12 @@ function Enrollment() {
                   return (
                     <div
                       key={discipline.code}
-                      className={`p-4 rounded-lg cursor-pointer transition-colors ${
-                        isUnavailable
-                          ? "bg-gray-100 opacity-50 cursor-not-allowed"
-                          : isSelected
+                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isUnavailable
+                        ? "bg-gray-100 opacity-50 cursor-not-allowed"
+                        : isSelected
                           ? "bg-green-50 border-2 border-green-500"
                           : category.color // Cor de fundo do card
-                      }`}
+                        }`}
                       onClick={() =>
                         !isUnavailable && handleDisciplineClick(discipline)
                       }
@@ -419,7 +475,8 @@ function Enrollment() {
                             />
                           </div>
                           <h4 className="text-base font-medium mt-1">
-                            {discipline.name}
+                            {/* aplica truncate na string longa */}
+                            {truncate(discipline.name, 20)}
                           </h4>
                         </div>
                         <div className="flex flex-col gap-2">
@@ -429,7 +486,7 @@ function Enrollment() {
                               className="text-gray-600 w-3.5"
                             />
                             <span className="text-sm text-gray-800">
-                              {discipline.professor}
+                              {truncate(discipline.professor, 20)}
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -452,7 +509,7 @@ function Enrollment() {
                           </div>
                         </div>
                         <div className="text-sm text-gray-800">
-                          Vagas: {discipline.filled}/{discipline.slots}
+                          Créditos: {discipline.credits}
                         </div>
                       </div>
                     </div>
@@ -468,7 +525,7 @@ function Enrollment() {
                     Quadro de Horários
                   </h2>
                   <div className="overflow-x-auto">
-                    <table className="w-full border-collapse">
+                    <table className="w-auto table-auto border-collapse">
                       <thead>
                         <tr>
                           <th className="p-4 text-left bg-gray-50 border border-gray-200 font-medium">
@@ -485,64 +542,119 @@ function Enrollment() {
                         </tr>
                       </thead>
                       <tbody>
-                        {timeSlots.map((timeSlot, index) => (
-                          <tr key={timeSlot}>
-                            <td className="p-4 border border-gray-200">
-                              {timeSlot}
-                            </td>
-                            {weekDays.map((day) => {
-                              const discipline = selectedDisciplines.find((d) =>
-                                d.timeslots.some(
-                                  (slot) => slot === `${day.id}-${index + 8}`
-                                )
-                              );
-                              return (
-                                <td
-                                  key={`${day.id}-${timeSlot}`}
-                                  className="p-2 border border-gray-200 align-top"
-                                >
-                                  {discipline && (
-                                    <div className="bg-gray-50 p-3 rounded">
-                                      <div className="font-mono text-sm mb-1">
-                                        {discipline.code}
-                                      </div>
-                                      <div className="text-sm text-gray-700">
-                                        {discipline.name}
-                                      </div>
+                        {(() => {
+                          const skip: Record<string, number> = {};
+                          return visibleSlotIndexes.map((slotIdx) => (
+                            <tr key={slotIdx}>
+                              <td className="px-1 py-1 border border-gray-200">
+                                {timeSlots[slotIdx]}
+                              </td>
+                              {weekDays.map((day) => {
+                                if (skip[day.id] > 0) {
+                                  skip[day.id]!--;
+                                  return null;
+                                }
+                                // coleta todos os blocos que começam aqui (sem predecessor do mesmo week)
+                                const slots = selectedDisciplines.flatMap((disc) =>
+                                  disc.timeslots
+                                    .filter(
+                                      (s) =>
+                                        s.day === day.id &&
+                                        s.time === slotIdx + 8 &&
+                                        !disc.timeslots.some(
+                                          (p) =>
+                                            p.day === day.id &&
+                                            p.week === s.week &&
+                                            p.time === s.time - 1
+                                        )
+                                    )
+                                    .map((s) => ({ disc, week: s.week, start: s.time }))
+                                );
+                                if (slots.length === 0) {
+                                  return <td key={day.id} className="p-0 border align-top" />;
+                                }
+                                // calcula span para cada bloco
+                                const spans = slots.map(({ disc, week, start }) => {
+                                  let span = 1;
+                                  while (
+                                    disc.timeslots.some(
+                                      (s) =>
+                                        s.day === day.id &&
+                                        s.week === week &&
+                                        s.time === start + span
+                                    )
+                                  ) {
+                                    span++;
+                                  }
+                                  return span;
+                                });
+                                const maxSpan = Math.max(...spans);
+                                skip[day.id] = maxSpan - 1;
+                                return (
+                                  <td
+                                    key={day.id}
+                                    rowSpan={maxSpan}
+                                    className="p-0 border align-top whitespace-nowrap"
+                                  >
+                                    <div className="flex flex-col items-start justify-start gap-px">
+                                      {slots.map(({ disc, week, start }, i) => {
+                                        // pega a cor da categoria: obrigatória BCC = azul, optativa = amarelo, etc.
+                                        const { color } = getDisciplineCategory(disc.name);
+                                        return (
+                                          <div
+                                            key={disc.code + week}
+                                            className={`inline-block p-2 rounded-lg shadow-sm border border-gray-200 text-left max-w-max ${color}`}
+                                          >
+                                            {/* Código */}
+                                            <div className="font-mono text-sm mb-1">{disc.code}</div>
+                                            {/* Nome */}
+                                            <div className="text-base font-medium mb-2">
+                                              {truncate(disc.name, 20)}
+                                            </div>
+                                            {/* Professor */}
+                                            <div className="text-xs text-gray-700 mb-1">{truncate(disc.professor, 20)}</div>
+                                            {/* Campus */}
+                                            <div className="text-xs text-gray-700 mb-1">{disc.campus}</div>
+                                            {/* Horário e Semana */}
+                                            <div className="text-xs text-gray-500">
+                                              {`${start}:00 às ${start + spans[i]}:00 • ${week}`}
+                                            </div>
+                                          </div>
+                                        );
+                                      })}
                                     </div>
-                                  )}
-                                </td>
-                              );
-                            })}
-                          </tr>
-                        ))}
+                                  </td>
+                                );
+                              })}
+                            </tr>
+                          ));
+                        })()}
                       </tbody>
                     </table>
                   </div>
                 </div>
 
                 <div
-                  className={`mt-4 border rounded-lg p-4 ${
-                    selectedDisciplines.some((d) =>
+                  className={`mt-4 border rounded-lg p-4 ${selectedDisciplines.some((d) =>
+                    d.courseCategory?.includes(
+                      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
+                    )
+                  )
+                    ? "bg-gray-200 border-gray-300"
+                    : selectedDisciplines.some((d) =>
                       d.courseCategory?.includes(
-                        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
+                        "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
                       )
                     )
-                      ? "bg-gray-200 border-gray-300"
-                      : selectedDisciplines.some((d) =>
-                          d.courseCategory?.includes(
-                            "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
-                          )
-                        )
                       ? "bg-yellow-200 border-yellow-300"
                       : selectedDisciplines.some((d) =>
-                          d.courseCategory?.includes(
-                            "BCC - Bacharelado em Ciências da Computação (OL)"
-                          )
+                        d.courseCategory?.includes(
+                          "BCC - Bacharelado em Ciências da Computação (OL)"
                         )
-                      ? "bg-red-200 border-red-300"
-                      : "bg-green-50 border-green-200"
-                  }`}
+                      )
+                        ? "bg-red-200 border-red-300"
+                        : "bg-green-50 border-green-200"
+                    }`}
                 >
                   <p className="font-medium text-green-800">
                     {selectedDisciplines.length} disciplina(s) selecionada(s)
