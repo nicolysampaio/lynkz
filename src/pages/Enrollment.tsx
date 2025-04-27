@@ -1,4 +1,6 @@
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useEffect } from "react";
+import { useLocation, Navigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
@@ -11,25 +13,78 @@ import {
   faLocationDot,
   faClock,
   faChevronDown,
+  faTimes,
   faList,
   faTable,
-  IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
-import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import enrollmentData from "../../db/enrollment.json";
-import disciplines from "../../db/disciplines.json";
+import disciplinesData from "../../db/disciplines.json";
+import courseCategoriesData from "../../db/course_categories.json";
+import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+type LocationState = {
+  selectedCourse?: string;
+  completedDisciplineCodes?: string[];
+};
+
+type Timeslot = {
+  day: string;
+  time: number;
+  week: string;
+};
+
 function Enrollment() {
+  const location = useLocation();
+  const { completedDisciplineCodes = [] } = location.state as LocationState;
+
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
   const [showTurnoDropdown, setShowTurnoDropdown] = useState(false);
-  const [selectedDisciplines, setSelectedDisciplines] = useState<
-    DisciplineEnrollment[]
-  >([]);
-  const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
+
+  // → Novo estado para o filtro de viagens
+  const [allowTravelConflict, setAllowTravelConflict] = useState<"Sim" | "Não">("Não");
+  const [showTravelDropdown, setShowTravelDropdown] = useState(false);
+
+  // → novo estado para bloqueio de múltiplos professores
+  const [selectedProfessors, setSelectedProfessors] = useState<string[]>([]);
+  const [professorSearch, setProfessorSearch] = useState("");
+  const [searchProfessorResults, setSearchProfessorResults] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (!professorSearch.trim()) {
+      setSearchProfessorResults([]);
+    } else {
+      setSearchProfessorResults(
+        professorList.filter(p =>
+          p.toLowerCase().includes(professorSearch.toLowerCase()) &&
+          !selectedProfessors.includes(p)
+        )
+      );
+    }
+  }, [professorSearch, selectedProfessors]);
+
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [selectedDisciplines, setSelectedDisciplines] = useState<DisciplineEnrollment[]>([]);
+
+  const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
+    setSelectedDisciplines(prev =>
+      prev.some(d => d.section === discipline.section)
+        ? prev.filter(d => d.section !== discipline.section)
+        : [...prev, discipline]
+    );
+  };
+
+  const state = (location.state ?? {}) as LocationState;
+  if (!state.selectedCourse) {
+    return <Navigate to="/pageCourse" replace />;
+  }
+  const { selectedCourse } = state;
+
+  const COURSE_CATEGORIES =
+    courseCategoriesData.find((c) => c.id === selectedCourse)?.courseCategory ?? [];
 
   const campi = [
     { id: 0, name: "Santo André" },
@@ -37,24 +92,124 @@ function Enrollment() {
     { id: 2, name: "Todos" },
   ];
   const turno = ["Matutino", "Vespertino", "Noturno", "Todos"];
+  const campusMap: Record<string, string> = {
+    "Santo André": "SA",
+    "São Bernardo do Campo": "SB",
+  };
 
-  const categories = [
-    { id: "BCT", name: "BCT", color: "bg-gray-200" },
-    { id: "BCC", name: "BCC", color: "bg-blue-200" },
-    { id: "OPTATIVA", name: "OPTATIVA", color: "bg-yellow-200" },
-    { id: "LIVRE", name: "LIVRE", color: "bg-red-200" },
-    { id: "CONCLUÍDA", name: "CONCLUÍDA", color: "bg-green-500" },
-  ];
+  const clearFilters = () => {
+    setSelectedCampus("Todos");
+    setSelectedTurno("Todos");
+    setAllowTravelConflict("Não");
+    setSelectedProfessors([]);
+    setProfessorSearch("");
+  };
 
-  const icons = [
-    { name: "Disciplina Obrigatória", icon: faCheckCircle, color: "text-red-500"},
-    { name: "Disciplina Limitada", icon: faLock, color: "text-blue-500" },
-    { name: "Disciplina Livre", icon: faUnlock, color: "text-green-500" },
-    { name: "Disciplina Concluída", icon: faMedal, color: "text-yellow-500" },
-    { name: "Professor", icon: faUser, color: "text-gray-700" },
-    { name: "Local", icon: faLocationDot, color: "text-gray-700" },
-    { name: "Turno", icon: faClock, color: "text-gray-700" },
-  ];
+  const isSlotConflict = (a: Timeslot, b: Timeslot): boolean => {
+    if (a.day !== b.day || a.time !== b.time) return false;
+    if (a.week === "Semanal" || b.week === "Semanal") return true;
+    return a.week === b.week;
+  };
+
+  const isTravelAllowed = (a: Timeslot, b: Timeslot): boolean => {
+    if (a.day !== b.day) return true;
+    const endA = a.time + 1;
+    return b.time >= endA + 1;
+  };
+
+  const hasCloseTravelConflict = (d1: DisciplineEnrollment, d2: DisciplineEnrollment): boolean => {
+    if (d1.campus === d2.campus) return false;
+    return d1.timeslots
+      .concat(d1.practiceTimeslots)
+      .some(ts1 => d2.timeslots.concat(d2.practiceTimeslots)
+        .some(ts2 => !isTravelAllowed(ts1, ts2)));
+  };
+
+  const checkTimeConflict = (disc: DisciplineEnrollment) => {
+    return selectedDisciplines.some((sel) =>
+      [...disc.timeslots, ...disc.practiceTimeslots].some((slot) =>
+        [...sel.timeslots, ...sel.practiceTimeslots].some((s) =>
+          isSlotConflict(s, slot)
+        )
+      )
+    );
+  };
+
+  const isDisciplineUnavailable = (d: DisciplineEnrollment) => {
+    if (selectedDisciplines.some(x => x.section === d.section)) return false;
+    return selectedDisciplines.length > 0 && checkTimeConflict(d);
+  };
+
+  const getCategoryColor = (category: string): string => {
+    const prefix = category.split(" -")[0];
+    const match = category.match(/\((OBR|OL)\)$/);
+    const suffix = match?.[1];
+    if (prefix === "BCC") {
+      return suffix === "OBR" ? "bg-blue-200" : "bg-yellow-200";
+    }
+    if (prefix === "BC&T") {
+      return suffix === "OBR" ? "bg-gray-200" : "bg-yellow-200";
+    }
+    return "bg-red-200";
+  };
+
+  const getCategoryIcon = (category: string) => {
+    const match = category.match(/\((OBR|OL)\)$/)?.[1];
+    return match === "OBR"
+      ? { name: faCheckCircle, color: "text-blue-500" }
+      : { name: faLock, color: "text-yellow-500" };
+  };
+
+  const allDisciplines: DisciplineEnrollment[] = enrollmentData.disciplines.map(d => ({
+    id: d.id!,
+    code: d.sigla_disciplina!,
+    section: d.sigla_turma!,
+    name: d.name ?? "",
+    campus: d.campus ?? "",
+    turn: d.turn ?? "",
+    credits: d.credits ?? 0,
+    slots: d.slots ?? 0,
+    room: d.room,
+    tpei: d.tpei,
+    professor: [
+      d.docente_teoria ?? d.docente_pratica,
+      d.docente_teoria_2 ?? d.docente_pratica_2,
+      d.docente_teoria_3 ?? d.docente_pratica_3,
+    ].filter(Boolean).join(" / "),
+    scheduleTheory: d.schedule_theory,
+    schedulePractice: d.schedule_practice,
+    timeslots: d.timeslots as Timeslot[],
+    practiceTimeslots: [],
+    courseCategory: (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
+  }));
+
+  // → monta lista única de professores
+  const professorList = Array.from(
+    new Set(
+      allDisciplines
+        .flatMap(d => d.professor.split(" / "))
+        .filter(Boolean)
+    )
+  ).sort();
+
+  const byCourse = allDisciplines.filter(d =>
+    d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
+  );
+  const remaining = byCourse.filter(d => !completedDisciplineCodes.includes(d.code));
+
+  const filteredDisciplines = remaining.filter(d => {
+    const matchesCampus = selectedCampus === "Todos" || d.campus === campusMap[selectedCampus];
+    const matchesTurn = selectedTurno === "Todos" || d.turn === selectedTurno;
+    const matchesProfessor = selectedProfessors.length === 0 ||
+      !selectedProfessors.some(sp =>
+        d.professor.split(" / ").includes(sp)
+      );
+    const isAvailable = !isDisciplineUnavailable(d);
+    const noTravelConflict = allowTravelConflict === "Sim" ||
+      !selectedDisciplines.some(other => hasCloseTravelConflict(d, other));
+
+    return matchesCampus && matchesTurn && matchesProfessor && isAvailable && noTravelConflict;
+  });
 
   const timeSlots = [
     "8:00 às 9:00",
@@ -82,141 +237,10 @@ function Enrollment() {
     { id: "sex", label: "Sexta" },
   ] as const;
 
-  const clearFilters = () => {
-    setSelectedCampus("Todos");
-    setSelectedTurno("Todos");
-  };
-
-  const checkTimeConflict = (discipline: DisciplineEnrollment) => {
-    if (selectedDisciplines.length === 0) return false;
-
-    return selectedDisciplines.some((selected) =>
-      discipline.timeslots.some((timeSlot) =>
-        selected.timeslots.includes(timeSlot)
-      )
-    );
-  };
-
-  const isDisciplineUnavailable = (discipline: DisciplineEnrollment) => {
-    if (selectedDisciplines.some((d) => d.code === discipline.code))
-      return false;
-    if (selectedDisciplines.length === 0) return false;
-    return checkTimeConflict(discipline);
-  };
-
-  const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
-    const isSelected = selectedDisciplines.some(
-      (d) => d.code === discipline.code
-    );
-
-    if (isSelected) {
-      setSelectedDisciplines((prev) =>
-        prev.filter((d) => d.code !== discipline.code)
-      );
-      return;
-    }
-
-    if (checkTimeConflict(discipline)) {
-      alert(
-        "Conflito de horário detectado! Não é possível selecionar esta disciplina."
-      );
-      return;
-    }
-
-    setSelectedDisciplines((prev) => [...prev, discipline]);
-  };
-
-  const getCategoryColor = (
-    category: "BCT" | "BCC" | "OPTATIVA" | "LIVRE" | "CONCLUÍDA"
-  ): string => {
-    switch (category) {
-      case "BCT":
-        return "bg-gray-200";
-      case "BCC":
-        return "bg-blue-200";
-      case "OPTATIVA":
-        return "bg-yellow-200";
-      case "LIVRE":
-        return "bg-red-200";
-      case "CONCLUÍDA":
-        return "bg-green-500";
-      default:
-        return "bg-red-200";
-    }
-  };
-
-  const getCategoryIcon = (
-    category: "obrigatoria" | "optativa" | "livre" | "concluida"
-  ) => {
-    switch (category) {
-      case "obrigatoria":
-        return { name: faCheckCircle, color: "text-red-500" };
-      case "optativa":
-        return { name: faLock, color: "text-blue-500" };
-      case "livre":
-        return { name: faUnlock, color: "text-green-500" };
-      default:
-        return { name: faMedal, color: "text-yellow-500" };
-    }
-  };
-
-  const getDisciplineCategory = (
-    name: string
-  ): { icon: {name: IconDefinition, color: string}; color: string } => {
-    const categories: string[] = disciplines
-      .filter((disc) => disc.name === name)
-      .flatMap((disc) => disc.courseCategory || []);
-
-    if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
-    ) {
-      return {
-        icon: getCategoryIcon("obrigatoria"),
-        color: getCategoryColor("BCT"),
-      };
-    } else if (
-      categories.includes("BCC - Bacharelado em Ciências da Computação (OBR)")
-    ) {
-      return {
-        icon: getCategoryIcon("obrigatoria"),
-        color: getCategoryColor("BCC"),
-      };
-    } else if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
-    ) {
-      return {
-        icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("BCT"),
-      };
-    } else if (
-      categories.includes("BCC - Bacharelado em Ciências da Computação (OL)")
-    ) {
-      return {
-        icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("BCC"),
-      };
-    } else {
-      return {
-        icon: getCategoryIcon("livre"),
-        color: getCategoryColor("LIVRE"),
-      };
-    }
-  };
-
-  const filteredDisciplines = enrollmentData.disciplines.filter(
-    (discipline: DisciplineEnrollment) => {
-      const matchesTurn =
-        selectedTurno === "Todos" || discipline.turn === selectedTurno;
-      const isAvailable = !isDisciplineUnavailable(discipline);
-      return matchesTurn && isAvailable;
-    }
-  );
-
   return (
-    <div className="min-h-screen flex flex-col flex-1 bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
-
-      <main className="flex flex-col flex-1 mx-16 py-8">
+      <main className="flex-1 mx-16 py-8">
         <div className="flex justify-between mb-8 items-center">
           <div className="flex items-center gap-4">
             <h3 className="text-green-800 font-bold text-2xl">
@@ -229,7 +253,40 @@ function Enrollment() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Card de Confirmar disciplinas */}
+        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
+        {selectedDisciplines.length > 0 && (
+                  <div
+                    className={`mt-4 border rounded-lg p-4  ${selectedDisciplines.some((d) =>
+                      d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
+                    )
+                      ? "bg-gray-200 border-gray-300"
+                      : selectedDisciplines.some((d) =>
+                        d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
+                      )
+                        ? "bg-yellow-200 border-yellow-300"
+                        : "bg-green-50 border-green-200"
+                      }`}
+                  >
+                    <p className="font-medium text-green-800">
+                      {selectedDisciplines.length} disciplina(s) selecionada(s)
+                    </p>
+                    <div className="flex gap-2 mt-2">
+                      <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+                        Salvar Seleção
+                      </button>
+                      <button
+                        className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-50"
+                        onClick={() => setSelectedDisciplines([])}
+                      >
+                        Limpar Seleção
+                      </button>
+                    </div>
+                  </div>
+                )}
+                </div>
+        {/* Filtros e Grade de Horários */}
+        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
           <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-4">
             <h4 className="mb-6 font-semibold text-lg flex items-center">
               <FontAwesomeIcon icon={faFilter} className="mr-2" />
@@ -299,6 +356,83 @@ function Enrollment() {
                 </div>
               </div>
 
+              {/* → filtro Viagens próximas entre campus */}
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Viagens próximas entre campus
+                </label>
+                <div className="relative">
+                  <button
+                    onClick={() => setShowTravelDropdown(!showTravelDropdown)}
+                    className="w-full px-4 py-2 text-left flex items-center justify-between rounded border border-gray-200 hover:border-green-700 focus:outline-none focus:border-green-700"
+                  >
+                    <span>{allowTravelConflict}</span>
+                    <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+                  </button>
+                  {showTravelDropdown && (
+                    <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg">
+                      <ul className="py-1">
+                        {["Sim", "Não"].map((val) => (
+                          <li
+                            key={val}
+                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                            onClick={() => {
+                              setAllowTravelConflict(val as "Sim" | "Não");
+                              setShowTravelDropdown(false);
+                            }}
+                          >
+                            {val}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* → filtro de bloqueio de professor */}
+              <div className="mt-4">
+                <label className="text-sm font-medium mb-2 block">Professores não desejados</label>
+                <input
+                  type="text"
+                  placeholder="Pesquisar professor..."
+                  value={professorSearch}
+                  onChange={e => setProfessorSearch(e.target.value)}
+                  className="p-2 border rounded w-full mb-2"
+                />
+                {searchProfessorResults.length > 0 && (
+                  <div className="absolute z-10 w-full bg-white border rounded shadow-lg">
+                    {searchProfessorResults.map(p => (
+                      <div
+                        key={p}
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setSelectedProfessors(prev => [...prev, p]);
+                          setProfessorSearch("");
+                        }}
+                      >
+                        {p}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {selectedProfessors.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {selectedProfessors.map(p => (
+                      <div key={p} className="bg-red-200 text-red-900 px-2 py-1 rounded flex items-center">
+                        <span>{p}</span>
+                        <button
+                          onClick={() => setSelectedProfessors(prev => prev.filter(x => x !== p))}
+                          className="ml-2 hover:text-red-600"
+                        >
+                          <FontAwesomeIcon icon={faTimes} />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <button
                 onClick={clearFilters}
                 className="w-full mt-4 px-4 py-2 text-center rounded border border-gray-200 hover:bg-gray-50"
@@ -309,18 +443,16 @@ function Enrollment() {
               <div className="flex items-center justify-center gap-2 pt-4 mt-4">
                 <button
                   onClick={() => setViewMode("list")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
-                    viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
                   <FontAwesomeIcon icon={faList} className="mr-2" />
                   Lista
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${
-                    viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
                   <FontAwesomeIcon icon={faTable} className="mr-2" />
                   Grade
@@ -335,7 +467,13 @@ function Enrollment() {
                     <div>
                       <h5 className="text-xs font-medium mb-2">Categorias:</h5>
                       <div className="flex flex-wrap gap-3">
-                        {categories.map((category) => (
+                        {[
+
+                          { id: 1, name: "Obrigatória", color: "bg-blue-200" },
+                          { id: 2, name: "Optativa", color: "bg-yellow-200" },
+                          { id: 3, name: "Livre", color: "bg-red-200" },
+                          { id: 4, name: "Concluída", color: "bg-green-500" },
+                        ].map((category) => (
                           <div
                             key={category.id}
                             className="flex items-center gap-1.5"
@@ -352,7 +490,13 @@ function Enrollment() {
                     <div>
                       <h5 className="text-xs font-medium mb-2">Ícones:</h5>
                       <div className="grid grid-cols-1 gap-2.5 text-xs">
-                        {icons.map((item) => (
+                        {[
+
+                          { name: "Obrigatória", icon: faCheckCircle, color: "text-blue-200" },
+                          { name: "Optativa", icon: faLock, color: "text-yellow-500" },
+                          { name: "Livre", icon: faUnlock, color: "text-green-500" },
+                          { name: "Concluída", icon: faMedal, color: "text-yellow-500" },
+                        ].map((item) => (
                           <div
                             key={item.name}
                             className="flex items-center gap-2"
@@ -370,10 +514,143 @@ function Enrollment() {
                 </div>
               )}
             </div>
-          </section>
 
+          </section>
+          {/* → Schedule (quadro de horários) fica **antes** de Disciplinas Disponíveis */}
           <section className="md:col-span-3">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+
+            {selectedDisciplines.length > 0 && (  
+              <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+
+                <h2 className="text-2xl font-bold mb-4">Quadro de Horários</h2>
+
+                <div className="overflow-x-auto">
+
+
+                  <table className="w-auto table-auto border-collapse">
+                    <thead>
+                      <tr>
+                        <th className="p-4 text-left bg-gray-50 border border-gray-200 font-medium">
+                          Horário
+                        </th>
+                        {weekDays.map((day) => (
+                          <th
+                            key={day.id}
+                            className="p-4 text-left bg-gray-50 border border-gray-200 font-medium text-gray-600"
+                          >
+                            {day.label}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(() => {
+                        const skip: Record<string, number> = {};
+
+                        const used = new Set<number>();
+                        selectedDisciplines.forEach((disc) =>
+                          [...disc.timeslots, ...disc.practiceTimeslots].forEach((s) =>
+                            used.add(s.time - 8) // converte hora em índice (8h → slotIdx 0)
+                          )
+                        );
+                        const visibleSlotIndexes = Array.from(used)
+                          .filter((i) => i >= 0 && i < timeSlots.length)
+                          .sort((a, b) => a - b);
+
+                        return visibleSlotIndexes.map((slotIdx) => (
+                          <tr key={slotIdx}>
+                            <td className="px-1 py-1 border border-gray-200">
+                              {timeSlots[slotIdx]}
+                            </td>
+                            {weekDays.map((day) => {
+                              if (skip[day.id] > 0) {
+                                skip[day.id]!--;
+                                return null;
+                              }
+                              const slots = selectedDisciplines.flatMap((disc) =>
+                                disc.timeslots
+                                  .filter((s) => s.day === day.id && s.time === slotIdx + 8)
+                                  .map((s) => ({ disc, week: s.week, start: s.time }))
+                              );
+                              if (slots.length === 0) {
+                                return <td key={day.id} className="p-0 border grey align-top" />;
+                              }
+                              // calcula span para cada bloco
+                              const spans = slots.map(({ disc, week, start }) => {
+                                let span = 1;
+                                while (
+                                  disc.timeslots.some(
+                                    (s) =>
+                                      s.day === day.id &&
+                                      s.week === week &&
+                                      s.time === start + span
+                                  )
+                                ) {
+                                  span++;
+                                }
+                                return span;
+                              });
+                              const maxSpan = Math.max(...spans);
+                              skip[day.id] = maxSpan - 1;
+                              return (
+                                <td
+                                  key={day.id}
+                                  rowSpan={maxSpan}
+                                  className="p-1 border align-top whitespace-normal"
+                                >
+                                  <div className="flex flex-col items-start justify-start gap-px">
+                                    {slots.map(({ disc, week, start }, i) => {
+                                      // escolhe a categoria da disciplina e aplica cor correta
+                                      const matchCat = disc.courseCategory.find(c =>
+                                        COURSE_CATEGORIES.includes(c)
+                                      )!;
+                                      const color = getCategoryColor(matchCat);
+                                      return (
+                                        <div
+                                          key={disc.code + week}
+                                          className={`inline-block p-2 rounded-lg shadow-sm border border-gray-200 text-left max-w-max ${color}`}
+                                        >
+                                          {/* Código */}
+                                          <div className="font-mono text-sm mb-1">{disc.section}</div>
+
+                                          {/* Nome */}
+                                          <div className="text-base font-medium mb-2 truncate max-w-[12ch]">
+                                            {disc.name}
+                                          </div>
+                                          {/* Professor */}
+                                          <div className="text-xs text-gray-700 mb-1 truncate max-w-[12ch]"> {disc.professor}</div>
+
+                                          {/* Campus */}
+                                          <div className="text-xs text-gray-700 mb-1"><FontAwesomeIcon
+                                            icon={faLocationDot}
+                                            className="text-gray-600 w-3.5"
+                                          />{disc.campus}</div>
+
+                                          {/* Horário e Semana */}
+                                          <div className="text-xs text-gray-500 mb-1 truncate max-w-[20ch]">
+                                            {`${start}:00 às ${start + spans[i]}:00`}
+                                          </div>
+                                          <div className="text-xs text-gray-500 mb-1 truncate max-w-[20ch]">
+                                            {`${week}`}
+                                          </div>
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                </td>
+                              );
+                            })}
+                          </tr>
+                        ));
+                      })()}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* Disciplinas Disponíveis */}
+            <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h2 className="text-2xl font-bold mb-2">
                 Disciplinas Disponíveis
               </h2>
@@ -381,30 +658,31 @@ function Enrollment() {
                 Selecione as disciplinas para sua matrícula
               </p>
 
-              <div
-                className={`grid ${
-                  viewMode === "grid"
-                    ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-                    : "grid-cols-1 gap-2"
-                }`}
-              >
+              <div className={`grid ${viewMode === "grid"
+                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+                : "grid-cols-1 gap-2"
+                }`}>
                 {filteredDisciplines.map((discipline) => {
-                  const category = getDisciplineCategory(discipline.name);
+                  // escolhe a courseCategory que pertence ao curso atual
+                  const matchCat = discipline.courseCategory.find((c) =>
+                    COURSE_CATEGORIES.includes(c)
+                  )!;
+                  const color = getCategoryColor(matchCat);
+                  const icon = getCategoryIcon(matchCat);
                   const isSelected = selectedDisciplines.some(
-                    (d) => d.code === discipline.code
+                    (d) => d.section === discipline.section
                   );
                   const isUnavailable = isDisciplineUnavailable(discipline);
 
                   return (
                     <div
-                      key={discipline.code}
-                      className={`p-4 rounded-lg cursor-pointer transition-colors ${
-                        isUnavailable
-                          ? "bg-gray-100 opacity-50 cursor-not-allowed"
-                          : isSelected
+                      key={discipline.section}
+                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isUnavailable
+                        ? "bg-gray-100 opacity-50 cursor-not-allowed"
+                        : isSelected
                           ? "bg-green-50 border-2 border-green-500"
-                          : category.color // Cor de fundo do card
-                      }`}
+                          : color // Cor de fundo do card
+                        }`}
                       onClick={() =>
                         !isUnavailable && handleDisciplineClick(discipline)
                       }
@@ -412,13 +690,13 @@ function Enrollment() {
                       <div className="flex flex-col gap-3">
                         <div>
                           <div className="flex items-center justify-between">
-                            <h5 className="text-xs">{discipline.code}</h5>
+                            <h5 className="text-xs">{discipline.section}</h5>
                             <FontAwesomeIcon
-                              icon={category.icon.name}
-                              className={`${category.icon.color} w-4 h-4`}
+                              icon={icon.name}
+                              className={`${icon.color} w-4 h-4`}
                             />
                           </div>
-                          <h4 className="text-base font-medium mt-1">
+                          <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
                             {discipline.name}
                           </h4>
                         </div>
@@ -429,7 +707,7 @@ function Enrollment() {
                               className="text-gray-600 w-3.5"
                             />
                             <span className="text-sm text-gray-800">
-                              {discipline.professor}
+                              <span className="break-words max-w-[16ch]">{discipline.professor}</span>
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -452,7 +730,7 @@ function Enrollment() {
                           </div>
                         </div>
                         <div className="text-sm text-gray-800">
-                          Vagas: {discipline.filled}/{discipline.slots}
+                          Créditos: {discipline.credits}
                         </div>
                       </div>
                     </div>
@@ -461,110 +739,9 @@ function Enrollment() {
               </div>
             </div>
 
-            {selectedDisciplines.length > 0 && (
-              <>
-                <div className="mt-8 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                  <h2 className="text-2xl font-bold mb-4">
-                    Quadro de Horários
-                  </h2>
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-collapse">
-                      <thead>
-                        <tr>
-                          <th className="p-4 text-left bg-gray-50 border border-gray-200 font-medium">
-                            Horário
-                          </th>
-                          {weekDays.map((day) => (
-                            <th
-                              key={day.id}
-                              className="p-4 text-left bg-gray-50 border border-gray-200 font-medium text-gray-600"
-                            >
-                              {day.label}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {timeSlots.map((timeSlot, index) => (
-                          <tr key={timeSlot}>
-                            <td className="p-4 border border-gray-200">
-                              {timeSlot}
-                            </td>
-                            {weekDays.map((day) => {
-                              const discipline = selectedDisciplines.find((d) =>
-                                d.timeslots.some(
-                                  (slot) => slot === `${day.id}-${index + 8}`
-                                )
-                              );
-                              return (
-                                <td
-                                  key={`${day.id}-${timeSlot}`}
-                                  className="p-2 border border-gray-200 align-top"
-                                >
-                                  {discipline && (
-                                    <div className="bg-gray-50 p-3 rounded">
-                                      <div className="font-mono text-sm mb-1">
-                                        {discipline.code}
-                                      </div>
-                                      <div className="text-sm text-gray-700">
-                                        {discipline.name}
-                                      </div>
-                                    </div>
-                                  )}
-                                </td>
-                              );
-                            })}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <div
-                  className={`mt-4 border rounded-lg p-4 ${
-                    selectedDisciplines.some((d) =>
-                      d.courseCategory?.includes(
-                        "BC&T - Bacharelado em Ciência e Tecnologia (OBR)"
-                      )
-                    )
-                      ? "bg-gray-200 border-gray-300"
-                      : selectedDisciplines.some((d) =>
-                          d.courseCategory?.includes(
-                            "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
-                          )
-                        )
-                      ? "bg-yellow-200 border-yellow-300"
-                      : selectedDisciplines.some((d) =>
-                          d.courseCategory?.includes(
-                            "BCC - Bacharelado em Ciências da Computação (OL)"
-                          )
-                        )
-                      ? "bg-red-200 border-red-300"
-                      : "bg-green-50 border-green-200"
-                  }`}
-                >
-                  <p className="font-medium text-green-800">
-                    {selectedDisciplines.length} disciplina(s) selecionada(s)
-                  </p>
-                  <div className="flex gap-2 mt-2">
-                    <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
-                      Salvar Seleção
-                    </button>
-                    <button
-                      className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-50"
-                      onClick={() => setSelectedDisciplines([])}
-                    >
-                      Limpar Seleção
-                    </button>
-                  </div>
-                </div>
-              </>
-            )}
           </section>
         </div>
       </main>
-
       <Footer />
     </div>
   );

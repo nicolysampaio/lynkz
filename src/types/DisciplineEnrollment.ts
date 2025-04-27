@@ -1,19 +1,24 @@
-interface DisciplineEnrollment {
-  id: number;
-  code: string;
+interface Timeslot {
+  day: string;
+  time: number;
+  week: string;
+}
+
+export default interface DisciplineEnrollment {
+  id: number; 
+  code: string;           // corresponde a sigla_disciplina
+  section: string;        // adiciona sigla_turma
   name: string;
   professor: string;
   campus: string;
-  schedule: string;
-  room: string;
-  slots: number;
-  filled: number;
   turn: string;
   credits: number;
-  period: string;
-  quadrimester: number;
-  timeslots: string[];
-  courseCategory?: string[];
+  slots: number;
+  room: string | null;
+  tpei: string;
+  scheduleTheory: string | null;
+  schedulePractice: string | null;
+  timeslots: Timeslot[];
+  practiceTimeslots: Timeslot[];
+  courseCategory: string[];
 }
-
-export default DisciplineEnrollment;

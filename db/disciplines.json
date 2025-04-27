@@ -425,15 +425,6 @@
     ]
   },
   {
-    "id": 27,
-    "code": "BCC8OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "8º quadrimestre",
-    "quarter": 8,
-    "courseCategory": []
-  },
-  {
     "id": 28,
     "code": "MCTA004-17",
     "name": "Arquitetura de Computadores",
@@ -475,15 +466,6 @@
       "BCC - Bacharelado em Ciências da Computação (OBR)",
       "BM - Bacharelado em Matemática (OL)"
     ]
-  },
-  {
-    "id": 31,
-    "code": "BCC9OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "9º quadrimestre",
-    "quarter": 9,
-    "courseCategory": []
   },
   {
     "id": 32,
@@ -542,15 +524,6 @@
     ]
   },
   {
-    "id": 36,
-    "code": "BCC10OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 10,
-    "courseCategory": []
-  },
-  {
     "id": 37,
     "code": "MCTA009-13",
     "name": "Computadores, Ética e Sociedade",
@@ -588,24 +561,6 @@
     "courseCategory": [
       "BCC - Bacharelado em Ciências da Computação (OBR)"
     ]
-  },
-  {
-    "id": 40,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 10,
-    "courseCategory": []
-  },
-  {
-    "id": 41,
-    "code": "BCC11OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "11º quadrimestre",
-    "quarter": 11,
-    "courseCategory": []
   },
   {
     "id": 42,
@@ -650,15 +605,6 @@
     ]
   },
   {
-    "id": 45,
-    "code": "BCC11OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "11º quadrimestre",
-    "quarter": 12,
-    "courseCategory": []
-  },
-  {
     "id": 46,
     "code": "BCC1201",
     "name": "Metodologia e Escrita Científica p/ Computação",
@@ -694,15 +640,6 @@
     ]
   },
   {
-    "id": 49,
-    "code": "BCC13OPT",
-    "name": "Disciplina optativa",
-    "credits": 4,
-    "period": "13º quadrimestre",
-    "quarter": 13,
-    "courseCategory": []
-  },
-  {
     "id": 50,
     "code": "MCCC006-23",
     "name": "Compiladores e Interpretadores",
@@ -720,15 +657,6 @@
     "credits": 4,
     "period": "13º quadrimestre",
     "quarter": 13,
-    "courseCategory": []
-  },
-  {
-    "id": 52,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 14,
     "courseCategory": []
   },
   {
@@ -751,15 +679,6 @@
     "credits": 4,
     "period": "13º quadrimestre",
     "quarter": 14,
-    "courseCategory": []
-  },
-  {
-    "id": 55,
-    "code": "BCC10OPT",
-    "name": "Disciplina Livre",
-    "credits": 4,
-    "period": "10º quadrimestre",
-    "quarter": 15,
     "courseCategory": []
   },
   {
@@ -792,7 +711,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 58
   },
   {
@@ -803,7 +722,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 59
   },
   {
@@ -815,7 +734,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 60
   },
   {
@@ -826,7 +745,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 61
   },
   {
@@ -837,7 +756,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 62
   },
   {
@@ -848,7 +767,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 63
   },
   {
@@ -859,7 +778,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 64
   },
   {
@@ -870,7 +789,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 65
   },
   {
@@ -881,7 +800,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 66
   },
   {
@@ -892,7 +811,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 67
   },
   {
@@ -903,7 +822,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 68
   },
   {
@@ -914,7 +833,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 69
   },
   {
@@ -926,7 +845,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 70
   },
   {
@@ -937,7 +856,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 71
   },
   {
@@ -948,7 +867,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 72
   },
   {
@@ -959,7 +878,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 73
   },
   {
@@ -974,7 +893,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 74
   },
   {
@@ -985,7 +904,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 75
   },
   {
@@ -997,7 +916,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 76
   },
   {
@@ -1009,7 +928,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 77
   },
   {
@@ -1021,7 +940,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 78
   },
   {
@@ -1032,7 +951,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 79
   },
   {
@@ -1044,7 +963,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 80
   },
   {
@@ -1055,7 +974,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 81
   },
   {
@@ -1066,7 +985,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 82
   },
   {
@@ -1077,7 +996,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 83
   },
   {
@@ -1092,7 +1011,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 84
   },
   {
@@ -1106,7 +1025,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 85
   },
   {
@@ -1117,7 +1036,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 86
   },
   {
@@ -1128,7 +1047,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 87
   },
   {
@@ -1141,7 +1060,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 88
   },
   {
@@ -1153,7 +1072,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 89
   },
   {
@@ -1164,7 +1083,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 90
   },
   {
@@ -1177,7 +1096,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 91
   },
   {
@@ -1188,7 +1107,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 92
   },
   {
@@ -1200,7 +1119,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 93
   },
   {
@@ -1212,7 +1131,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 94
   },
   {
@@ -1223,7 +1142,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 95
   },
   {
@@ -1234,7 +1153,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 96
   },
   {
@@ -1247,7 +1166,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 97
   },
   {
@@ -1258,7 +1177,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 98
   },
   {
@@ -1269,7 +1188,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 99
   },
   {
@@ -1280,7 +1199,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 100
   },
   {
@@ -1295,7 +1214,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 101
   },
   {
@@ -1307,7 +1226,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 102
   },
   {
@@ -1319,7 +1238,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 103
   },
   {
@@ -1330,7 +1249,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 104
   },
   {
@@ -1346,7 +1265,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 105
   },
   {
@@ -1360,7 +1279,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 106
   },
   {
@@ -1372,7 +1291,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 107
   },
   {
@@ -1383,7 +1302,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 108
   },
   {
@@ -1396,7 +1315,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 109
   },
   {
@@ -1407,7 +1326,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 110
   },
   {
@@ -1421,7 +1340,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 111
   },
   {
@@ -1432,7 +1351,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 112
   },
   {
@@ -1444,7 +1363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 113
   },
   {
@@ -1455,7 +1374,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 114
   },
   {
@@ -1466,7 +1385,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 115
   },
   {
@@ -1481,7 +1400,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 116
   },
   {
@@ -1492,7 +1411,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 117
   },
   {
@@ -1503,7 +1422,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 118
   },
   {
@@ -1514,7 +1433,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 119
   },
   {
@@ -1525,7 +1444,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 120
   },
   {
@@ -1541,7 +1460,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 121
   },
   {
@@ -1553,7 +1472,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 122
   },
   {
@@ -1564,7 +1483,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 123
   },
   {
@@ -1577,7 +1496,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 124
   },
   {
@@ -1597,7 +1516,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 125
   },
   {
@@ -1608,7 +1527,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 126
   },
   {
@@ -1620,7 +1539,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 127
   },
   {
@@ -1631,7 +1550,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 128
   },
   {
@@ -1643,7 +1562,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 129
   },
   {
@@ -1657,7 +1576,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 130
   },
   {
@@ -1671,7 +1590,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 131
   },
   {
@@ -1682,7 +1601,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 132
   },
   {
@@ -1695,7 +1614,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 133
   },
   {
@@ -1708,7 +1627,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 134
   },
   {
@@ -1719,7 +1638,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 135
   },
   {
@@ -1730,7 +1649,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 136
   },
   {
@@ -1741,7 +1660,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 137
   },
   {
@@ -1752,7 +1671,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 138
   },
   {
@@ -1763,7 +1682,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 139
   },
   {
@@ -1777,7 +1696,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 140
   },
   {
@@ -1791,7 +1710,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 141
   },
   {
@@ -1804,7 +1723,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 142
   },
   {
@@ -1815,7 +1734,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 143
   },
   {
@@ -1829,7 +1748,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 144
   },
   {
@@ -1846,7 +1765,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 145
   },
   {
@@ -1860,7 +1779,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 146
   },
   {
@@ -1872,7 +1791,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 147
   },
   {
@@ -1883,7 +1802,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 148
   },
   {
@@ -1897,7 +1816,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 149
   },
   {
@@ -1911,7 +1830,7 @@
     ],
     "quarter": 2,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 150
   },
   {
@@ -1925,7 +1844,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 151
   },
   {
@@ -1945,7 +1864,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 152
   },
   {
@@ -1960,7 +1879,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 153
   },
   {
@@ -1975,7 +1894,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 154
   },
   {
@@ -1986,7 +1905,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 155
   },
   {
@@ -2005,7 +1924,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 156
   },
   {
@@ -2018,7 +1937,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 157
   },
   {
@@ -2032,7 +1951,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 158
   },
   {
@@ -2043,7 +1962,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 159
   },
   {
@@ -2056,7 +1975,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 160
   },
   {
@@ -2071,7 +1990,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 161
   },
   {
@@ -2083,7 +2002,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 162
   },
   {
@@ -2094,7 +2013,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 163
   },
   {
@@ -2105,7 +2024,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 164
   },
   {
@@ -2116,7 +2035,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 165
   },
   {
@@ -2127,7 +2046,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 166
   },
   {
@@ -2143,7 +2062,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 167
   },
   {
@@ -2172,7 +2091,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 169
   },
   {
@@ -2184,7 +2103,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 170
   },
   {
@@ -2196,7 +2115,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 171
   },
   {
@@ -2208,7 +2127,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 172
   },
   {
@@ -2220,7 +2139,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 173
   },
   {
@@ -2231,7 +2150,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 174
   },
   {
@@ -2242,7 +2161,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 175
   },
   {
@@ -2254,7 +2173,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 176
   },
   {
@@ -2267,7 +2186,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 177
   },
   {
@@ -2278,7 +2197,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 178
   },
   {
@@ -2292,7 +2211,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 179
   },
   {
@@ -2303,7 +2222,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 180
   },
   {
@@ -2316,7 +2235,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 181
   },
   {
@@ -2331,7 +2250,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 182
   },
   {
@@ -2343,7 +2262,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 183
   },
   {
@@ -2369,7 +2288,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 184
   },
   {
@@ -2390,7 +2309,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 185
   },
   {
@@ -2402,7 +2321,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 186
   },
   {
@@ -2413,7 +2332,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 187
   },
   {
@@ -2425,7 +2344,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 188
   },
   {
@@ -2437,7 +2356,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 189
   },
   {
@@ -2449,7 +2368,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 190
   },
   {
@@ -2462,7 +2381,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 191
   },
   {
@@ -2478,7 +2397,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 192
   },
   {
@@ -2494,7 +2413,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 193
   },
   {
@@ -2506,7 +2425,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 194
   },
   {
@@ -2517,7 +2436,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 195
   },
   {
@@ -2528,7 +2447,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 196
   },
   {
@@ -2540,7 +2459,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 197
   },
   {
@@ -2553,7 +2472,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 198
   },
   {
@@ -2577,7 +2496,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 199
   },
   {
@@ -2593,7 +2512,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 200
   },
   {
@@ -2605,7 +2524,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 201
   },
   {
@@ -2618,7 +2537,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 202
   },
   {
@@ -2631,7 +2550,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 203
   },
   {
@@ -2645,7 +2564,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 204
   },
   {
@@ -2659,7 +2578,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 205
   },
   {
@@ -2670,7 +2589,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 206
   },
   {
@@ -2682,7 +2601,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 207
   },
   {
@@ -2699,7 +2618,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 208
   },
   {
@@ -2721,7 +2640,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 209
   },
   {
@@ -2737,7 +2656,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 210
   },
   {
@@ -2751,7 +2670,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 211
   },
   {
@@ -2763,7 +2682,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 212
   },
   {
@@ -2774,7 +2693,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 213
   },
   {
@@ -2786,7 +2705,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 214
   },
   {
@@ -2799,7 +2718,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 215
   },
   {
@@ -2813,7 +2732,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 216
   },
   {
@@ -2824,7 +2743,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 217
   },
   {
@@ -2835,7 +2754,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 218
   },
   {
@@ -2846,7 +2765,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 219
   },
   {
@@ -2858,7 +2777,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 220
   },
   {
@@ -2871,7 +2790,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 221
   },
   {
@@ -2882,7 +2801,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 222
   },
   {
@@ -2893,7 +2812,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 223
   },
   {
@@ -2905,7 +2824,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 224
   },
   {
@@ -2918,7 +2837,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 225
   },
   {
@@ -2932,7 +2851,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 226
   },
   {
@@ -2945,7 +2864,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 227
   },
   {
@@ -2959,7 +2878,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 228
   },
   {
@@ -2971,7 +2890,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 229
   },
   {
@@ -2982,7 +2901,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 230
   },
   {
@@ -2994,7 +2913,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 231
   },
   {
@@ -3005,7 +2924,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 232
   },
   {
@@ -3018,7 +2937,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 233
   },
   {
@@ -3030,7 +2949,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 234
   },
   {
@@ -3041,7 +2960,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 235
   },
   {
@@ -3054,7 +2973,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 236
   },
   {
@@ -3072,7 +2991,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 237
   },
   {
@@ -3083,7 +3002,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 238
   },
   {
@@ -3095,7 +3014,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 239
   },
   {
@@ -3107,7 +3026,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 240
   },
   {
@@ -3120,7 +3039,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 241
   },
   {
@@ -3131,7 +3050,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 242
   },
   {
@@ -3143,7 +3062,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 243
   },
   {
@@ -3154,7 +3073,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 244
   },
   {
@@ -3165,7 +3084,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 245
   },
   {
@@ -3176,7 +3095,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 246
   },
   {
@@ -3192,7 +3111,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 247
   },
   {
@@ -3203,7 +3122,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 248
   },
   {
@@ -3218,7 +3137,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 249
   },
   {
@@ -3229,7 +3148,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 250
   },
   {
@@ -3244,7 +3163,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 251
   },
   {
@@ -3262,7 +3181,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 252
   },
   {
@@ -3273,7 +3192,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 253
   },
   {
@@ -3284,7 +3203,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 254
   },
   {
@@ -3299,7 +3218,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 255
   },
   {
@@ -3314,7 +3233,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 256
   },
   {
@@ -3326,7 +3245,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 257
   },
   {
@@ -3344,7 +3263,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 258
   },
   {
@@ -3361,7 +3280,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 259
   },
   {
@@ -3372,7 +3291,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 260
   },
   {
@@ -3385,7 +3304,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 261
   },
   {
@@ -3396,7 +3315,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 262
   },
   {
@@ -3410,7 +3329,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 263
   },
   {
@@ -3421,7 +3340,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 264
   },
   {
@@ -3433,7 +3352,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 265
   },
   {
@@ -3449,7 +3368,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 266
   },
   {
@@ -3461,7 +3380,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 267
   },
   {
@@ -3472,7 +3391,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 268
   },
   {
@@ -3483,7 +3402,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 269
   },
   {
@@ -3494,7 +3413,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 270
   },
   {
@@ -3508,7 +3427,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 271
   },
   {
@@ -3520,7 +3439,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 272
   },
   {
@@ -3534,7 +3453,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 273
   },
   {
@@ -3546,7 +3465,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 274
   },
   {
@@ -3557,7 +3476,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 275
   },
   {
@@ -3568,7 +3487,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 276
   },
   {
@@ -3580,7 +3499,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 277
   },
   {
@@ -3591,7 +3510,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 278
   },
   {
@@ -3604,7 +3523,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 279
   },
   {
@@ -3615,7 +3534,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 280
   },
   {
@@ -3626,7 +3545,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 281
   },
   {
@@ -3637,7 +3556,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 282
   },
   {
@@ -3648,7 +3567,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 283
   },
   {
@@ -3659,7 +3578,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 284
   },
   {
@@ -3672,7 +3591,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 285
   },
   {
@@ -3683,7 +3602,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 286
   },
   {
@@ -3697,7 +3616,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 287
   },
   {
@@ -3710,7 +3629,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 288
   },
   {
@@ -3726,7 +3645,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 289
   },
   {
@@ -3737,7 +3656,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 290
   },
   {
@@ -3748,7 +3667,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 291
   },
   {
@@ -3761,7 +3680,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 292
   },
   {
@@ -3776,7 +3695,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 293
   },
   {
@@ -3792,7 +3711,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 294
   },
   {
@@ -3806,7 +3725,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 295
   },
   {
@@ -3820,7 +3739,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 296
   },
   {
@@ -3831,7 +3750,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 297
   },
   {
@@ -3844,7 +3763,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 298
   },
   {
@@ -3857,7 +3776,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 299
   },
   {
@@ -3872,7 +3791,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 300
   },
   {
@@ -3884,7 +3803,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 301
   },
   {
@@ -3898,7 +3817,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 302
   },
   {
@@ -3909,7 +3828,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 303
   },
   {
@@ -3923,7 +3842,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 304
   },
   {
@@ -3937,7 +3856,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 305
   },
   {
@@ -3949,7 +3868,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 306
   },
   {
@@ -3963,7 +3882,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 307
   },
   {
@@ -3976,7 +3895,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 308
   },
   {
@@ -3987,7 +3906,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 309
   },
   {
@@ -4000,7 +3919,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 310
   },
   {
@@ -4011,7 +3930,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 311
   },
   {
@@ -4026,7 +3945,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 312
   },
   {
@@ -4037,7 +3956,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 313
   },
   {
@@ -4048,7 +3967,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 314
   },
   {
@@ -4059,7 +3978,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 315
   },
   {
@@ -4071,7 +3990,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 316
   },
   {
@@ -4082,7 +4001,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 317
   },
   {
@@ -4093,7 +4012,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 318
   },
   {
@@ -4110,7 +4029,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 319
   },
   {
@@ -4121,7 +4040,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 320
   },
   {
@@ -4132,7 +4051,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 321
   },
   {
@@ -4146,7 +4065,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 322
   },
   {
@@ -4158,7 +4077,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 323
   },
   {
@@ -4169,7 +4088,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 324
   },
   {
@@ -4180,7 +4099,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 325
   },
   {
@@ -4195,7 +4114,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 326
   },
   {
@@ -4207,7 +4126,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 327
   },
   {
@@ -4222,7 +4141,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 328
   },
   {
@@ -4236,7 +4155,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 329
   },
   {
@@ -4251,7 +4170,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 330
   },
   {
@@ -4266,7 +4185,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 331
   },
   {
@@ -4288,7 +4207,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 332
   },
   {
@@ -4302,7 +4221,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 333
   },
   {
@@ -4313,7 +4232,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 334
   },
   {
@@ -4333,7 +4252,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 335
   },
   {
@@ -4344,7 +4263,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 336
   },
   {
@@ -4356,7 +4275,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 337
   },
   {
@@ -4371,7 +4290,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 338
   },
   {
@@ -4384,7 +4303,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 339
   },
   {
@@ -4399,7 +4318,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 340
   },
   {
@@ -4411,7 +4330,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 341
   },
   {
@@ -4430,7 +4349,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 342
   },
   {
@@ -4442,7 +4361,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 343
   },
   {
@@ -4453,7 +4372,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 344
   },
   {
@@ -4465,7 +4384,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 345
   },
   {
@@ -4477,7 +4396,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 346
   },
   {
@@ -4488,7 +4407,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 347
   },
   {
@@ -4503,7 +4422,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 348
   },
   {
@@ -4514,7 +4433,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 349
   },
   {
@@ -4526,7 +4445,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 350
   },
   {
@@ -4537,7 +4456,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 351
   },
   {
@@ -4550,7 +4469,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 352
   },
   {
@@ -4562,7 +4481,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 353
   },
   {
@@ -4573,7 +4492,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 354
   },
   {
@@ -4587,7 +4506,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 355
   },
   {
@@ -4599,7 +4518,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 356
   },
   {
@@ -4610,7 +4529,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 357
   },
   {
@@ -4621,7 +4540,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 358
   },
   {
@@ -4635,7 +4554,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 359
   },
   {
@@ -4647,7 +4566,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 360
   },
   {
@@ -4659,7 +4578,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 361
   },
   {
@@ -4674,7 +4593,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 362
   },
   {
@@ -4686,7 +4605,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 363
   },
   {
@@ -4702,7 +4621,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 364
   },
   {
@@ -4716,7 +4635,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 365
   },
   {
@@ -4728,7 +4647,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 366
   },
   {
@@ -4739,7 +4658,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 367
   },
   {
@@ -4751,7 +4670,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 368
   },
   {
@@ -4763,7 +4682,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 369
   },
   {
@@ -4775,7 +4694,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 370
   },
   {
@@ -4786,7 +4705,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 371
   },
   {
@@ -4799,7 +4718,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 372
   },
   {
@@ -4810,7 +4729,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 373
   },
   {
@@ -4821,7 +4740,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 374
   },
   {
@@ -4832,7 +4751,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 375
   },
   {
@@ -4843,7 +4762,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 376
   },
   {
@@ -4855,7 +4774,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 377
   },
   {
@@ -4866,7 +4785,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 378
   },
   {
@@ -4877,7 +4796,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 379
   },
   {
@@ -4888,7 +4807,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 380
   },
   {
@@ -4899,7 +4818,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 381
   },
   {
@@ -4910,7 +4829,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 382
   },
   {
@@ -4924,7 +4843,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 383
   },
   {
@@ -4936,7 +4855,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 384
   },
   {
@@ -4947,7 +4866,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 385
   },
   {
@@ -4959,7 +4878,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 386
   },
   {
@@ -4970,7 +4889,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 387
   },
   {
@@ -4981,7 +4900,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 388
   },
   {
@@ -5004,7 +4923,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 389
   },
   {
@@ -5015,7 +4934,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 390
   },
   {
@@ -5026,7 +4945,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 391
   },
   {
@@ -5037,7 +4956,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 392
   },
   {
@@ -5048,7 +4967,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 393
   },
   {
@@ -5061,7 +4980,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 394
   },
   {
@@ -5073,7 +4992,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 395
   },
   {
@@ -5084,7 +5003,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 396
   },
   {
@@ -5095,7 +5014,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 397
   },
   {
@@ -5106,7 +5025,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 398
   },
   {
@@ -5120,7 +5039,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 399
   },
   {
@@ -5132,7 +5051,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 400
   },
   {
@@ -5145,7 +5064,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 401
   },
   {
@@ -5159,7 +5078,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 402
   },
   {
@@ -5172,7 +5091,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 403
   },
   {
@@ -5185,7 +5104,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 404
   },
   {
@@ -5197,7 +5116,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 405
   },
   {
@@ -5209,7 +5128,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 406
   },
   {
@@ -5223,7 +5142,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 407
   },
   {
@@ -5235,7 +5154,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 408
   },
   {
@@ -5246,7 +5165,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 409
   },
   {
@@ -5257,7 +5176,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 410
   },
   {
@@ -5270,7 +5189,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 411
   },
   {
@@ -5281,7 +5200,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 412
   },
   {
@@ -5292,7 +5211,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 413
   },
   {
@@ -5307,7 +5226,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 414
   },
   {
@@ -5318,7 +5237,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 415
   },
   {
@@ -5334,7 +5253,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 416
   },
   {
@@ -5346,7 +5265,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 417
   },
   {
@@ -5359,7 +5278,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 418
   },
   {
@@ -5370,7 +5289,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 419
   },
   {
@@ -5388,7 +5307,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 420
   },
   {
@@ -5404,7 +5323,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 421
   },
   {
@@ -5416,7 +5335,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 422
   },
   {
@@ -5429,7 +5348,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 423
   },
   {
@@ -5444,7 +5363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 424
   },
   {
@@ -5457,7 +5376,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 425
   },
   {
@@ -5468,7 +5387,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 426
   },
   {
@@ -5480,7 +5399,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 427
   },
   {
@@ -5492,7 +5411,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 428
   },
   {
@@ -5506,7 +5425,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 429
   },
   {
@@ -5520,7 +5439,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 430
   },
   {
@@ -5534,7 +5453,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 431
   },
   {
@@ -5551,7 +5470,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 432
   },
   {
@@ -5567,7 +5486,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 433
   },
   {
@@ -5579,7 +5498,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 434
   },
   {
@@ -5594,7 +5513,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 435
   },
   {
@@ -5609,7 +5528,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 436
   },
   {
@@ -5624,7 +5543,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 437
   },
   {
@@ -5640,7 +5559,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 438
   },
   {
@@ -5652,7 +5571,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 439
   },
   {
@@ -5670,7 +5589,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 440
   },
   {
@@ -5682,7 +5601,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 441
   },
   {
@@ -5696,7 +5615,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 442
   },
   {
@@ -5710,7 +5629,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 443
   },
   {
@@ -5725,7 +5644,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 444
   },
   {
@@ -5742,7 +5661,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 445
   },
   {
@@ -5754,7 +5673,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 446
   },
   {
@@ -5769,7 +5688,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 447
   },
   {
@@ -5784,7 +5703,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 448
   },
   {
@@ -5799,7 +5718,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 449
   },
   {
@@ -5810,7 +5729,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 450
   },
   {
@@ -5823,7 +5742,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 451
   },
   {
@@ -5838,7 +5757,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 452
   },
   {
@@ -5850,7 +5769,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 453
   },
   {
@@ -5864,7 +5783,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 454
   },
   {
@@ -5882,7 +5801,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 455
   },
   {
@@ -5893,7 +5812,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 456
   },
   {
@@ -5905,7 +5824,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 457
   },
   {
@@ -5921,7 +5840,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 458
   },
   {
@@ -5933,7 +5852,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 459
   },
   {
@@ -5948,7 +5867,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 460
   },
   {
@@ -5965,7 +5884,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 461
   },
   {
@@ -5986,7 +5905,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 462
   },
   {
@@ -5998,7 +5917,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 463
   },
   {
@@ -6013,7 +5932,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 464
   },
   {
@@ -6027,7 +5946,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 465
   },
   {
@@ -6042,7 +5961,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 466
   },
   {
@@ -6057,7 +5976,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 467
   },
   {
@@ -6069,7 +5988,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 468
   },
   {
@@ -6081,7 +6000,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 469
   },
   {
@@ -6094,7 +6013,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 470
   },
   {
@@ -6106,7 +6025,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 471
   },
   {
@@ -6120,7 +6039,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 472
   },
   {
@@ -6131,7 +6050,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 473
   },
   {
@@ -6144,7 +6063,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 474
   },
   {
@@ -6156,7 +6075,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 475
   },
   {
@@ -6173,7 +6092,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 476
   },
   {
@@ -6185,7 +6104,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 477
   },
   {
@@ -6203,7 +6122,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 478
   },
   {
@@ -6218,7 +6137,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 479
   },
   {
@@ -6230,7 +6149,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 480
   },
   {
@@ -6242,7 +6161,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 481
   },
   {
@@ -6254,7 +6173,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 482
   },
   {
@@ -6265,7 +6184,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 483
   },
   {
@@ -6277,7 +6196,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 484
   },
   {
@@ -6288,7 +6207,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 485
   },
   {
@@ -6299,7 +6218,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 486
   },
   {
@@ -6311,7 +6230,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 487
   },
   {
@@ -6324,7 +6243,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 488
   },
   {
@@ -6336,7 +6255,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 489
   },
   {
@@ -6348,7 +6267,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 490
   },
   {
@@ -6359,7 +6278,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 491
   },
   {
@@ -6370,7 +6289,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 492
   },
   {
@@ -6382,7 +6301,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 493
   },
   {
@@ -6397,7 +6316,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 494
   },
   {
@@ -6414,7 +6333,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 495
   },
   {
@@ -6429,7 +6348,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 496
   },
   {
@@ -6444,7 +6363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 497
   },
   {
@@ -6459,7 +6378,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 498
   },
   {
@@ -6470,7 +6389,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 499
   },
   {
@@ -6484,7 +6403,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 500
   },
   {
@@ -6496,7 +6415,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 501
   },
   {
@@ -6510,7 +6429,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 502
   },
   {
@@ -6522,7 +6441,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 503
   },
   {
@@ -6534,7 +6453,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 504
   },
   {
@@ -6549,7 +6468,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 505
   },
   {
@@ -6562,7 +6481,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 506
   },
   {
@@ -6576,7 +6495,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 507
   },
   {
@@ -6593,7 +6512,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 508
   },
   {
@@ -6610,7 +6529,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 509
   },
   {
@@ -6622,7 +6541,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 510
   },
   {
@@ -6633,7 +6552,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 511
   },
   {
@@ -6649,7 +6568,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 512
   },
   {
@@ -6662,7 +6581,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 513
   },
   {
@@ -6675,7 +6594,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 514
   },
   {
@@ -6688,7 +6607,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 515
   },
   {
@@ -6703,7 +6622,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 516
   },
   {
@@ -6723,7 +6642,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 517
   },
   {
@@ -6735,7 +6654,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 518
   },
   {
@@ -6747,7 +6666,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 519
   },
   {
@@ -6758,7 +6677,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 520
   },
   {
@@ -6769,7 +6688,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 521
   },
   {
@@ -6780,7 +6699,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 522
   },
   {
@@ -6792,7 +6711,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 523
   },
   {
@@ -6805,7 +6724,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 524
   },
   {
@@ -6820,7 +6739,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 525
   },
   {
@@ -6831,7 +6750,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 526
   },
   {
@@ -6842,7 +6761,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 527
   },
   {
@@ -6853,7 +6772,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 528
   },
   {
@@ -6865,7 +6784,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 529
   },
   {
@@ -6882,7 +6801,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 530
   },
   {
@@ -6893,7 +6812,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 531
   },
   {
@@ -6904,7 +6823,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 532
   },
   {
@@ -6915,7 +6834,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 533
   },
   {
@@ -6926,7 +6845,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 534
   },
   {
@@ -6941,7 +6860,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 535
   },
   {
@@ -6954,7 +6873,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 536
   },
   {
@@ -6970,7 +6889,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 537
   },
   {
@@ -6984,7 +6903,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 538
   },
   {
@@ -6998,7 +6917,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 539
   },
   {
@@ -7010,7 +6929,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 540
   },
   {
@@ -7021,7 +6940,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 541
   },
   {
@@ -7032,7 +6951,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 542
   },
   {
@@ -7046,7 +6965,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 543
   },
   {
@@ -7057,7 +6976,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 544
   },
   {
@@ -7071,7 +6990,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 545
   },
   {
@@ -7082,7 +7001,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 546
   },
   {
@@ -7096,7 +7015,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 547
   },
   {
@@ -7109,7 +7028,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 548
   },
   {
@@ -7122,7 +7041,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 549
   },
   {
@@ -7139,7 +7058,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 550
   },
   {
@@ -7152,7 +7071,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 551
   },
   {
@@ -7163,7 +7082,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 552
   },
   {
@@ -7175,7 +7094,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 553
   },
   {
@@ -7186,7 +7105,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 554
   },
   {
@@ -7197,7 +7116,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 555
   },
   {
@@ -7208,7 +7127,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 556
   },
   {
@@ -7220,7 +7139,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 557
   },
   {
@@ -7231,7 +7150,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 558
   },
   {
@@ -7243,7 +7162,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 559
   },
   {
@@ -7255,7 +7174,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 560
   },
   {
@@ -7266,7 +7185,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 561
   },
   {
@@ -7277,7 +7196,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 562
   },
   {
@@ -7289,7 +7208,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 563
   },
   {
@@ -7302,7 +7221,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 564
   },
   {
@@ -7314,7 +7233,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 565
   },
   {
@@ -7325,7 +7244,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 566
   },
   {
@@ -7336,7 +7255,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 567
   },
   {
@@ -7350,7 +7269,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 568
   },
   {
@@ -7363,7 +7282,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 569
   },
   {
@@ -7375,7 +7294,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 570
   },
   {
@@ -7390,7 +7309,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 571
   },
   {
@@ -7401,7 +7320,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 572
   },
   {
@@ -7412,7 +7331,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 573
   },
   {
@@ -7425,7 +7344,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 574
   },
   {
@@ -7437,7 +7356,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 575
   },
   {
@@ -7449,7 +7368,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 576
   },
   {
@@ -7461,7 +7380,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 577
   },
   {
@@ -7473,7 +7392,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 578
   },
   {
@@ -7484,7 +7403,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 579
   },
   {
@@ -7501,7 +7420,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 580
   },
   {
@@ -7512,7 +7431,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 581
   },
   {
@@ -7526,7 +7445,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 582
   },
   {
@@ -7538,7 +7457,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 583
   },
   {
@@ -7551,7 +7470,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 584
   },
   {
@@ -7562,7 +7481,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 585
   },
   {
@@ -7576,7 +7495,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 586
   },
   {
@@ -7591,7 +7510,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 587
   },
   {
@@ -7606,7 +7525,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 588
   },
   {
@@ -7622,7 +7541,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 589
   },
   {
@@ -7639,7 +7558,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 590
   },
   {
@@ -7651,7 +7570,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 591
   },
   {
@@ -7663,7 +7582,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 592
   },
   {
@@ -7678,7 +7597,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 593
   },
   {
@@ -7693,7 +7612,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 594
   },
   {
@@ -7705,7 +7624,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 595
   },
   {
@@ -7720,7 +7639,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 596
   },
   {
@@ -7735,7 +7654,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 597
   },
   {
@@ -7748,7 +7667,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 598
   },
   {
@@ -7761,7 +7680,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 599
   },
   {
@@ -7778,7 +7697,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 600
   },
   {
@@ -7791,7 +7710,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 601
   },
   {
@@ -7805,7 +7724,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 602
   },
   {
@@ -7822,7 +7741,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 603
   },
   {
@@ -7838,7 +7757,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 604
   },
   {
@@ -7853,7 +7772,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 605
   },
   {
@@ -7866,7 +7785,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 606
   },
   {
@@ -7880,7 +7799,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 607
   },
   {
@@ -7894,7 +7813,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 608
   },
   {
@@ -7907,7 +7826,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 609
   },
   {
@@ -7922,7 +7841,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 610
   },
   {
@@ -7935,7 +7854,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 611
   },
   {
@@ -7949,7 +7868,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 612
   },
   {
@@ -7961,7 +7880,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 613
   },
   {
@@ -7973,7 +7892,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 614
   },
   {
@@ -7985,7 +7904,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 615
   },
   {
@@ -8003,7 +7922,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 616
   },
   {
@@ -8015,7 +7934,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 617
   },
   {
@@ -8030,7 +7949,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 618
   },
   {
@@ -8043,7 +7962,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 619
   },
   {
@@ -8057,7 +7976,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 620
   },
   {
@@ -8069,7 +7988,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 621
   },
   {
@@ -8090,7 +8009,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 622
   },
   {
@@ -8101,7 +8020,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 623
   },
   {
@@ -8112,7 +8031,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 624
   },
   {
@@ -8123,7 +8042,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 625
   },
   {
@@ -8134,7 +8053,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 626
   },
   {
@@ -8146,7 +8065,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 627
   },
   {
@@ -8163,7 +8082,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 628
   },
   {
@@ -8177,7 +8096,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 629
   },
   {
@@ -8190,7 +8109,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 630
   },
   {
@@ -8203,7 +8122,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 631
   },
   {
@@ -8215,7 +8134,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 632
   },
   {
@@ -8226,7 +8145,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 633
   },
   {
@@ -8240,7 +8159,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 634
   },
   {
@@ -8252,7 +8171,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 635
   },
   {
@@ -8271,7 +8190,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 636
   },
   {
@@ -8284,7 +8203,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 637
   },
   {
@@ -8296,7 +8215,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 638
   },
   {
@@ -8309,7 +8228,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 639
   },
   {
@@ -8320,7 +8239,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 640
   },
   {
@@ -8331,7 +8250,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 641
   },
   {
@@ -8342,7 +8261,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 642
   },
   {
@@ -8361,7 +8280,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 643
   },
   {
@@ -8372,7 +8291,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 644
   },
   {
@@ -8383,7 +8302,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 645
   },
   {
@@ -8394,7 +8313,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 646
   },
   {
@@ -8408,7 +8327,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 647
   },
   {
@@ -8419,7 +8338,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 648
   },
   {
@@ -8433,7 +8352,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 649
   },
   {
@@ -8444,7 +8363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 650
   },
   {
@@ -8455,7 +8374,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 651
   },
   {
@@ -8473,7 +8392,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 652
   },
   {
@@ -8485,7 +8404,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 653
   },
   {
@@ -8496,7 +8415,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 654
   },
   {
@@ -8510,7 +8429,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 655
   },
   {
@@ -8523,7 +8442,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 656
   },
   {
@@ -8534,7 +8453,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 657
   },
   {
@@ -8546,7 +8465,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 658
   },
   {
@@ -8559,7 +8478,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 659
   },
   {
@@ -8570,7 +8489,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 660
   },
   {
@@ -8587,7 +8506,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 661
   },
   {
@@ -8598,7 +8517,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 662
   },
   {
@@ -8611,7 +8530,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 663
   },
   {
@@ -8622,7 +8541,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 664
   },
   {
@@ -8634,7 +8553,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 665
   },
   {
@@ -8648,7 +8567,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 666
   },
   {
@@ -8663,7 +8582,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 667
   },
   {
@@ -8674,7 +8593,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 668
   },
   {
@@ -8685,7 +8604,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 669
   },
   {
@@ -8700,7 +8619,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 670
   },
   {
@@ -8714,7 +8633,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 671
   },
   {
@@ -8728,7 +8647,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 672
   },
   {
@@ -8740,7 +8659,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 673
   },
   {
@@ -8751,7 +8670,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 674
   },
   {
@@ -8764,7 +8683,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 675
   },
   {
@@ -8775,7 +8694,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 676
   },
   {
@@ -8797,7 +8716,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 677
   },
   {
@@ -8812,7 +8731,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 678
   },
   {
@@ -8823,7 +8742,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 679
   },
   {
@@ -8845,7 +8764,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 680
   },
   {
@@ -8857,7 +8776,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 681
   },
   {
@@ -8868,7 +8787,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 682
   },
   {
@@ -8880,7 +8799,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 683
   },
   {
@@ -8891,7 +8810,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 684
   },
   {
@@ -8906,7 +8825,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 685
   },
   {
@@ -8917,7 +8836,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 686
   },
   {
@@ -8928,7 +8847,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 687
   },
   {
@@ -8939,7 +8858,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 688
   },
   {
@@ -8950,7 +8869,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 689
   },
   {
@@ -8961,7 +8880,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 690
   },
   {
@@ -8973,7 +8892,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 691
   },
   {
@@ -8984,7 +8903,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 692
   },
   {
@@ -8996,7 +8915,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 693
   },
   {
@@ -9008,7 +8927,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 694
   },
   {
@@ -9019,7 +8938,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 695
   },
   {
@@ -9031,7 +8950,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 696
   },
   {
@@ -9045,7 +8964,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 697
   },
   {
@@ -9057,7 +8976,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 698
   },
   {
@@ -9068,7 +8987,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 699
   },
   {
@@ -9079,7 +8998,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 700
   },
   {
@@ -9093,7 +9012,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 701
   },
   {
@@ -9105,7 +9024,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 702
   },
   {
@@ -9123,7 +9042,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 703
   },
   {
@@ -9134,7 +9053,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 704
   },
   {
@@ -9145,7 +9064,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 705
   },
   {
@@ -9156,7 +9075,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 706
   },
   {
@@ -9167,7 +9086,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 707
   },
   {
@@ -9186,7 +9105,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 708
   },
   {
@@ -9201,7 +9120,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 709
   },
   {
@@ -9216,7 +9135,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 710
   },
   {
@@ -9229,7 +9148,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 711
   },
   {
@@ -9241,7 +9160,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 712
   },
   {
@@ -9255,7 +9174,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 713
   },
   {
@@ -9268,7 +9187,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 714
   },
   {
@@ -9279,7 +9198,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 715
   },
   {
@@ -9290,7 +9209,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 716
   },
   {
@@ -9301,7 +9220,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 717
   },
   {
@@ -9314,7 +9233,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 718
   },
   {
@@ -9325,7 +9244,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 719
   },
   {
@@ -9337,7 +9256,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 720
   },
   {
@@ -9348,7 +9267,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 721
   },
   {
@@ -9359,7 +9278,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 722
   },
   {
@@ -9371,7 +9290,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 723
   },
   {
@@ -9383,7 +9302,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 724
   },
   {
@@ -9395,7 +9314,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 725
   },
   {
@@ -9407,7 +9326,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 726
   },
   {
@@ -9418,7 +9337,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 727
   },
   {
@@ -9435,7 +9354,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 728
   },
   {
@@ -9449,7 +9368,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 729
   },
   {
@@ -9461,7 +9380,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 730
   },
   {
@@ -9473,7 +9392,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 731
   },
   {
@@ -9485,7 +9404,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 732
   },
   {
@@ -9498,7 +9417,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 733
   },
   {
@@ -9511,7 +9430,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 734
   },
   {
@@ -9532,7 +9451,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 735
   },
   {
@@ -9543,7 +9462,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 736
   },
   {
@@ -9554,7 +9473,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 737
   },
   {
@@ -9566,7 +9485,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 738
   },
   {
@@ -9579,7 +9498,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 739
   },
   {
@@ -9591,7 +9510,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 740
   },
   {
@@ -9606,7 +9525,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 741
   },
   {
@@ -9619,7 +9538,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 742
   },
   {
@@ -9632,7 +9551,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 743
   },
   {
@@ -9645,7 +9564,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 744
   },
   {
@@ -9656,7 +9575,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 745
   },
   {
@@ -9668,7 +9587,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 746
   },
   {
@@ -9679,7 +9598,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 747
   },
   {
@@ -9691,7 +9610,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 748
   },
   {
@@ -9702,7 +9621,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 749
   },
   {
@@ -9713,7 +9632,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 750
   },
   {
@@ -9737,7 +9656,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 751
   },
   {
@@ -9748,7 +9667,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 752
   },
   {
@@ -9760,7 +9679,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 753
   },
   {
@@ -9771,7 +9690,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 754
   },
   {
@@ -9782,7 +9701,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 755
   },
   {
@@ -9795,7 +9714,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 756
   },
   {
@@ -9808,7 +9727,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 757
   },
   {
@@ -9820,7 +9739,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 758
   },
   {
@@ -9832,7 +9751,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 759
   },
   {
@@ -9851,7 +9770,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 760
   },
   {
@@ -9862,7 +9781,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 761
   },
   {
@@ -9882,7 +9801,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 762
   },
   {
@@ -9894,7 +9813,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 763
   },
   {
@@ -9907,7 +9826,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 764
   },
   {
@@ -9918,7 +9837,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 765
   },
   {
@@ -9930,7 +9849,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 766
   },
   {
@@ -9942,7 +9861,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 767
   },
   {
@@ -9953,7 +9872,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 768
   },
   {
@@ -9964,7 +9883,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 769
   },
   {
@@ -9975,7 +9894,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 770
   },
   {
@@ -9990,7 +9909,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 771
   },
   {
@@ -10002,7 +9921,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 772
   },
   {
@@ -10015,7 +9934,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 773
   },
   {
@@ -10031,7 +9950,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 774
   },
   {
@@ -10042,7 +9961,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 775
   },
   {
@@ -10053,7 +9972,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 776
   },
   {
@@ -10065,7 +9984,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 777
   },
   {
@@ -10077,7 +9996,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 778
   },
   {
@@ -10088,7 +10007,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 779
   },
   {
@@ -10100,7 +10019,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 780
   },
   {
@@ -10112,7 +10031,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 781
   },
   {
@@ -10123,7 +10042,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 782
   },
   {
@@ -10134,7 +10053,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 783
   },
   {
@@ -10145,7 +10064,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 784
   },
   {
@@ -10157,7 +10076,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 785
   },
   {
@@ -10171,7 +10090,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 786
   },
   {
@@ -10183,7 +10102,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 787
   },
   {
@@ -10196,7 +10115,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 788
   },
   {
@@ -10207,7 +10126,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 789
   },
   {
@@ -10220,7 +10139,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 790
   },
   {
@@ -10234,7 +10153,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 791
   },
   {
@@ -10245,7 +10164,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 792
   },
   {
@@ -10257,7 +10176,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 793
   },
   {
@@ -10276,7 +10195,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 794
   },
   {
@@ -10288,7 +10207,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 795
   },
   {
@@ -10300,7 +10219,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 796
   },
   {
@@ -10311,7 +10230,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 797
   },
   {
@@ -10322,7 +10241,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 798
   },
   {
@@ -10333,7 +10252,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 799
   },
   {
@@ -10350,7 +10269,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 800
   },
   {
@@ -10361,7 +10280,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 801
   },
   {
@@ -10372,7 +10291,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 802
   },
   {
@@ -10383,7 +10302,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 803
   },
   {
@@ -10400,7 +10319,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 804
   },
   {
@@ -10414,7 +10333,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 805
   },
   {
@@ -10425,7 +10344,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 806
   },
   {
@@ -10438,7 +10357,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 807
   },
   {
@@ -10451,7 +10370,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 808
   },
   {
@@ -10464,7 +10383,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 809
   },
   {
@@ -10475,7 +10394,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 810
   },
   {
@@ -10486,7 +10405,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 811
   },
   {
@@ -10498,7 +10417,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 812
   },
   {
@@ -10509,7 +10428,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 813
   },
   {
@@ -10522,7 +10441,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 814
   },
   {
@@ -10536,7 +10455,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 815
   },
   {
@@ -10550,7 +10469,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 816
   },
   {
@@ -10562,7 +10481,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 817
   },
   {
@@ -10573,7 +10492,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 818
   },
   {
@@ -10584,7 +10503,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 819
   },
   {
@@ -10598,7 +10517,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 820
   },
   {
@@ -10610,7 +10529,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 821
   },
   {
@@ -10621,7 +10540,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 822
   },
   {
@@ -10632,7 +10551,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 823
   },
   {
@@ -10644,7 +10563,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 824
   },
   {
@@ -10656,7 +10575,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 825
   },
   {
@@ -10667,7 +10586,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 826
   },
   {
@@ -10679,7 +10598,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 827
   },
   {
@@ -10692,7 +10611,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 828
   },
   {
@@ -10704,7 +10623,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 829
   },
   {
@@ -10715,7 +10634,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 830
   },
   {
@@ -10728,7 +10647,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 831
   },
   {
@@ -10744,7 +10663,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 832
   },
   {
@@ -10760,7 +10679,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 833
   },
   {
@@ -10776,7 +10695,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 834
   },
   {
@@ -10787,7 +10706,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 835
   },
   {
@@ -10798,7 +10717,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 836
   },
   {
@@ -10810,7 +10729,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 837
   },
   {
@@ -10822,7 +10741,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 838
   },
   {
@@ -10835,7 +10754,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 839
   },
   {
@@ -10847,7 +10766,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 840
   },
   {
@@ -10858,7 +10777,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 841
   },
   {
@@ -10878,7 +10797,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 842
   },
   {
@@ -10889,7 +10808,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 843
   },
   {
@@ -10901,7 +10820,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 844
   },
   {
@@ -10914,7 +10833,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 845
   },
   {
@@ -10927,7 +10846,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 846
   },
   {
@@ -10940,7 +10859,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 847
   },
   {
@@ -10951,7 +10870,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 848
   },
   {
@@ -10966,7 +10885,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 849
   },
   {
@@ -10980,7 +10899,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 850
   },
   {
@@ -10993,7 +10912,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 851
   },
   {
@@ -11004,7 +10923,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 852
   },
   {
@@ -11016,7 +10935,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 853
   },
   {
@@ -11029,7 +10948,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 854
   },
   {
@@ -11040,7 +10959,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 855
   },
   {
@@ -11054,7 +10973,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 856
   },
   {
@@ -11065,7 +10984,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 857
   },
   {
@@ -11076,7 +10995,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 858
   },
   {
@@ -11087,7 +11006,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 859
   },
   {
@@ -11098,7 +11017,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 860
   },
   {
@@ -11110,7 +11029,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 861
   },
   {
@@ -11122,7 +11041,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 862
   },
   {
@@ -11134,7 +11053,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 863
   },
   {
@@ -11146,7 +11065,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 864
   },
   {
@@ -11157,7 +11076,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 865
   },
   {
@@ -11168,7 +11087,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 866
   },
   {
@@ -11180,7 +11099,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 867
   },
   {
@@ -11191,7 +11110,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 868
   },
   {
@@ -11203,7 +11122,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 869
   },
   {
@@ -11214,7 +11133,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 870
   },
   {
@@ -11225,7 +11144,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 871
   },
   {
@@ -11236,7 +11155,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 872
   },
   {
@@ -11247,7 +11166,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 873
   },
   {
@@ -11258,7 +11177,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 874
   },
   {
@@ -11273,7 +11192,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 875
   },
   {
@@ -11285,7 +11204,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 876
   },
   {
@@ -11296,7 +11215,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 877
   },
   {
@@ -11308,7 +11227,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 878
   },
   {
@@ -11324,7 +11243,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 879
   },
   {
@@ -11336,7 +11255,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 880
   },
   {
@@ -11347,7 +11266,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 881
   },
   {
@@ -11358,7 +11277,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 882
   },
   {
@@ -11369,7 +11288,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 883
   },
   {
@@ -11385,7 +11304,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 884
   },
   {
@@ -11396,7 +11315,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 885
   },
   {
@@ -11408,7 +11327,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 886
   },
   {
@@ -11421,7 +11340,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 887
   },
   {
@@ -11433,7 +11352,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 888
   },
   {
@@ -11449,7 +11368,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 889
   },
   {
@@ -11464,7 +11383,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 890
   },
   {
@@ -11481,7 +11400,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 891
   },
   {
@@ -11494,7 +11413,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 892
   },
   {
@@ -11506,7 +11425,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 893
   },
   {
@@ -11518,7 +11437,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 894
   },
   {
@@ -11531,7 +11450,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 895
   },
   {
@@ -11544,7 +11463,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 896
   },
   {
@@ -11556,7 +11475,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 897
   },
   {
@@ -11567,7 +11486,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 898
   },
   {
@@ -11578,7 +11497,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 899
   },
   {
@@ -11591,7 +11510,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 900
   },
   {
@@ -11602,7 +11521,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 901
   },
   {
@@ -11613,7 +11532,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 902
   },
   {
@@ -11624,7 +11543,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 903
   },
   {
@@ -11639,7 +11558,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 904
   },
   {
@@ -11650,7 +11569,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 905
   },
   {
@@ -11662,7 +11581,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 906
   },
   {
@@ -11673,7 +11592,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 907
   },
   {
@@ -11684,7 +11603,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 908
   },
   {
@@ -11696,7 +11615,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 909
   },
   {
@@ -11709,7 +11628,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 910
   },
   {
@@ -11721,7 +11640,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 911
   },
   {
@@ -11734,7 +11653,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 912
   },
   {
@@ -11749,7 +11668,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 913
   },
   {
@@ -11763,7 +11682,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 914
   },
   {
@@ -11778,7 +11697,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 915
   },
   {
@@ -11789,7 +11708,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 916
   },
   {
@@ -11801,7 +11720,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 917
   },
   {
@@ -11815,7 +11734,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 918
   },
   {
@@ -11827,7 +11746,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 919
   },
   {
@@ -11840,7 +11759,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 920
   },
   {
@@ -11852,7 +11771,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 921
   },
   {
@@ -11863,7 +11782,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 922
   },
   {
@@ -11877,7 +11796,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 923
   },
   {
@@ -11888,7 +11807,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 924
   },
   {
@@ -11899,7 +11818,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 925
   },
   {
@@ -11910,7 +11829,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 926
   },
   {
@@ -11922,7 +11841,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 927
   },
   {
@@ -11937,7 +11856,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 928
   },
   {
@@ -11948,7 +11867,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 929
   },
   {
@@ -11962,7 +11881,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 930
   },
   {
@@ -11977,7 +11896,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 931
   },
   {
@@ -11992,7 +11911,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 932
   },
   {
@@ -12003,7 +11922,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 933
   },
   {
@@ -12015,7 +11934,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 934
   },
   {
@@ -12026,7 +11945,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 935
   },
   {
@@ -12039,7 +11958,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 936
   },
   {
@@ -12053,7 +11972,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 937
   },
   {
@@ -12064,7 +11983,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 938
   },
   {
@@ -12076,7 +11995,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 939
   },
   {
@@ -12087,7 +12006,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 940
   },
   {
@@ -12101,7 +12020,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 941
   },
   {
@@ -12112,7 +12031,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 942
   },
   {
@@ -12129,7 +12048,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 943
   },
   {
@@ -12145,7 +12064,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 944
   },
   {
@@ -12160,7 +12079,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 945
   },
   {
@@ -12172,7 +12091,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 946
   },
   {
@@ -12183,7 +12102,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 947
   },
   {
@@ -12194,7 +12113,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 948
   },
   {
@@ -12205,7 +12124,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 949
   },
   {
@@ -12220,7 +12139,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 950
   },
   {
@@ -12235,7 +12154,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 951
   },
   {
@@ -12249,7 +12168,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 952
   },
   {
@@ -12263,7 +12182,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 953
   },
   {
@@ -12275,7 +12194,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 954
   },
   {
@@ -12288,7 +12207,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 955
   },
   {
@@ -12301,7 +12220,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 956
   },
   {
@@ -12315,7 +12234,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 957
   },
   {
@@ -12329,7 +12248,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 958
   },
   {
@@ -12344,7 +12263,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 959
   },
   {
@@ -12358,7 +12277,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 960
   },
   {
@@ -12371,7 +12290,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 961
   },
   {
@@ -12387,7 +12306,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 962
   },
   {
@@ -12401,7 +12320,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 963
   },
   {
@@ -12414,7 +12333,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 964
   },
   {
@@ -12428,7 +12347,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 965
   },
   {
@@ -12440,7 +12359,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 966
   },
   {
@@ -12454,7 +12373,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 967
   },
   {
@@ -12468,7 +12387,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 968
   },
   {
@@ -12482,7 +12401,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 969
   },
   {
@@ -12496,7 +12415,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 970
   },
   {
@@ -12510,7 +12429,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 971
   },
   {
@@ -12524,7 +12443,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 972
   },
   {
@@ -12538,7 +12457,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 973
   },
   {
@@ -12551,7 +12470,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 974
   },
   {
@@ -12564,7 +12483,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 975
   },
   {
@@ -12577,7 +12496,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 976
   },
   {
@@ -12592,7 +12511,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 977
   },
   {
@@ -12606,7 +12525,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 978
   },
   {
@@ -12620,7 +12539,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 979
   },
   {
@@ -12633,7 +12552,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 980
   },
   {
@@ -12650,7 +12569,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 981
   },
   {
@@ -12666,7 +12585,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 982
   },
   {
@@ -12685,7 +12604,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 983
   },
   {
@@ -12697,7 +12616,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 984
   },
   {
@@ -12709,7 +12628,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 985
   },
   {
@@ -12721,7 +12640,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 986
   },
   {
@@ -12734,7 +12653,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 987
   },
   {
@@ -12748,7 +12667,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 988
   },
   {
@@ -12759,7 +12678,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 989
   },
   {
@@ -12770,7 +12689,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 990
   },
   {
@@ -12781,7 +12700,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 991
   },
   {
@@ -12792,7 +12711,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 992
   },
   {
@@ -12803,7 +12722,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 993
   },
   {
@@ -12814,7 +12733,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 994
   },
   {
@@ -12830,7 +12749,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 995
   },
   {
@@ -12841,7 +12760,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 996
   },
   {
@@ -12853,7 +12772,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 997
   },
   {
@@ -12865,7 +12784,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 998
   },
   {
@@ -12888,7 +12807,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 999
   },
   {
@@ -12900,7 +12819,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1000
   },
   {
@@ -12914,7 +12833,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1001
   },
   {
@@ -12925,7 +12844,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1002
   },
   {
@@ -12936,7 +12855,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1003
   },
   {
@@ -12948,7 +12867,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1004
   },
   {
@@ -12964,7 +12883,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1005
   },
   {
@@ -12975,7 +12894,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1006
   },
   {
@@ -12986,7 +12905,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1007
   },
   {
@@ -12997,7 +12916,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1008
   },
   {
@@ -13008,7 +12927,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1009
   },
   {
@@ -13021,7 +12940,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1010
   },
   {
@@ -13034,7 +12953,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1011
   },
   {
@@ -13045,7 +12964,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1012
   },
   {
@@ -13056,7 +12975,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1013
   },
   {
@@ -13070,7 +12989,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1014
   },
   {
@@ -13081,7 +13000,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1015
   },
   {
@@ -13092,7 +13011,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1016
   },
   {
@@ -13107,7 +13026,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1017
   },
   {
@@ -13121,7 +13040,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1018
   },
   {
@@ -13132,7 +13051,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 1019
   },
   {
@@ -13143,7 +13062,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1020
   },
   {
@@ -13154,7 +13073,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1021
   },
   {
@@ -13165,7 +13084,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1022
   },
   {
@@ -13179,7 +13098,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1023
   },
   {
@@ -13190,7 +13109,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1024
   },
   {
@@ -13202,7 +13121,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1025
   },
   {
@@ -13213,7 +13132,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1026
   },
   {
@@ -13224,7 +13143,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1027
   },
   {
@@ -13235,7 +13154,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1028
   },
   {
@@ -13246,7 +13165,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1029
   },
   {
@@ -13258,7 +13177,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1030
   },
   {
@@ -13271,7 +13190,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1031
   },
   {
@@ -13282,7 +13201,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1032
   },
   {
@@ -13293,7 +13212,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1033
   },
   {
@@ -13305,7 +13224,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1034
   },
   {
@@ -13316,7 +13235,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1035
   },
   {
@@ -13329,7 +13248,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1036
   },
   {
@@ -13341,7 +13260,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1037
   },
   {
@@ -13355,7 +13274,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1038
   },
   {
@@ -13366,7 +13285,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1039
   },
   {
@@ -13377,7 +13296,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1040
   },
   {
@@ -13388,7 +13307,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1041
   },
   {
@@ -13399,7 +13318,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1042
   },
   {
@@ -13410,7 +13329,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1043
   },
   {
@@ -13421,7 +13340,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1044
   },
   {
@@ -13433,7 +13352,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1045
   },
   {
@@ -13444,7 +13363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1046
   },
   {
@@ -13455,7 +13374,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1047
   },
   {
@@ -13467,7 +13386,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1048
   },
   {
@@ -13478,7 +13397,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1049
   },
   {
@@ -13489,7 +13408,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1050
   },
   {
@@ -13501,7 +13420,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1051
   },
   {
@@ -13512,7 +13431,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1052
   },
   {
@@ -13523,7 +13442,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1053
   },
   {
@@ -13534,7 +13453,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1054
   },
   {
@@ -13549,7 +13468,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1055
   },
   {
@@ -13560,7 +13479,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1056
   },
   {
@@ -13571,7 +13490,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1057
   },
   {
@@ -13587,7 +13506,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1058
   },
   {
@@ -13600,7 +13519,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1059
   },
   {
@@ -13611,7 +13530,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1060
   },
   {
@@ -13624,7 +13543,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1061
   },
   {
@@ -13635,7 +13554,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1062
   },
   {
@@ -13646,7 +13565,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1063
   },
   {
@@ -13660,7 +13579,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1064
   },
   {
@@ -13673,7 +13592,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1065
   },
   {
@@ -13695,7 +13614,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1066
   },
   {
@@ -13707,7 +13626,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1067
   },
   {
@@ -13719,7 +13638,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1068
   },
   {
@@ -13731,7 +13650,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1069
   },
   {
@@ -13742,7 +13661,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1070
   },
   {
@@ -13753,7 +13672,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1071
   },
   {
@@ -13764,7 +13683,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1072
   },
   {
@@ -13775,7 +13694,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1073
   },
   {
@@ -13786,7 +13705,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1074
   },
   {
@@ -13799,7 +13718,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1075
   },
   {
@@ -13812,7 +13731,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1076
   },
   {
@@ -13830,7 +13749,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1077
   },
   {
@@ -13842,7 +13761,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1078
   },
   {
@@ -13854,7 +13773,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1079
   },
   {
@@ -13866,7 +13785,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1080
   },
   {
@@ -13882,7 +13801,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1081
   },
   {
@@ -13897,7 +13816,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1082
   },
   {
@@ -13912,7 +13831,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1083
   },
   {
@@ -13924,7 +13843,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1084
   },
   {
@@ -13937,7 +13856,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 1085
   },
   {
@@ -13952,7 +13871,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 1086
   },
   {
@@ -13965,7 +13884,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1087
   },
   {
@@ -13980,7 +13899,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 1088
   },
   {
@@ -13993,7 +13912,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1089
   },
   {
@@ -14005,7 +13924,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1090
   },
   {
@@ -14016,7 +13935,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1091
   },
   {
@@ -14028,7 +13947,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1092
   },
   {
@@ -14040,7 +13959,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1093
   },
   {
@@ -14055,7 +13974,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1094
   },
   {
@@ -14068,7 +13987,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1095
   },
   {
@@ -14080,7 +13999,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1096
   },
   {
@@ -14093,7 +14012,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1097
   },
   {
@@ -14105,7 +14024,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1098
   },
   {
@@ -14118,7 +14037,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1099
   },
   {
@@ -14132,7 +14051,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1100
   },
   {
@@ -14144,7 +14063,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1101
   },
   {
@@ -14155,7 +14074,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1102
   },
   {
@@ -14166,7 +14085,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1103
   },
   {
@@ -14178,7 +14097,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1104
   },
   {
@@ -14190,7 +14109,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1105
   },
   {
@@ -14201,7 +14120,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1106
   },
   {
@@ -14212,7 +14131,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 1107
   },
   {
@@ -14223,7 +14142,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1108
   },
   {
@@ -14235,7 +14154,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1109
   },
   {
@@ -14249,7 +14168,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1110
   },
   {
@@ -14261,7 +14180,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1111
   },
   {
@@ -14272,7 +14191,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1112
   },
   {
@@ -14284,7 +14203,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1113
   },
   {
@@ -14297,7 +14216,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1114
   },
   {
@@ -14313,7 +14232,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1115
   },
   {
@@ -14324,7 +14243,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1116
   },
   {
@@ -14335,7 +14254,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1117
   },
   {
@@ -14347,7 +14266,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1118
   },
   {
@@ -14360,7 +14279,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1119
   },
   {
@@ -14374,7 +14293,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1120
   },
   {
@@ -14385,7 +14304,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1121
   },
   {
@@ -14398,7 +14317,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1122
   },
   {
@@ -14410,7 +14329,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1123
   },
   {
@@ -14423,7 +14342,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1124
   },
   {
@@ -14437,7 +14356,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1125
   },
   {
@@ -14448,7 +14367,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1126
   },
   {
@@ -14459,7 +14378,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1127
   },
   {
@@ -14473,7 +14392,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1128
   },
   {
@@ -14485,7 +14404,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1129
   },
   {
@@ -14496,7 +14415,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1130
   },
   {
@@ -14511,7 +14430,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1131
   },
   {
@@ -14522,7 +14441,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1132
   },
   {
@@ -14533,7 +14452,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1133
   },
   {
@@ -14546,7 +14465,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1134
   },
   {
@@ -14558,7 +14477,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1135
   },
   {
@@ -14571,7 +14490,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1136
   },
   {
@@ -14583,7 +14502,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1137
   },
   {
@@ -14595,7 +14514,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1138
   },
   {
@@ -14610,7 +14529,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1139
   },
   {
@@ -14621,7 +14540,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1140
   },
   {
@@ -14632,7 +14551,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1141
   },
   {
@@ -14644,7 +14563,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1142
   },
   {
@@ -14656,7 +14575,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1143
   },
   {
@@ -14670,7 +14589,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1144
   },
   {
@@ -14683,7 +14602,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1145
   },
   {
@@ -14695,7 +14614,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1146
   },
   {
@@ -14707,7 +14626,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1147
   },
   {
@@ -14719,7 +14638,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1148
   },
   {
@@ -14731,7 +14650,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1149
   },
   {
@@ -14745,7 +14664,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1150
   },
   {
@@ -14756,7 +14675,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1151
   },
   {
@@ -14767,7 +14686,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1152
   },
   {
@@ -14778,7 +14697,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1153
   },
   {
@@ -14789,7 +14708,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1154
   },
   {
@@ -14800,7 +14719,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1155
   },
   {
@@ -14811,7 +14730,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1156
   },
   {
@@ -14824,7 +14743,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1157
   },
   {
@@ -14835,7 +14754,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1158
   },
   {
@@ -14846,7 +14765,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1159
   },
   {
@@ -14863,7 +14782,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1160
   },
   {
@@ -14875,7 +14794,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1161
   },
   {
@@ -14886,7 +14805,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1162
   },
   {
@@ -14899,7 +14818,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1163
   },
   {
@@ -14910,7 +14829,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1164
   },
   {
@@ -14921,7 +14840,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1165
   },
   {
@@ -14934,7 +14853,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1166
   },
   {
@@ -14947,7 +14866,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1167
   },
   {
@@ -14959,7 +14878,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1168
   },
   {
@@ -14972,7 +14891,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1169
   },
   {
@@ -14984,7 +14903,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1170
   },
   {
@@ -14996,7 +14915,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1171
   },
   {
@@ -15007,7 +14926,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1172
   },
   {
@@ -15019,7 +14938,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1173
   },
   {
@@ -15032,7 +14951,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 1174
   },
   {
@@ -15045,7 +14964,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 1175
   },
   {
@@ -15056,7 +14975,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1176
   },
   {
@@ -15068,7 +14987,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1177
   },
   {
@@ -15082,7 +15001,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1178
   },
   {
@@ -15095,7 +15014,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1179
   },
   {
@@ -15106,7 +15025,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1180
   },
   {
@@ -15117,7 +15036,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1181
   },
   {
@@ -15128,7 +15047,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1182
   },
   {
@@ -15139,7 +15058,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1183
   },
   {
@@ -15150,7 +15069,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1184
   },
   {
@@ -15161,7 +15080,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1185
   },
   {
@@ -15174,7 +15093,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1186
   },
   {
@@ -15186,7 +15105,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1187
   },
   {
@@ -15197,7 +15116,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1188
   },
   {
@@ -15210,7 +15129,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1189
   },
   {
@@ -15224,7 +15143,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1190
   },
   {
@@ -15237,7 +15156,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1191
   },
   {
@@ -15248,7 +15167,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1192
   },
   {
@@ -15259,7 +15178,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1193
   },
   {
@@ -15270,7 +15189,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1194
   },
   {
@@ -15281,7 +15200,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1195
   },
   {
@@ -15296,7 +15215,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1196
   },
   {
@@ -15308,7 +15227,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1197
   },
   {
@@ -15324,7 +15243,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1198
   },
   {
@@ -15336,7 +15255,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1199
   },
   {
@@ -15352,7 +15271,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1200
   },
   {
@@ -15370,7 +15289,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1201
   },
   {
@@ -15381,7 +15300,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1202
   },
   {
@@ -15392,7 +15311,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1203
   },
   {
@@ -15404,7 +15323,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1204
   },
   {
@@ -15416,7 +15335,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 5,
     "id": 1205
   },
   {
@@ -15428,7 +15347,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1206
   },
   {
@@ -15439,7 +15358,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1207
   },
   {
@@ -15450,7 +15369,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1208
   },
   {
@@ -15461,7 +15380,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1209
   },
   {
@@ -15472,7 +15391,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1210
   },
   {
@@ -15483,7 +15402,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1211
   },
   {
@@ -15494,7 +15413,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1212
   },
   {
@@ -15505,7 +15424,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1213
   },
   {
@@ -15516,7 +15435,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1214
   },
   {
@@ -15527,7 +15446,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1215
   },
   {
@@ -15539,7 +15458,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1216
   },
   {
@@ -15550,7 +15469,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1217
   },
   {
@@ -15561,7 +15480,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1218
   },
   {
@@ -15573,7 +15492,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1219
   },
   {
@@ -15589,7 +15508,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1220
   },
   {
@@ -15602,7 +15521,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1221
   },
   {
@@ -15613,7 +15532,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1222
   },
   {
@@ -15624,7 +15543,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1223
   },
   {
@@ -15635,7 +15554,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1224
   },
   {
@@ -15648,7 +15567,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1225
   },
   {
@@ -15660,7 +15579,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1226
   },
   {
@@ -15672,7 +15591,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1227
   },
   {
@@ -15684,7 +15603,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1228
   },
   {
@@ -15696,7 +15615,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1229
   },
   {
@@ -15708,7 +15627,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1230
   },
   {
@@ -15720,7 +15639,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1231
   },
   {
@@ -15732,7 +15651,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1232
   },
   {
@@ -15750,7 +15669,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1233
   },
   {
@@ -15761,7 +15680,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 8,
     "id": 1234
   },
   {
@@ -15774,7 +15693,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1235
   },
   {
@@ -15786,7 +15705,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1236
   },
   {
@@ -15800,7 +15719,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1237
   },
   {
@@ -15811,7 +15730,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1238
   },
   {
@@ -15823,7 +15742,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1239
   },
   {
@@ -15834,7 +15753,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1240
   },
   {
@@ -15846,7 +15765,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1241
   },
   {
@@ -15859,7 +15778,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1242
   },
   {
@@ -15870,7 +15789,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1243
   },
   {
@@ -15883,7 +15802,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1244
   },
   {
@@ -15896,7 +15815,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1245
   },
   {
@@ -15907,7 +15826,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1246
   },
   {
@@ -15919,7 +15838,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1247
   },
   {
@@ -15930,7 +15849,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1248
   },
   {
@@ -15944,7 +15863,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1249
   },
   {
@@ -15955,7 +15874,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1250
   },
   {
@@ -15970,7 +15889,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1251
   },
   {
@@ -15981,7 +15900,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1252
   },
   {
@@ -15994,7 +15913,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1253
   },
   {
@@ -16006,7 +15925,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1254
   },
   {
@@ -16019,7 +15938,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1255
   },
   {
@@ -16031,7 +15950,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1256
   },
   {
@@ -16045,7 +15964,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1257
   },
   {
@@ -16057,7 +15976,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1258
   },
   {
@@ -16069,7 +15988,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1259
   },
   {
@@ -16080,7 +15999,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1260
   },
   {
@@ -16091,7 +16010,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1261
   },
   {
@@ -16108,7 +16027,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1262
   },
   {
@@ -16122,7 +16041,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1263
   },
   {
@@ -16135,7 +16054,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1264
   },
   {
@@ -16150,7 +16069,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1265
   },
   {
@@ -16162,7 +16081,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1266
   },
   {
@@ -16173,7 +16092,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1267
   },
   {
@@ -16185,7 +16104,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1268
   },
   {
@@ -16197,7 +16116,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1269
   },
   {
@@ -16209,7 +16128,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1270
   },
   {
@@ -16221,7 +16140,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1271
   },
   {
@@ -16234,7 +16153,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1272
   },
   {
@@ -16246,7 +16165,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1273
   },
   {
@@ -16257,7 +16176,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1274
   },
   {
@@ -16276,7 +16195,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1275
   },
   {
@@ -16287,7 +16206,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1276
   },
   {
@@ -16300,7 +16219,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1277
   },
   {
@@ -16312,7 +16231,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1278
   },
   {
@@ -16326,7 +16245,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1279
   },
   {
@@ -16337,7 +16256,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1280
   },
   {
@@ -16348,7 +16267,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1281
   },
   {
@@ -16363,7 +16282,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1282
   },
   {
@@ -16374,7 +16293,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1283
   },
   {
@@ -16385,7 +16304,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1284
   },
   {
@@ -16396,7 +16315,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1285
   },
   {
@@ -16410,7 +16329,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1286
   },
   {
@@ -16422,7 +16341,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1287
   },
   {
@@ -16433,7 +16352,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1288
   },
   {
@@ -16444,7 +16363,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1289
   },
   {
@@ -16455,7 +16374,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1290
   },
   {
@@ -16466,7 +16385,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1291
   },
   {
@@ -16477,7 +16396,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1292
   },
   {
@@ -16488,7 +16407,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1293
   },
   {
@@ -16499,7 +16418,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1294
   },
   {
@@ -16511,7 +16430,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1295
   },
   {
@@ -16525,7 +16444,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1296
   },
   {
@@ -16536,7 +16455,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1297
   },
   {
@@ -16547,7 +16466,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1298
   },
   {
@@ -16561,7 +16480,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1299
   },
   {
@@ -16574,7 +16493,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1300
   },
   {
@@ -16586,7 +16505,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1301
   },
   {
@@ -16597,7 +16516,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1302
   },
   {
@@ -16608,7 +16527,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1303
   },
   {
@@ -16619,7 +16538,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1304
   },
   {
@@ -16630,7 +16549,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1305
   },
   {
@@ -16641,7 +16560,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 0,
     "id": 1306
   },
   {
@@ -16652,7 +16571,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1307
   },
   {
@@ -16663,7 +16582,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1308
   },
   {
@@ -16674,7 +16593,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1309
   },
   {
@@ -16685,7 +16604,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1310
   },
   {
@@ -16698,7 +16617,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1311
   },
   {
@@ -16709,7 +16628,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1312
   },
   {
@@ -16721,7 +16640,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1313
   },
   {
@@ -16732,7 +16651,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1314
   },
   {
@@ -16743,7 +16662,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1315
   },
   {
@@ -16754,7 +16673,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1316
   },
   {
@@ -16765,7 +16684,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1317
   },
   {
@@ -16777,7 +16696,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1318
   },
   {
@@ -16788,7 +16707,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1319
   },
   {
@@ -16799,7 +16718,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1320
   },
   {
@@ -16810,7 +16729,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1321
   },
   {
@@ -16822,7 +16741,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1322
   },
   {
@@ -16833,7 +16752,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1323
   },
   {
@@ -16844,7 +16763,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1324
   },
   {
@@ -16855,7 +16774,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1325
   },
   {
@@ -16866,7 +16785,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1326
   },
   {
@@ -16881,7 +16800,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1327
   },
   {
@@ -16892,7 +16811,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1328
   },
   {
@@ -16903,7 +16822,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1329
   },
   {
@@ -16916,7 +16835,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1330
   },
   {
@@ -16930,7 +16849,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1331
   },
   {
@@ -16942,7 +16861,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1332
   },
   {
@@ -16953,7 +16872,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1333
   },
   {
@@ -16964,7 +16883,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1334
   },
   {
@@ -16976,7 +16895,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1335
   },
   {
@@ -16987,7 +16906,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1336
   },
   {
@@ -16998,7 +16917,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1337
   },
   {
@@ -17011,7 +16930,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1338
   },
   {
@@ -17028,7 +16947,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1339
   },
   {
@@ -17039,7 +16958,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1340
   },
   {
@@ -17050,7 +16969,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1341
   },
   {
@@ -17061,7 +16980,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1342
   },
   {
@@ -17077,7 +16996,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1343
   },
   {
@@ -17089,7 +17008,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1344
   },
   {
@@ -17100,7 +17019,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1345
   },
   {
@@ -17113,7 +17032,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 3,
     "id": 1346
   },
   {
@@ -17124,7 +17043,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1347
   },
   {
@@ -17135,7 +17054,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1348
   },
   {
@@ -17146,7 +17065,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1349
   },
   {
@@ -17157,7 +17076,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1350
   },
   {
@@ -17169,7 +17088,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1351
   },
   {
@@ -17184,7 +17103,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1352
   },
   {
@@ -17197,7 +17116,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1353
   },
   {
@@ -17210,7 +17129,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1354
   },
   {
@@ -17221,7 +17140,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1355
   },
   {
@@ -17232,7 +17151,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1356
   },
   {
@@ -17244,7 +17163,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1357
   },
   {
@@ -17258,7 +17177,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 2,
     "id": 1358
   },
   {
@@ -17269,7 +17188,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1359
   },
   {
@@ -17284,7 +17203,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1360
   },
   {
@@ -17296,7 +17215,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1361
   },
   {
@@ -17307,7 +17226,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 4,
     "id": 1362
   },
   {
@@ -17321,7 +17240,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1363
   },
   {
@@ -17335,7 +17254,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1364
   },
   {
@@ -17350,7 +17269,7 @@
     ],
     "quarter": null,
     "period": "",
-    "credits": null,
+    "credits": 6,
     "id": 1365
   }
 ]
