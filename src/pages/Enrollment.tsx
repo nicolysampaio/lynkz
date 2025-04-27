@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, Navigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
@@ -13,59 +14,168 @@ import {
   faChevronDown,
   faList,
   faTable,
-  IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
-import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import enrollmentData from "../../db/enrollment.json";
-import disciplines from "../../db/disciplines.json";
+import disciplinesData from "../../db/disciplines.json";
+import courseCategoriesData from "../../db/course_categories.json";
+import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-/**
- * Limita o comprimento de uma string e adiciona reticências quando excede maxLength.
- */
+// <-- novo tipo para receber estado
+type LocationState = {
+  selectedCourse?: string;
+  completedDisciplineCodes?: string[];
+};
+
+type Timeslot = {
+  day: string;
+  time: number;
+  week: string;
+};
 
 const truncate = (text: string, maxLength: number): string =>
   text.length > maxLength ? text.slice(0, maxLength) + "…" : text;
 
-/**
- * Componente principal de Matrícula em Disciplinas.
- */
-
 function Enrollment() {
+  const location = useLocation();
+  const { completedDisciplineCodes = [] } = location.state as LocationState;  // <-- pega códigos concluídos
+
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
   const [showTurnoDropdown, setShowTurnoDropdown] = useState(false);
-  const [selectedDisciplines, setSelectedDisciplines] = useState<
-    DisciplineEnrollment[]
-  >([]);
-  const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
+  const [viewMode, setViewMode] = useState<"grid"|"list">("grid");
+  const [selectedDisciplines, setSelectedDisciplines] = useState<DisciplineEnrollment[]>([]);
 
+  const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
+    setSelectedDisciplines(prev =>
+      prev.some(d => d.section === discipline.section)
+        ? prev.filter(d => d.section !== discipline.section)
+        : [...prev, discipline]
+    );
+  };
+
+  // redireciona se não tiver estado
+  const state = (location.state ?? {}) as {
+    selectedCourse?: string;
+    completedDisciplineCodes?: string[];
+  };
+  if (!state.selectedCourse) {
+    return <Navigate to="/pageCourse" replace />;
+  }
+  const { selectedCourse } = state;
+
+  // monta lista de categorias válidas para o curso selecionado
+  const COURSE_CATEGORIES =
+    courseCategoriesData.find((c) => c.id === selectedCourse)
+      ?.courseCategory ?? [];
+
+  // 1) constantes de UI
   const campi = [
     { id: 0, name: "Santo André" },
     { id: 1, name: "São Bernardo do Campo" },
     { id: 2, name: "Todos" },
   ];
   const turno = ["Matutino", "Vespertino", "Noturno", "Todos"];
+  const campusMap: Record<string,string> = {
+    "Santo André": "SA",
+    "São Bernardo do Campo": "SB",
+  };
 
-  const categories = [
-    { id: "BCT", name: "BCT", color: "bg-gray-200" },
-    { id: "BCC", name: "BCC", color: "bg-blue-200" },
-    { id: "OPTATIVA", name: "OPTATIVA", color: "bg-yellow-200" },
-    { id: "LIVRE", name: "LIVRE", color: "bg-red-200" },
-    { id: "CONCLUÍDA", name: "CONCLUÍDA", color: "bg-green-500" },
-  ];
+  // 2) helpers
+  const clearFilters = () => {
+    setSelectedCampus("Todos");
+    setSelectedTurno("Todos");
+  };
+  // verifica conflito de horário considerando Semanal e Quinzenal
+  const isSlotConflict = (a: Timeslot, b: Timeslot): boolean => {
+    if (a.day !== b.day || a.time !== b.time) return false;
+    // "Semanal" conflita com qualquer outra frequência
+    if (a.week === "Semanal" || b.week === "Semanal") return true;
+    // bi‑semanais só conflitam se forem da mesma edição
+    return a.week === b.week;
+  };
 
-  const icons = [
-    { name: "Disciplina Obrigatória", icon: faCheckCircle, color: "text-red-500" },
-    { name: "Disciplina Limitada", icon: faLock, color: "text-blue-500" },
-    { name: "Disciplina Livre", icon: faUnlock, color: "text-green-500" },
-    { name: "Disciplina Concluída", icon: faMedal, color: "text-yellow-500" },
-    { name: "Professor", icon: faUser, color: "text-gray-700" },
-    { name: "Local", icon: faLocationDot, color: "text-gray-700" },
-    { name: "Turno", icon: faClock, color: "text-gray-700" },
-  ];
+  // checa se a disciplina 'disc' conflita com alguma já selecionada
+  const checkTimeConflict = (disc: DisciplineEnrollment) => {
+    return selectedDisciplines.some((sel) =>
+      [...disc.timeslots, ...disc.practiceTimeslots].some((slot) =>
+        [...sel.timeslots, ...sel.practiceTimeslots].some((s) =>
+          isSlotConflict(s, slot)
+        )
+      )
+    );
+  };
+  const isDisciplineUnavailable = (d: DisciplineEnrollment) => {
+    if (selectedDisciplines.some(x => x.section === d.section)) return false;
+    return selectedDisciplines.length > 0 && checkTimeConflict(d);
+  };
+  const getCategoryColor = (category: string): string => {
+    const prefix = category.split(" -")[0];
+    const match = category.match(/\((OBR|OL)\)$/);
+    const suffix = match?.[1];
+    if (prefix === "BCC") {
+      return suffix === "OBR" ? "bg-blue-200" : "bg-yellow-200";
+    }
+    if (prefix === "BC&T") {
+      return suffix === "OBR" ? "bg-gray-200" : "bg-yellow-200";
+    }
+    // demais cursos
+    return "bg-red-200";
+  };
+  const getCategoryIcon = (category: string) => {
+    const match = category.match(/\((OBR|OL)\)$/)?.[1];
+    return match === "OBR"
+      ? { name: faCheckCircle, color: "text-blue-500" }
+      : { name: faLock,       color: "text-yellow-500" };
+  };
+
+  // 3) mapeia JSON em DisciplineEnrollment[]
+  const allDisciplines: DisciplineEnrollment[] = enrollmentData.disciplines.map(d => ({
+    id: d.id!,
+    code: d.sigla_disciplina!,
+    section: d.sigla_turma!,        // ← preenche aqui
+    name: d.name ?? "",
+    campus: d.campus ?? "",
+    turn: d.turn ?? "",
+    credits: d.credits ?? 0,
+    slots: d.slots ?? 0,
+    room: d.room,
+    tpei: d.tpei,
+    // substitui teoria1 por prática1 se estiver ausente, idem para teoria2/3
+    professor: [
+      d.docente_teoria  ?? d.docente_pratica,
+      d.docente_teoria_2 ?? d.docente_pratica_2,
+      d.docente_teoria_3 ?? d.docente_pratica_3,
+    ]
+      .filter(Boolean)
+      .join(" / "),
+    scheduleTheory: d.schedule_theory,
+    schedulePractice: d.schedule_practice,
+    timeslots: d.timeslots as Timeslot[],
+    practiceTimeslots: [],
+    courseCategory:
+      (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
+  }));
+
+  // 4) filtra por courseCategory exata em vez de includes(selectedCourse)
+  const byCourse = allDisciplines.filter((d) =>
+    d.courseCategory.some((cat) => COURSE_CATEGORIES.includes(cat))
+  );
+
+  // 5) remove disciplinas já cursadas e aplica filtros de campus, turno e conflitos
+  const remaining = byCourse.filter(
+    d => !completedDisciplineCodes.includes(d.code)
+  );
+  const filteredDisciplines = remaining.filter((d) => {
+    const matchesCampus =
+      selectedCampus === "Todos" || d.campus === campusMap[selectedCampus];
+    const matchesTurn =
+      selectedTurno === "Todos" || d.turn === selectedTurno;
+    const isAvailable = !isDisciplineUnavailable(d);
+    return matchesCampus && matchesTurn && isAvailable;
+  });
 
   const timeSlots = [
     "8:00 às 9:00",
@@ -92,197 +202,6 @@ function Enrollment() {
     { id: "qui", label: "Quinta" },
     { id: "sex", label: "Sexta" },
   ] as const;
-
-  /**
-  * Limpa filtros de campus e turno.
-  */
-
-  const clearFilters = () => {
-    setSelectedCampus("Todos");
-    setSelectedTurno("Todos");
-  };
-  /**
-    * Verifica conflito de horário entre uma disciplina candidata e as já selecionadas.
-    */
-
-  const checkTimeConflict = (discipline: DisciplineEnrollment) => {
-    if (selectedDisciplines.length === 0) return false;
-
-    return selectedDisciplines.some((selected) =>
-      discipline.timeslots.some((slot) =>
-        selected.timeslots.some((s) => {
-          const sameDayAndTime = s.day === slot.day && s.time === slot.time;
-          if (!sameDayAndTime) return false;
-
-          if (s.week === "Semanal" || slot.week === "Semanal") {
-            // Semanal conflita com qualquer coisa no mesmo slot
-            return true;
-          }
-          // Quinzenal I só conflita com Quinzenal I ou Semanal
-          // Quinzenal II só conflita com Quinzenal II ou Semanal
-          return s.week === slot.week;
-        })
-      )
-    );
-  };
-
-  /**
-   * Retorna true se a disciplina não puder ser selecionada (já selecionada ou conflita).
-   */
-
-  const isDisciplineUnavailable = (discipline: DisciplineEnrollment) => {
-    if (selectedDisciplines.some((d) => d.code === discipline.code))
-      return false;
-    if (selectedDisciplines.length === 0) return false;
-    return checkTimeConflict(discipline);
-  };
-
-  /**
-   * Trata o clique na disciplina: adiciona ou remove da seleção.
-   */
-
-  const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
-    const isSelected = selectedDisciplines.some(
-      (d) => d.code === discipline.code
-    );
-
-    if (isSelected) {
-      setSelectedDisciplines((prev) =>
-        prev.filter((d) => d.code !== discipline.code)
-      );
-      return;
-    }
-
-    if (checkTimeConflict(discipline)) {
-      alert(
-        "Conflito de horário detectado! Não é possível selecionar esta disciplina."
-      );
-      return;
-    }
-
-    setSelectedDisciplines((prev) => [...prev, discipline]);
-  };
-
-  /**
-   * Retorna a cor de fundo de acordo com a categoria da disciplina.
-   */
-
-  const getCategoryColor = (
-    category: "BCT" | "BCC" | "OPTATIVA" | "LIVRE" | "CONCLUÍDA"
-  ): string => {
-    switch (category) {
-      case "BCT":
-        return "bg-gray-200";
-      case "BCC":
-        return "bg-blue-200";
-      case "OPTATIVA":
-        return "bg-yellow-200";
-      case "LIVRE":
-        return "bg-red-200";
-      case "CONCLUÍDA":
-        return "bg-green-500";
-      default:
-        return "bg-red-200";
-    }
-  };
-
-  /**
-   * Retorna o ícone correspondente à categoria da disciplina.
-   */
-
-  const getCategoryIcon = (
-    category: "obrigatoria" | "optativa" | "livre" | "concluida"
-  ) => {
-    switch (category) {
-      case "obrigatoria":
-        return { name: faCheckCircle, color: "text-red-500" };
-      case "optativa":
-        return { name: faLock, color: "text-blue-500" };
-      case "livre":
-        return { name: faUnlock, color: "text-green-500" };
-      default:
-        return { name: faMedal, color: "text-yellow-500" };
-    }
-  };
-
-  /**
-   * Determina categoria (obrigatória, optativa, livre) de acordo com courseCategory.
-   */
-  const getDisciplineCategory = (
-    name: string
-  ): { icon: { name: IconDefinition; color: string }; color: string } => {
-    const categories: string[] = disciplines
-      .filter((disc) => disc.name === name)
-      .flatMap((disc) => disc.courseCategory || []);
-
-    if (
-      categories.includes("BCC - Bacharelado em Ciências da Computação (OBR)")
-    ) {
-      return {
-        icon: getCategoryIcon("obrigatoria"),
-        color: getCategoryColor("BCC"),
-      };
-    } else if (
-      categories.includes("BCC - Bacharelado em Ciências da Computação (OL)")
-    ) {
-      return {
-        icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("OPTATIVA"), // <-- usar OPTATIVA para cor amarela
-      };
-    } else if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
-    ) {
-      return {
-        icon: getCategoryIcon("obrigatoria"),
-        color: getCategoryColor("BCT"),
-      };
-    } else if (
-      categories.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
-    ) {
-      return {
-        icon: getCategoryIcon("optativa"),
-        color: getCategoryColor("OPTATIVA"), // <-- usar OPTATIVA para cor amarela
-      };
-    } else {
-      return {
-        icon: getCategoryIcon("livre"),
-        color: getCategoryColor("LIVRE"),
-      };
-    }
-  };
-
-  // mapeamento nome → código
-  const campusMap: Record<string, string> = {
-    "Santo André": "SA",
-    "São Bernardo do Campo": "SB",
-  };
-
-  // Disciplinas após filtro de campus, turno e disponibilidade
-  const filteredDisciplines = enrollmentData.disciplines.filter(
-    (discipline: DisciplineEnrollment) => {
-      // filtro de campus
-      const matchesCampus =
-        selectedCampus === "Todos" ||
-        discipline.campus === campusMap[selectedCampus];
-      // filtro de turno
-      const matchesTurn =
-        selectedTurno === "Todos" || discipline.turn === selectedTurno;
-      const isAvailable = !isDisciplineUnavailable(discipline);
-
-      return matchesCampus && matchesTurn && isAvailable;
-    }
-  );
-
-  // Índices de horários a serem exibidos na grade
-
-  const visibleSlotIndexes = timeSlots
-    .map((_, idx) => idx)
-    .filter((idx) =>
-      selectedDisciplines.some((d) =>
-        d.timeslots.some((slot) => slot.time === idx + 8)
-      )
-    )
-    .sort((a, b) => a - b);
 
   return (
     <div className="min-h-screen flex flex-col flex-1 bg-gray-50">
@@ -405,7 +324,12 @@ function Enrollment() {
                     <div>
                       <h5 className="text-xs font-medium mb-2">Categorias:</h5>
                       <div className="flex flex-wrap gap-3">
-                        {categories.map((category) => (
+                        {[
+                          { id: 1, name: "Obrigatória", color: "bg-blue-200" },
+                          { id: 2, name: "Optativa", color: "bg-yellow-200" },
+                          { id: 3, name: "Livre", color: "bg-red-200" },
+                          { id: 4, name: "Concluída", color: "bg-green-500" },
+                        ].map((category) => (
                           <div
                             key={category.id}
                             className="flex items-center gap-1.5"
@@ -422,7 +346,12 @@ function Enrollment() {
                     <div>
                       <h5 className="text-xs font-medium mb-2">Ícones:</h5>
                       <div className="grid grid-cols-1 gap-2.5 text-xs">
-                        {icons.map((item) => (
+                        {[
+                          { name: "Obrigatória", icon: faCheckCircle, color: "text-blue-200" },
+                          { name: "Optativa", icon: faLock, color: "text-yellow-500" },
+                          { name: "Livre", icon: faUnlock, color: "text-green-500" },
+                          { name: "Concluída", icon: faMedal, color: "text-yellow-500" },
+                        ].map((item) => (
                           <div
                             key={item.name}
                             className="flex items-center gap-2"
@@ -458,20 +387,25 @@ function Enrollment() {
                   }`}
               >
                 {filteredDisciplines.map((discipline) => {
-                  const category = getDisciplineCategory(discipline.name);
+                  // escolhe a courseCategory que pertence ao curso atual
+                  const matchCat = discipline.courseCategory.find((c) =>
+                    COURSE_CATEGORIES.includes(c)
+                  )!;
+                  const color = getCategoryColor(matchCat);
+                  const icon  = getCategoryIcon(matchCat);
                   const isSelected = selectedDisciplines.some(
-                    (d) => d.code === discipline.code
+                    (d) => d.section === discipline.section
                   );
                   const isUnavailable = isDisciplineUnavailable(discipline);
 
                   return (
                     <div
-                      key={discipline.code}
+                      key={discipline.section}
                       className={`p-4 rounded-lg cursor-pointer transition-colors ${isUnavailable
                         ? "bg-gray-100 opacity-50 cursor-not-allowed"
                         : isSelected
                           ? "bg-green-50 border-2 border-green-500"
-                          : category.color // Cor de fundo do card
+                          : color // Cor de fundo do card
                         }`}
                       onClick={() =>
                         !isUnavailable && handleDisciplineClick(discipline)
@@ -480,15 +414,15 @@ function Enrollment() {
                       <div className="flex flex-col gap-3">
                         <div>
                           <div className="flex items-center justify-between">
-                            <h5 className="text-xs">{discipline.code}</h5>
+                            <h5 className="text-xs">{discipline.section}</h5>
                             <FontAwesomeIcon
-                              icon={category.icon.name}
-                              className={`${category.icon.color} w-4 h-4`}
+                              icon={icon.name}
+                              className={`${icon.color} w-4 h-4`}
                             />
                           </div>
                           <h4 className="text-base font-medium mt-1">
                             {/* aplica truncate na string longa */}
-                            {truncate(discipline.name, 20)}
+                            {truncate(discipline.name ?? "", 20)}
                           </h4>
                         </div>
                         <div className="flex flex-col gap-2">
@@ -556,6 +490,7 @@ function Enrollment() {
                       <tbody>
                         {(() => {
                           const skip: Record<string, number> = {};
+                          const visibleSlotIndexes = Array.from({ length: timeSlots.length }, (_, i) => i); // Define visibleSlotIndexes
                           return visibleSlotIndexes.map((slotIdx) => (
                             <tr key={slotIdx}>
                               <td className="px-1 py-1 border border-gray-200">
@@ -610,8 +545,11 @@ function Enrollment() {
                                   >
                                     <div className="flex flex-col items-start justify-start gap-px">
                                       {slots.map(({ disc, week, start }, i) => {
-                                        // pega a cor da categoria: obrigatória BCC = azul, optativa = amarelo, etc.
-                                        const { color } = getDisciplineCategory(disc.name);
+                                        // escolhe a categoria da disciplina e aplica cor correta
+                                        const matchCat = disc.courseCategory.find(c =>
+                                          COURSE_CATEGORIES.includes(c)
+                                        )!;
+                                        const color = getCategoryColor(matchCat);
                                         return (
                                           <div
                                             key={disc.code + week}
@@ -621,7 +559,7 @@ function Enrollment() {
                                             <div className="font-mono text-sm mb-1">{disc.code}</div>
                                             {/* Nome */}
                                             <div className="text-base font-medium mb-2">
-                                              {truncate(disc.name, 20)}
+                                              {truncate(disc.name ?? "", 20)}
                                             </div>
                                             {/* Professor */}
                                             <div className="text-xs text-gray-700 mb-1">{truncate(disc.professor, 20)}</div>
