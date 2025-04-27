@@ -34,18 +34,20 @@ type Timeslot = {
   week: string;
 };
 
-const truncate = (text: string, maxLength: number): string =>
-  text.length > maxLength ? text.slice(0, maxLength) + "…" : text;
-
 function Enrollment() {
   const location = useLocation();
-  const { completedDisciplineCodes = [] } = location.state as LocationState;  // <-- pega códigos concluídos
+  const { completedDisciplineCodes = [] } = location.state as LocationState;
 
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
   const [showTurnoDropdown, setShowTurnoDropdown] = useState(false);
-  const [viewMode, setViewMode] = useState<"grid"|"list">("grid");
+
+  // → Novo estado para o filtro de viagens
+  const [allowTravelConflict, setAllowTravelConflict] = useState<"Sim" | "Não">("Não");
+  const [showTravelDropdown, setShowTravelDropdown] = useState(false);
+
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [selectedDisciplines, setSelectedDisciplines] = useState<DisciplineEnrollment[]>([]);
 
   const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
@@ -56,48 +58,51 @@ function Enrollment() {
     );
   };
 
-  // redireciona se não tiver estado
-  const state = (location.state ?? {}) as {
-    selectedCourse?: string;
-    completedDisciplineCodes?: string[];
-  };
+  const state = (location.state ?? {}) as LocationState;
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
   const { selectedCourse } = state;
 
-  // monta lista de categorias válidas para o curso selecionado
   const COURSE_CATEGORIES =
-    courseCategoriesData.find((c) => c.id === selectedCourse)
-      ?.courseCategory ?? [];
+    courseCategoriesData.find((c) => c.id === selectedCourse)?.courseCategory ?? [];
 
-  // 1) constantes de UI
   const campi = [
     { id: 0, name: "Santo André" },
     { id: 1, name: "São Bernardo do Campo" },
     { id: 2, name: "Todos" },
   ];
   const turno = ["Matutino", "Vespertino", "Noturno", "Todos"];
-  const campusMap: Record<string,string> = {
+  const campusMap: Record<string, string> = {
     "Santo André": "SA",
     "São Bernardo do Campo": "SB",
   };
 
-  // 2) helpers
   const clearFilters = () => {
     setSelectedCampus("Todos");
     setSelectedTurno("Todos");
   };
-  // verifica conflito de horário considerando Semanal e Quinzenal
+
   const isSlotConflict = (a: Timeslot, b: Timeslot): boolean => {
     if (a.day !== b.day || a.time !== b.time) return false;
-    // "Semanal" conflita com qualquer outra frequência
     if (a.week === "Semanal" || b.week === "Semanal") return true;
-    // bi‑semanais só conflitam se forem da mesma edição
     return a.week === b.week;
   };
 
-  // checa se a disciplina 'disc' conflita com alguma já selecionada
+  const isTravelAllowed = (a: Timeslot, b: Timeslot): boolean => {
+    if (a.day !== b.day) return true;
+    const endA = a.time + 1;
+    return b.time >= endA + 1;
+  };
+
+  const hasCloseTravelConflict = (d1: DisciplineEnrollment, d2: DisciplineEnrollment): boolean => {
+    if (d1.campus === d2.campus) return false;
+    return d1.timeslots
+      .concat(d1.practiceTimeslots)
+      .some(ts1 => d2.timeslots.concat(d2.practiceTimeslots)
+        .some(ts2 => !isTravelAllowed(ts1, ts2)));
+  };
+
   const checkTimeConflict = (disc: DisciplineEnrollment) => {
     return selectedDisciplines.some((sel) =>
       [...disc.timeslots, ...disc.practiceTimeslots].some((slot) =>
@@ -107,10 +112,12 @@ function Enrollment() {
       )
     );
   };
+
   const isDisciplineUnavailable = (d: DisciplineEnrollment) => {
     if (selectedDisciplines.some(x => x.section === d.section)) return false;
     return selectedDisciplines.length > 0 && checkTimeConflict(d);
   };
+
   const getCategoryColor = (category: string): string => {
     const prefix = category.split(" -")[0];
     const match = category.match(/\((OBR|OL)\)$/);
@@ -121,21 +128,20 @@ function Enrollment() {
     if (prefix === "BC&T") {
       return suffix === "OBR" ? "bg-gray-200" : "bg-yellow-200";
     }
-    // demais cursos
     return "bg-red-200";
   };
+
   const getCategoryIcon = (category: string) => {
     const match = category.match(/\((OBR|OL)\)$/)?.[1];
     return match === "OBR"
       ? { name: faCheckCircle, color: "text-blue-500" }
-      : { name: faLock,       color: "text-yellow-500" };
+      : { name: faLock, color: "text-yellow-500" };
   };
 
-  // 3) mapeia JSON em DisciplineEnrollment[]
   const allDisciplines: DisciplineEnrollment[] = enrollmentData.disciplines.map(d => ({
     id: d.id!,
     code: d.sigla_disciplina!,
-    section: d.sigla_turma!,        // ← preenche aqui
+    section: d.sigla_turma!,
     name: d.name ?? "",
     campus: d.campus ?? "",
     turn: d.turn ?? "",
@@ -143,38 +149,40 @@ function Enrollment() {
     slots: d.slots ?? 0,
     room: d.room,
     tpei: d.tpei,
-    // substitui teoria1 por prática1 se estiver ausente, idem para teoria2/3
     professor: [
-      d.docente_teoria  ?? d.docente_pratica,
+      d.docente_teoria ?? d.docente_pratica,
       d.docente_teoria_2 ?? d.docente_pratica_2,
       d.docente_teoria_3 ?? d.docente_pratica_3,
-    ]
-      .filter(Boolean)
-      .join(" / "),
+    ].filter(Boolean).join(" / "),
     scheduleTheory: d.schedule_theory,
     schedulePractice: d.schedule_practice,
     timeslots: d.timeslots as Timeslot[],
     practiceTimeslots: [],
-    courseCategory:
-      (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
+    courseCategory: (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
   }));
 
-  // 4) filtra por courseCategory exata em vez de includes(selectedCourse)
   const byCourse = allDisciplines.filter((d) =>
     d.courseCategory.some((cat) => COURSE_CATEGORIES.includes(cat))
   );
 
-  // 5) remove disciplinas já cursadas e aplica filtros de campus, turno e conflitos
   const remaining = byCourse.filter(
     d => !completedDisciplineCodes.includes(d.code)
   );
+
+  // → Atualizar a lógica de filteredDisciplines
   const filteredDisciplines = remaining.filter((d) => {
     const matchesCampus =
       selectedCampus === "Todos" || d.campus === campusMap[selectedCampus];
     const matchesTurn =
       selectedTurno === "Todos" || d.turn === selectedTurno;
     const isAvailable = !isDisciplineUnavailable(d);
-    return matchesCampus && matchesTurn && isAvailable;
+
+    // → respeita allowTravelConflict
+    const noTravelConflict =
+      allowTravelConflict === "Sim" ||
+      !selectedDisciplines.some((other) => hasCloseTravelConflict(d, other));
+
+    return matchesCampus && matchesTurn && isAvailable && noTravelConflict;
   });
 
   const timeSlots = [
@@ -219,7 +227,7 @@ function Enrollment() {
             Período 2025.2
           </p>
         </div>
-
+        {/* Filtros e Grade de Horários */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-4">
             <h4 className="mb-6 font-semibold text-lg flex items-center">
@@ -282,6 +290,40 @@ function Enrollment() {
                             }}
                           >
                             {t}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* → filtro Viagens próximas entre campus */}
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Viagens próximas entre campus
+                </label>
+                <div className="relative">
+                  <button
+                    onClick={() => setShowTravelDropdown(!showTravelDropdown)}
+                    className="w-full px-4 py-2 text-left flex items-center justify-between rounded border border-gray-200 hover:border-green-700 focus:outline-none focus:border-green-700"
+                  >
+                    <span>{allowTravelConflict}</span>
+                    <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+                  </button>
+                  {showTravelDropdown && (
+                    <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg">
+                      <ul className="py-1">
+                        {["Sim", "Não"].map((val) => (
+                          <li
+                            key={val}
+                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                            onClick={() => {
+                              setAllowTravelConflict(val as "Sim" | "Não");
+                              setShowTravelDropdown(false);
+                            }}
+                          >
+                            {val}
                           </li>
                         ))}
                       </ul>
@@ -392,7 +434,7 @@ function Enrollment() {
                     COURSE_CATEGORIES.includes(c)
                   )!;
                   const color = getCategoryColor(matchCat);
-                  const icon  = getCategoryIcon(matchCat);
+                  const icon = getCategoryIcon(matchCat);
                   const isSelected = selectedDisciplines.some(
                     (d) => d.section === discipline.section
                   );
@@ -420,9 +462,8 @@ function Enrollment() {
                               className={`${icon.color} w-4 h-4`}
                             />
                           </div>
-                          <h4 className="text-base font-medium mt-1">
-                            {/* aplica truncate na string longa */}
-                            {truncate(discipline.name ?? "", 20)}
+                          <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
+                            {discipline.name}
                           </h4>
                         </div>
                         <div className="flex flex-col gap-2">
@@ -432,7 +473,7 @@ function Enrollment() {
                               className="text-gray-600 w-3.5"
                             />
                             <span className="text-sm text-gray-800">
-                              {truncate(discipline.professor, 20)}
+                              <span className="break-words max-w-[16ch]">{discipline.professor}</span>
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -490,7 +531,20 @@ function Enrollment() {
                       <tbody>
                         {(() => {
                           const skip: Record<string, number> = {};
-                          const visibleSlotIndexes = Array.from({ length: timeSlots.length }, (_, i) => i); // Define visibleSlotIndexes
+                          // ↓ antes: listava todas as horas fixas
+                          // const visibleSlotIndexes = Array.from({ length: timeSlots.length }, (_, i) => i);
+
+                          // ↑ agora: só renderiza linhas para horários que tenham ao menos um card
+                          const used = new Set<number>();
+                          selectedDisciplines.forEach((disc) =>
+                            [...disc.timeslots, ...disc.practiceTimeslots].forEach((s) =>
+                              used.add(s.time - 8) // converte hora em índice (8h → slotIdx 0)
+                            )
+                          );
+                          const visibleSlotIndexes = Array.from(used)
+                            .filter((i) => i >= 0 && i < timeSlots.length)
+                            .sort((a, b) => a - b);
+
                           return visibleSlotIndexes.map((slotIdx) => (
                             <tr key={slotIdx}>
                               <td className="px-1 py-1 border border-gray-200">
@@ -501,20 +555,9 @@ function Enrollment() {
                                   skip[day.id]!--;
                                   return null;
                                 }
-                                // coleta todos os blocos que começam aqui (sem predecessor do mesmo week)
                                 const slots = selectedDisciplines.flatMap((disc) =>
                                   disc.timeslots
-                                    .filter(
-                                      (s) =>
-                                        s.day === day.id &&
-                                        s.time === slotIdx + 8 &&
-                                        !disc.timeslots.some(
-                                          (p) =>
-                                            p.day === day.id &&
-                                            p.week === s.week &&
-                                            p.time === s.time - 1
-                                        )
-                                    )
+                                    .filter((s) => s.day === day.id && s.time === slotIdx + 8)
                                     .map((s) => ({ disc, week: s.week, start: s.time }))
                                 );
                                 if (slots.length === 0) {
@@ -541,7 +584,7 @@ function Enrollment() {
                                   <td
                                     key={day.id}
                                     rowSpan={maxSpan}
-                                    className="p-0 border align-top whitespace-nowrap"
+                                    className="p-0 border align-top whitespace-normal"
                                   >
                                     <div className="flex flex-col items-start justify-start gap-px">
                                       {slots.map(({ disc, week, start }, i) => {
@@ -556,18 +599,27 @@ function Enrollment() {
                                             className={`inline-block p-2 rounded-lg shadow-sm border border-gray-200 text-left max-w-max ${color}`}
                                           >
                                             {/* Código */}
-                                            <div className="font-mono text-sm mb-1">{disc.code}</div>
+                                            <div className="font-mono text-sm mb-1">{disc.section}</div>
+                                           
                                             {/* Nome */}
-                                            <div className="text-base font-medium mb-2">
-                                              {truncate(disc.name ?? "", 20)}
+                                            <div className="text-base font-medium mb-2 truncate max-w-[12ch]">
+                                              {disc.name}
                                             </div>
                                             {/* Professor */}
-                                            <div className="text-xs text-gray-700 mb-1">{truncate(disc.professor, 20)}</div>
+                                            <div className="text-xs text-gray-700 mb-1 truncate max-w-[12ch]"> {disc.professor}</div>
+                                           
                                             {/* Campus */}
-                                            <div className="text-xs text-gray-700 mb-1">{disc.campus}</div>
+                                            <div className="text-xs text-gray-700 mb-1"><FontAwesomeIcon
+                                              icon={faLocationDot}
+                                              className="text-gray-600 w-3.5"
+                                            />{disc.campus}</div>
+                                            
                                             {/* Horário e Semana */}
-                                            <div className="text-xs text-gray-500">
-                                              {`${start}:00 às ${start + spans[i]}:00 • ${week}`}
+                                            <div className="text-xs text-gray-500 mb-1 truncate max-w-[20ch]">
+                                              {`${start}:00 às ${start + spans[i]}:00`}
+                                            </div>
+                                            <div className="text-xs text-gray-500 mb-1 truncate max-w-[20ch]">
+                                              {`${week}`}
                                             </div>
                                           </div>
                                         );
