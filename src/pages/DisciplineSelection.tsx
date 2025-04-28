@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useLocation, useNavigate, Navigate } from "react-router-dom";
-import courseCategories from "../../db/course_categories.json";
 import disciplines from "../../db/disciplines.json";
 import Discipline from "../types/Discipline";
 import Header from "../components/Header";
@@ -10,6 +9,8 @@ import CardDiscipline from "../components/Subjects/CardDiscipline";
 import CardHumanidade from "../components/Subjects/CardHumanidade";
 import CardDisciplineList from "../components/Subjects/CardDisciplineList";
 import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
+import Course from "./Course";// ou, se for exportação default:
+// import type Course from "../types/Course";
 
 const HUMANITIES_QUARTERS = [1, 5, 6];
 const OPTATIVES_QUARTERS = [8, 9, 10, 11, 12, 13];
@@ -25,10 +26,10 @@ export default function DisciplineSelection() {
   // Hooks sempre no topo:
   const navigate = useNavigate();
   const location = useLocation();
-  interface LocationState {
-    selectedCourse: string;
-  }
-  const state = location.state as LocationState;
+  const state = location.state as { selectedCourse: Course };
+  const courseData = state.selectedCourse;
+  const COURSE_CATEGORIES = courseData.courseCategory ?? [];
+  const COURSE_COLORS = courseData.course_color ?? [];
 
   const [disciplinesSelected, setDisciplinesSelected] = useState<Set<number>>(
     new Set()
@@ -44,11 +45,6 @@ export default function DisciplineSelection() {
       [quarter]: !prev[quarter],
     }));
   };
-
-  // monta os COURSE_CATEGORIES e course_color a partir do selectedCourse
-  const courseData = courseCategories.find((c) => c.id === state.selectedCourse);
-  const COURSE_CATEGORIES = courseData?.courseCategory ?? [];
-  const COURSE_COLORS = courseData?.course_color ?? [];
 
   /**
    * Define o nome da classificação da disciplina
@@ -137,25 +133,27 @@ export default function DisciplineSelection() {
   }, {});
 
   const handleConfirmSelection = () => {
-    // códigos das disciplinas “normais”
+    
+    // Códigos das disciplinas normais selecionadas
     const completedDisciplineCodes = Array.from(disciplinesSelected)
-      .map((id) => (disciplines as Discipline[]).find((d) => d.id === id)?.code)
-      .filter((c): c is string => !!c);
-
-    // códigos das humanidades selecionadas
+    .map((id) => (disciplines as Discipline[]).find((d) => d.id === id)?.code)
+    .filter((c): c is string => !!c);
+    
+    // Códigos das humanidades selecionadas
     const completedHumanitiesCodes = Object.values(humanitiesSelected)
-      .filter((h): h is number => h !== null)
-      .map((optId) => {
-        // encontra a disciplina no JSON pelo id correto
-        return (disciplines as Discipline[]).find((d) => d.id === optId)?.code;
-      })
-      .filter((c): c is string => !!c);
-
+    .filter((h): h is number => h !== null)
+    .map((optId) => {
+      return (disciplines as Discipline[]).find((d) => d.id === optId)?.code;
+    })
+    .filter((c): c is string => !!c);
+    
     const completedCodes = [
       ...completedDisciplineCodes,
-      ...completedHumanitiesCodes
+      ...completedHumanitiesCodes,
     ];
-
+    
+    console.log("Botão 'Confirmar seleção' clicado ",{completedDisciplineCodes});
+    // Navegar para a página de matrícula com os dados necessários
     navigate("/disciplinas-matricula", {
       state: {
         selectedCourse: state.selectedCourse,
@@ -163,7 +161,7 @@ export default function DisciplineSelection() {
       },
     });
   };
-
+  
   // Qualquer redirecionamento antes de usar logicas que dependem de state:
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
@@ -232,11 +230,15 @@ export default function DisciplineSelection() {
           <div className="flex justify-center">
             <Button
               label="Confirmar seleção"
-              onClick={handleConfirmSelection}
-              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0
+              onClick={() => {
+                console.log("Botão 'Confirmar seleção' clicado");
+                handleConfirmSelection();
+              }}
+              className={`bg-green-800 text-white text-sm ${
+                disciplinesSelected.size === 0
                   ? "opacity-25 cursor-not-allowed"
                   : ""
-                }`}
+              }`}
             />
           </div>
         </div>

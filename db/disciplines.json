@@ -1129,7 +1129,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 14,
     "period": "",
     "credits": 3,
     "id": 94
@@ -1694,7 +1694,7 @@
       "BBT - Bacharelado em Biotecnologia (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 140
@@ -1842,7 +1842,7 @@
       "BCB - Bacharelado em Ciências Biológicas (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 151
@@ -1988,7 +1988,7 @@
       "LCH - Licenciatura em Ciências Humanas (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 3,
     "id": 161
@@ -2379,7 +2379,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 3,
     "id": 191
@@ -2395,7 +2395,7 @@
       "BCB - Bacharelado em Ciências Biológicas (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 192
@@ -2522,7 +2522,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 201
@@ -2654,7 +2654,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 5,
     "id": 210
@@ -2730,7 +2730,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 3,
     "id": 216
@@ -2849,7 +2849,7 @@
       "BCB - Bacharelado em Ciências Biológicas (OL)",
       "BN - Bacharelado em Neurociência (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 226
@@ -6401,7 +6401,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 500
@@ -6413,7 +6413,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 2,
     "id": 501
@@ -6722,7 +6722,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "LCH - Licenciatura em Ciências Humanas (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 3,
     "id": 524
@@ -7080,7 +7080,7 @@
     "courseCategory": [
       "EAU - Engenharia Ambiental e Urbana (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 552
@@ -7342,7 +7342,7 @@
       "BPT - Bacharelado em Planejamento Territorial (OL)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 14,
     "period": "",
     "credits": 4,
     "id": 574
@@ -7354,7 +7354,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 3,
     "id": 575
@@ -7366,7 +7366,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 2,
     "id": 576
@@ -7390,7 +7390,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 578
@@ -8515,7 +8515,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 662
@@ -10193,7 +10193,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 794
@@ -10331,7 +10331,7 @@
       "BCB - Bacharelado em Ciências Biológicas (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 805
@@ -10479,7 +10479,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "BN - Bacharelado em Neurociência (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 817
@@ -10490,7 +10490,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 818
@@ -11718,7 +11718,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 917
@@ -12077,7 +12077,7 @@
       "BQ - Bacharelado em Química (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 3,
     "id": 945
@@ -12831,7 +12831,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 2,
     "id": 1001
@@ -12853,7 +12853,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 1003
@@ -13258,7 +13258,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BPT - Bacharelado em Planejamento Territorial (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 1037
@@ -14022,7 +14022,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 3,
     "id": 1098
@@ -14230,7 +14230,7 @@
       "BPT - Bacharelado em Planejamento Territorial (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 2,
     "id": 1115
@@ -14390,7 +14390,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 3,
     "id": 1128
@@ -14527,7 +14527,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 2,
     "id": 1139
@@ -14752,7 +14752,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 2,
     "id": 1158
@@ -14936,7 +14936,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 3,
     "id": 1173
@@ -14973,7 +14973,7 @@
     "courseCategory": [
       "EAU - Engenharia Ambiental e Urbana (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 3,
     "id": 1176
@@ -14985,7 +14985,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 3,
     "id": 1177
@@ -15091,7 +15091,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 3,
     "id": 1186
@@ -16052,7 +16052,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 3,
     "id": 1264
@@ -16928,7 +16928,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 1338
@@ -16994,7 +16994,7 @@
       "BPT - Bacharelado em Planejamento Territorial (OL)",
       "LCH - Licenciatura em Ciências Humanas (OL)"
     ],
-    "quarter": null,
+    "quarter": 15,
     "period": "",
     "credits": 2,
     "id": 1343
@@ -17017,7 +17017,7 @@
     "courseCategory": [
       "EAU - Engenharia Ambiental e Urbana (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 1345
@@ -17030,7 +17030,7 @@
       "EAU - Engenharia Ambiental e Urbana (OBR)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 3,
     "id": 1346

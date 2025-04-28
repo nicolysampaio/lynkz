@@ -6,23 +6,16 @@ import Button from "../components/Button.tsx";
 
 import courseCategories from "../../db/course_categories.json";
 
-interface Course {
-  id: string;
-  name: string;
-  campus: string[];
-  type: string;
-  disabled?: boolean;
-  courseCategory: string[];
-}
+import type { Course } from "../types/Course.tsx";
 
 // usa JSON como fonte
 const courses: Course[] = courseCategories;
 
 function Course() {
   const navigate = useNavigate();
-  const [selectedCourse, setSelectedCourse] = useState<string | null>(null);
-  const toggleCourse = (id: string) => {
-    setSelectedCourse((prev) => (prev === id ? null : id));
+  const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+  const toggleCourse = (course: Course) => {
+    setSelectedCourse((prev) => (prev?.id === course.id ? null : course));
   };
 
   const handleConfirm = () => {
@@ -48,7 +41,7 @@ function Course() {
                     .map((course) => (
                       <span
                         key={course.id}
-                        onClick={() => toggleCourse(course.id)}
+                        onClick={() => toggleCourse(course)}
                         className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2 ${
                           course.disabled ? "opacity-25 cursor-not-allowed" : "cursor-pointer"
                         }`}
@@ -56,7 +49,7 @@ function Course() {
                         <input
                           type="checkbox"
                           id={`course-${course.id}`}
-                          checked={selectedCourse === course.id}
+                          checked={selectedCourse?.id === course.id}
                           disabled={course.disabled}
                           className="w-4"
                         />
