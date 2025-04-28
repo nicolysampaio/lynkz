@@ -5,7 +5,7 @@ import Button from "../components/Button.tsx";
 function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header route="/pageLogin" />
+      <Header route="/login" />
 
       <main className="container flex flex-col flex-1 mx-auto px-4 py-8 items-center justify-center">
         <h2 className="text-3xl font-bold text-green-800 mb-4">
@@ -18,7 +18,7 @@ function Home() {
         <Button
           label="Começar sem login"
           className="bg-green-800 text-white"
-          route={"/pageCourse"}
+          route={"/cursos"}
         />
       </main>
 
