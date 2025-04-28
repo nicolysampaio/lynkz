@@ -23,6 +23,7 @@ import courseCategoriesData from "../../db/course_categories.json";
 import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Course } from "../types/Course";
 
 type LocationState = {
   selectedCourse?: string;
@@ -43,11 +44,9 @@ const PRIORITY_INGRESS_OBR = [
 
 export default function Enrollment() {
   const location = useLocation();
-  const { selectedCourse } = location.state as { selectedCourse: string };
+  const { selectedCourse } = location.state as { selectedCourse: Course };
 
-  // pega as cores do course_categories.json
-  const courseData = courseCategoriesData.find((c) => c.id === selectedCourse);
-  const COURSE_COLORS = courseData?.course_color ?? [];
+  const COURSE_COLORS = selectedCourse.course_color ?? [];
 
   // classificação com prioridade a “Obrigatórias Ingresso”
   const classifyCategoryName = (cat: string, completed: boolean): string => {
@@ -121,14 +120,14 @@ export default function Enrollment() {
   };
 
   const state = (location.state ?? {}) as LocationState;
-  const completedDisciplineCodes = state.completedDisciplineCodes ?? [];
+  const { completedDisciplineCodes = [] } = location.state as LocationState;
+
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
-  const { selectedCourse: selectedCourseId } = state;
 
   const COURSE_CATEGORIES =
-    courseCategoriesData.find((c) => c.id === selectedCourseId)?.courseCategory ?? [];
+    courseCategoriesData.find((c) => c.id === selectedCourse.id)?.courseCategory ?? [];
 
   const campi = [
     { id: 0, name: "Santo André" },
@@ -216,10 +215,12 @@ export default function Enrollment() {
     )
   ).sort();
 
-  const byCourse = allDisciplines.filter(d =>
-    d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
-  );
-  const remaining = byCourse.filter(d => !completedDisciplineCodes.includes(d.code));
+  // ...existing code...
+const byCourse = allDisciplines.filter(d =>
+  Array.isArray(COURSE_CATEGORIES) && d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
+);
+// ...existing code...
+  const remaining = byCourse.filter(d => !completedDisciplineCodes?.includes(d.code));
 
   const filteredDisciplines = remaining.filter(d => {
     const matchesCampus = selectedCampus === "Todos" || d.campus === campusMap[selectedCampus];
@@ -491,7 +492,7 @@ export default function Enrollment() {
                       <h5 className="text-xs font-medium mb-2">Categorias:</h5>
                       <div className="flex flex-wrap gap-3">
                         {COURSE_COLORS.map((cat) => (
-                          <div key={cat.id} className="flex items-center gap-1.5">
+                          <div key={cat.name} className="flex items-center gap-1.5">
                             <div className={`w-4 h-4 rounded ${cat.color}`}></div>
                             <span className="text-xs">{cat.name}</span>
                           </div>

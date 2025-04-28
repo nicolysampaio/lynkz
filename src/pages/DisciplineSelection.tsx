@@ -152,8 +152,8 @@ export default function DisciplineSelection() {
       ...completedHumanitiesCodes,
     ];
     
-    console.log("Botão 'Confirmar seleção' clicado ",{completedDisciplineCodes});
     // Navegar para a página de matrícula com os dados necessários
+    console.log("Botão 'Confirmar seleção' clicado ", completedDisciplineCodes, completedHumanitiesCodes, completedCodes, state.selectedCourse);
     navigate("/disciplinas-matricula", {
       state: {
         selectedCourse: state.selectedCourse,

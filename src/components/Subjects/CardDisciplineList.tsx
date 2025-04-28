@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import disciplines from "../../../db/disciplines.json";
@@ -19,21 +19,30 @@ export default function CardDisciplineList({
   const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
 
   // define categorias optativas (todas as programCategories que terminam em "(OL)")
-  const optativeCategories = programCategories.filter((c) =>
-    c.endsWith("(OL)")
+  const optativeCategories = useMemo(
+    () => programCategories.filter((c) => c.endsWith("(OL)")),
+    [programCategories]
   );
 
   // disciplinas optativas do programa
-  const optativeDisciplines = (disciplines as Discipline[]).filter((d) =>
-    d.courseCategory?.some((cat) => optativeCategories.includes(cat))
+  const optativeDisciplines = useMemo(
+    () =>
+      (disciplines as Discipline[]).filter((d) =>
+        d.courseCategory?.some((cat) => optativeCategories.includes(cat))
+      ),
+    [optativeCategories]
   );
 
   // disciplinas livres: que não pertencem a nenhuma category do programa
-  const freeDisciplines = (disciplines as Discipline[]).filter(
-    (d) =>
-      !d.courseCategory?.some((cat) =>
-        programCategories.includes(cat)
-      )
+  const freeDisciplines = useMemo(
+    () =>
+      (disciplines as Discipline[]).filter(
+        (d) =>
+          !d.courseCategory?.some((cat) =>
+            programCategories.includes(cat)
+          )
+      ),
+    [programCategories]
   );
 
   useEffect(() => {
