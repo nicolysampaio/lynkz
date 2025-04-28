@@ -809,7 +809,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 67
@@ -831,7 +831,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 69
@@ -843,7 +843,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 70
@@ -1383,7 +1383,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 115
@@ -2286,7 +2286,7 @@
       "BN - Bacharelado em Neurociência (OL)",
       "BCD - Bacharelado em Ciência de Dados (OBR)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 184
@@ -2307,7 +2307,7 @@
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 185
@@ -2638,7 +2638,7 @@
       "LM - Licenciatura em Matemática (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 209
@@ -2799,7 +2799,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 222
@@ -3190,7 +3190,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 253
@@ -3216,7 +3216,7 @@
       "EINF - Engenharia de Informação (OL)",
       "EMAT - Engenharia de Materiais (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 2,
     "id": 255
@@ -3497,7 +3497,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 6,
     "id": 277
@@ -3543,7 +3543,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 281
@@ -3554,7 +3554,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 282
@@ -4921,7 +4921,7 @@
       "BCD - Bacharelado em Ciência de Dados (OL)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 389
@@ -5287,7 +5287,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 419
@@ -6640,7 +6640,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 2,
     "id": 517
@@ -8188,7 +8188,7 @@
       "EMAT - Engenharia de Materiais (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 2,
     "id": 636
@@ -8463,7 +8463,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 2,
     "id": 658
@@ -9103,7 +9103,7 @@
       "EMAT - Engenharia de Materiais (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 2,
     "id": 708
@@ -9242,7 +9242,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 719
@@ -9654,7 +9654,7 @@
       "BQ - Bacharelado em Química (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 4,
     "id": 751
@@ -9768,7 +9768,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 760
@@ -9799,7 +9799,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 762
@@ -10100,7 +10100,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 787
@@ -12805,7 +12805,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 2,
     "id": 999
@@ -13327,7 +13327,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 1043
@@ -14949,7 +14949,7 @@
       "EINF - Engenharia de Informação (OBR)",
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 5,
     "id": 1174
@@ -14962,7 +14962,7 @@
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)",
       "EINF - Engenharia de Informação (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 5,
     "id": 1175
@@ -15067,7 +15067,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 1184
@@ -15287,7 +15287,7 @@
       "EMAT - Engenharia de Materiais (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 2,
     "id": 1201
@@ -15367,7 +15367,7 @@
     "courseCategory": [
       "EAER - Engenharia Aeroespacial (OBR)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 1208
@@ -16193,7 +16193,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 1275
@@ -16859,7 +16859,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 1332
@@ -16945,7 +16945,7 @@
       "BN - Bacharelado em Neurociência (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 1339
@@ -17161,7 +17161,7 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 1357

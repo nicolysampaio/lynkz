@@ -35,9 +35,52 @@ type Timeslot = {
   week: string;
 };
 
-function Enrollment() {
+// categorias OBR que devem usar “Obrigatórias Ingresso”
+const PRIORITY_INGRESS_OBR = [
+  "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+  "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+];
+
+export default function Enrollment() {
   const location = useLocation();
-  const { completedDisciplineCodes = [] } = location.state as LocationState;
+  const { selectedCourse } = location.state as { selectedCourse: string };
+
+  // pega as cores do course_categories.json
+  const courseData = courseCategoriesData.find((c) => c.id === selectedCourse);
+  const COURSE_COLORS = courseData?.course_color ?? [];
+
+  // classificação com prioridade a “Obrigatórias Ingresso”
+  const classifyCategoryName = (cat: string, completed: boolean): string => {
+    if (completed) return "Concluída";
+
+    if (PRIORITY_INGRESS_OBR.includes(cat)) {
+      return "Obrigatórias Ingresso";
+    }
+    if (cat.endsWith("(OBR)")) return "Obrigatória";
+    if (cat.endsWith("(OL)")) return "Optativa";
+    return "Livre";
+  };
+
+  // 3) retorna bg‐class do course_color
+  const getCategoryColor = (cat: string, completed: boolean): string =>
+    COURSE_COLORS.find((c) => c.name === classifyCategoryName(cat, completed))
+      ?.color ?? "";
+
+  // 4) retorna ícone + text‐class
+  const getCategoryIcon = (cat: string, completed: boolean) => {
+    const name = classifyCategoryName(cat, completed);
+    const icon =
+      name === "Concluída"
+        ? faMedal
+        : name === "Optativa"
+        ? faLock
+        : name === "Livre"
+        ? faUnlock
+        : faCheckCircle;
+    const color = COURSE_COLORS.find((c) => c.name === name)
+      ?.color.replace("bg-", "text-") ?? "";
+    return { icon, color };
+  };
 
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
@@ -78,13 +121,14 @@ function Enrollment() {
   };
 
   const state = (location.state ?? {}) as LocationState;
+  const completedDisciplineCodes = state.completedDisciplineCodes ?? [];
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
-  const { selectedCourse } = state;
+  const { selectedCourse: selectedCourseId } = state;
 
   const COURSE_CATEGORIES =
-    courseCategoriesData.find((c) => c.id === selectedCourse)?.courseCategory ?? [];
+    courseCategoriesData.find((c) => c.id === selectedCourseId)?.courseCategory ?? [];
 
   const campi = [
     { id: 0, name: "Santo André" },
@@ -138,26 +182,6 @@ function Enrollment() {
   const isDisciplineUnavailable = (d: DisciplineEnrollment) => {
     if (selectedDisciplines.some(x => x.section === d.section)) return false;
     return selectedDisciplines.length > 0 && checkTimeConflict(d);
-  };
-
-  const getCategoryColor = (category: string): string => {
-    const prefix = category.split(" -")[0];
-    const match = category.match(/\((OBR|OL)\)$/);
-    const suffix = match?.[1];
-    if (prefix === "BCC") {
-      return suffix === "OBR" ? "bg-blue-200" : "bg-yellow-200";
-    }
-    if (prefix === "BC&T") {
-      return suffix === "OBR" ? "bg-gray-200" : "bg-yellow-200";
-    }
-    return "bg-red-200";
-  };
-
-  const getCategoryIcon = (category: string) => {
-    const match = category.match(/\((OBR|OL)\)$/)?.[1];
-    return match === "OBR"
-      ? { name: faCheckCircle, color: "text-blue-500" }
-      : { name: faLock, color: "text-yellow-500" };
   };
 
   const allDisciplines: DisciplineEnrollment[] = enrollmentData.disciplines.map(d => ({
@@ -255,36 +279,36 @@ function Enrollment() {
 
         {/* Card de Confirmar disciplinas */}
         <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
-        {selectedDisciplines.length > 0 && (
-                  <div
-                    className={`mt-4 border rounded-lg p-4  ${selectedDisciplines.some((d) =>
-                      d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
-                    )
-                      ? "bg-gray-200 border-gray-300"
-                      : selectedDisciplines.some((d) =>
-                        d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
-                      )
-                        ? "bg-yellow-200 border-yellow-300"
-                        : "bg-green-50 border-green-200"
-                      }`}
-                  >
-                    <p className="font-medium text-green-800">
-                      {selectedDisciplines.length} disciplina(s) selecionada(s)
-                    </p>
-                    <div className="flex gap-2 mt-2">
-                      <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
-                        Salvar Seleção
-                      </button>
-                      <button
-                        className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-50"
-                        onClick={() => setSelectedDisciplines([])}
-                      >
-                        Limpar Seleção
-                      </button>
-                    </div>
-                  </div>
-                )}
-                </div>
+          {selectedDisciplines.length > 0 && (
+            <div
+              className={`mt-4 border rounded-lg p-4  ${selectedDisciplines.some((d) =>
+                d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OBR)")
+              )
+                ? "bg-gray-200 border-gray-300"
+                : selectedDisciplines.some((d) =>
+                  d.courseCategory?.includes("BC&T - Bacharelado em Ciência e Tecnologia (OL)")
+                )
+                  ? "bg-yellow-200 border-yellow-300"
+                  : "bg-green-50 border-green-200"
+                }`}
+            >
+              <p className="font-medium text-green-800">
+                {selectedDisciplines.length} disciplina(s) selecionada(s)
+              </p>
+              <div className="flex gap-2 mt-2">
+                <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+                  Salvar Seleção
+                </button>
+                <button
+                  className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-50"
+                  onClick={() => setSelectedDisciplines([])}
+                >
+                  Limpar Seleção
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
         {/* Filtros e Grade de Horários */}
         <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
           <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-4">
@@ -462,52 +486,30 @@ function Enrollment() {
               {viewMode === "grid" && (
                 <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-md">
                   <h4 className="font-semibold text-sm mb-4">Legenda:</h4>
-
                   <div className="space-y-4">
                     <div>
                       <h5 className="text-xs font-medium mb-2">Categorias:</h5>
                       <div className="flex flex-wrap gap-3">
-                        {[
-
-                          { id: 1, name: "Obrigatória", color: "bg-blue-200" },
-                          { id: 2, name: "Optativa", color: "bg-yellow-200" },
-                          { id: 3, name: "Livre", color: "bg-red-200" },
-                          { id: 4, name: "Concluída", color: "bg-green-500" },
-                        ].map((category) => (
-                          <div
-                            key={category.id}
-                            className="flex items-center gap-1.5"
-                          >
-                            <div
-                              className={`w-4 h-4 rounded ${category.color}`}
-                            ></div>
-                            <span className="text-xs">{category.name}</span>
+                        {COURSE_COLORS.map((cat) => (
+                          <div key={cat.id} className="flex items-center gap-1.5">
+                            <div className={`w-4 h-4 rounded ${cat.color}`}></div>
+                            <span className="text-xs">{cat.name}</span>
                           </div>
                         ))}
                       </div>
                     </div>
-
                     <div>
                       <h5 className="text-xs font-medium mb-2">Ícones:</h5>
                       <div className="grid grid-cols-1 gap-2.5 text-xs">
-                        {[
-
-                          { name: "Obrigatória", icon: faCheckCircle, color: "text-blue-200" },
-                          { name: "Optativa", icon: faLock, color: "text-yellow-500" },
-                          { name: "Livre", icon: faUnlock, color: "text-green-500" },
-                          { name: "Concluída", icon: faMedal, color: "text-yellow-500" },
-                        ].map((item) => (
-                          <div
-                            key={item.name}
-                            className="flex items-center gap-2"
-                          >
-                            <FontAwesomeIcon
-                              icon={item.icon}
-                              className={`${item.color} w-4 h-4`}
-                            />
-                            <span className="text-xs">{item.name}</span>
-                          </div>
-                        ))}
+                        {COURSE_COLORS.map((cat) => {
+                          const { icon, color } = getCategoryIcon(cat.name, false);
+                          return (
+                            <div key={cat.id} className="flex items-center gap-2">
+                              <FontAwesomeIcon icon={icon} className={`${color} w-4 h-4`} />
+                              <span>{cat.name}</span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
@@ -519,7 +521,7 @@ function Enrollment() {
           {/* → Schedule (quadro de horários) fica **antes** de Disciplinas Disponíveis */}
           <section className="md:col-span-3">
 
-            {selectedDisciplines.length > 0 && (  
+            {selectedDisciplines.length > 0 && (
               <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
 
                 <h2 className="text-2xl font-bold mb-4">Quadro de Horários</h2>
@@ -604,7 +606,7 @@ function Enrollment() {
                                       const matchCat = disc.courseCategory.find(c =>
                                         COURSE_CATEGORIES.includes(c)
                                       )!;
-                                      const color = getCategoryColor(matchCat);
+                                      const color = getCategoryColor(matchCat, false);
                                       return (
                                         <div
                                           key={disc.code + week}
@@ -667,34 +669,28 @@ function Enrollment() {
                   const matchCat = discipline.courseCategory.find((c) =>
                     COURSE_CATEGORIES.includes(c)
                   )!;
-                  const color = getCategoryColor(matchCat);
-                  const icon = getCategoryIcon(matchCat);
-                  const isSelected = selectedDisciplines.some(
-                    (d) => d.section === discipline.section
-                  );
-                  const isUnavailable = isDisciplineUnavailable(discipline);
+                  const completed = selectedDisciplines.some((s) => s.section === discipline.section);
+                  const bg = getCategoryColor(matchCat, completed);
+                  const { icon, color } = getCategoryIcon(matchCat, completed);
 
                   return (
                     <div
                       key={discipline.section}
-                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isUnavailable
+                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isDisciplineUnavailable(discipline)
                         ? "bg-gray-100 opacity-50 cursor-not-allowed"
-                        : isSelected
+                        : completed
                           ? "bg-green-50 border-2 border-green-500"
-                          : color // Cor de fundo do card
-                        }`}
+                          : bg // Cor de fundo do card
+                      }`}
                       onClick={() =>
-                        !isUnavailable && handleDisciplineClick(discipline)
+                        !isDisciplineUnavailable(discipline) && handleDisciplineClick(discipline)
                       }
                     >
                       <div className="flex flex-col gap-3">
                         <div>
                           <div className="flex items-center justify-between">
                             <h5 className="text-xs">{discipline.section}</h5>
-                            <FontAwesomeIcon
-                              icon={icon.name}
-                              className={`${icon.color} w-4 h-4`}
-                            />
+                            <FontAwesomeIcon icon={icon} className={`${color} w-4 h-4`} />
                           </div>
                           <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
                             {discipline.name}
@@ -746,5 +742,3 @@ function Enrollment() {
     </div>
   );
 }
-
-export default Enrollment;

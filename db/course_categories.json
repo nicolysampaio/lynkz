@@ -24,6 +24,33 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "BCC - Bacharelado em Ciências da Computação (OBR)",
       "BCC - Bacharelado em Ciências da Computação (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "color": "bg-gray-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -148,6 +175,28 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LCB - Licenciatura em Ciências Biológicas (OBR)",
       "LCB - Licenciatura em Ciências Biológicas (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -162,6 +211,28 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -241,11 +312,64 @@
       "São Bernardo do Campo"
     ],
     "type": "Engenharias",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EAER - Engenharia Aeroespacial (OBR)",
       "EAER - Engenharia Aeroespacial (OL)"
+    ],
+    "OPTATIVES_QUARTERS": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      14
+    ],
+    "LIVRES_QUARTERS": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      14
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-lime-700"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "color": "bg-gray-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -260,6 +384,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "BQ - Bacharelado em Química (OBR)",
       "BQ - Bacharelado em Química (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -274,6 +420,28 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
       "BPT - Bacharelado em Planejamento Territorial (OBR)",
       "BPT - Bacharelado em Planejamento Territorial (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -288,6 +456,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EBIO - Engenharia Biomédica (OBR)",
       "EBIO - Engenharia Biomédica (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -302,6 +492,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)",
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -316,6 +528,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EGES - Engenharia de Gestão (OBR)",
       "EGES - Engenharia de Gestão (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -330,6 +564,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EINF - Engenharia de Informação (OBR)",
       "EINF - Engenharia de Informação (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -344,6 +600,28 @@
       "LCH - Licenciatura em Ciências Humanas (OBR)",
       "LFIL - Licenciatura em Filosofia (OBR)",
       "LFIL - Licenciatura em Filosofia (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -358,6 +636,28 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LFIS - Licenciatura em Física (OBR)",
       "LFIS - Licenciatura em Física (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -386,6 +686,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "BN - Bacharelado em Neurociência (OBR)",
       "BN - Bacharelado em Neurociência (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -400,6 +722,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "BM - Bacharelado em Matemática (OBR)",
       "BM - Bacharelado em Matemática (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -412,6 +756,28 @@
     "disabled": true,
     "courseCategory": [
       "Licenciatura em Ciências Naturais e Exatas (OBR)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   },
   {
@@ -426,6 +792,28 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "LEC - Licenciatura em Educação do Campo (OBR)",
       "LEC - Licenciatura em Educação do Campo (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "color": "bg-blue-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "color": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "color": "bg-red-200"
+      },
+      {
+        "id": 4,
+        "name": "Concluída",
+        "color": "bg-green-500"
+      }
     ]
   }
 ]

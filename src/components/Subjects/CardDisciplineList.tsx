@@ -6,50 +6,51 @@ import Discipline from "../../types/Discipline";
 
 interface CardDisciplineListProps {
   category: "optativa" | "livre";
+  programCategories: string[];       // ← categorias vindas de Course/DisciplineSelection
 }
 
-const COURSE_CATEGORIES = [
-  "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
-  "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-  "BCC - Bacharelado em Ciências da Computação (OBR)",
-  "BCC - Bacharelado em Ciências da Computação (OL)",
-];
-
-const OPTATIVE_CATEGORY = "BCC - Bacharelado em Ciências da Computação (OL)";
-
-const optativeDisciplines = disciplines.filter(
-  (discipline): discipline is Discipline =>
-    discipline.courseCategory?.includes(OPTATIVE_CATEGORY)
-);
-
-const freeDisciplines = disciplines.filter(
-  (discipline): discipline is Discipline =>
-    !discipline.courseCategory?.some((category) =>
-      COURSE_CATEGORIES.includes(category)
-    )
-);
-
-function CardDisciplineList({ category }: CardDisciplineListProps) {
+export default function CardDisciplineList({
+  category,
+  programCategories,                // ← destruture aqui
+}: CardDisciplineListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<Discipline[]>([]);
   const [selectedOptativas, setSelectedOptativas] = useState<Discipline[]>([]);
   const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
 
+  // define categorias optativas (todas as programCategories que terminam em "(OL)")
+  const optativeCategories = programCategories.filter((c) =>
+    c.endsWith("(OL)")
+  );
+
+  // disciplinas optativas do programa
+  const optativeDisciplines = (disciplines as Discipline[]).filter((d) =>
+    d.courseCategory?.some((cat) => optativeCategories.includes(cat))
+  );
+
+  // disciplinas livres: que não pertencem a nenhuma category do programa
+  const freeDisciplines = (disciplines as Discipline[]).filter(
+    (d) =>
+      !d.courseCategory?.some((cat) =>
+        programCategories.includes(cat)
+      )
+  );
+
   useEffect(() => {
     if (!searchQuery.trim()) {
       setSearchResults([]);
     } else {
-      const results =
+      const source =
         category === "optativa"
           ? optativeDisciplines
           : freeDisciplines;
       setSearchResults(
-        results.filter((d) =>
+        source.filter((d) =>
           d.name?.toLowerCase().includes(searchQuery.toLowerCase())
         )
       );
     }
-  }, [searchQuery, category]);
+  }, [searchQuery, category, optativeDisciplines, freeDisciplines]);
 
   const handleSelect = (disc: Discipline) => {
     if (category === "optativa") {
@@ -69,13 +70,14 @@ function CardDisciplineList({ category }: CardDisciplineListProps) {
       setSelectedLivres((prev) => prev.filter((d) => d.id !== id));
   };
 
-  // cores conforme categoria
-  const containerClass = category === "optativa"
-    ? "bg-yellow-100 text-yellow-800 border-yellow-200"
-    : "bg-red-100 text-red-800 border-red-200";
-  const chipClass = category === "optativa"
-    ? "bg-yellow-200 text-yellow-900"
-    : "bg-red-200 text-red-900";
+  const containerClass =
+    category === "optativa"
+      ? "bg-yellow-100 text-yellow-800 border-yellow-200"
+      : "bg-red-100 text-red-800 border-red-200";
+  const chipClass =
+    category === "optativa"
+      ? "bg-yellow-200 text-yellow-900"
+      : "bg-red-200 text-red-900";
 
   return (
     <div className={`p-4 border rounded-lg relative ${containerClass}`}>
@@ -107,7 +109,8 @@ function CardDisciplineList({ category }: CardDisciplineListProps) {
         </div>
       )}
 
-      {(category === "optativa" ? selectedOptativas : selectedLivres).length > 0 && (
+      {(category === "optativa" ? selectedOptativas : selectedLivres)
+        .length > 0 && (
         <div className="mt-4">
           <h4 className="font-semibold">Selecionadas:</h4>
           <div className="flex flex-wrap gap-2 mt-2">
@@ -133,5 +136,3 @@ function CardDisciplineList({ category }: CardDisciplineListProps) {
     </div>
   );
 }
-
-export default CardDisciplineList;
