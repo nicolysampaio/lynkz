@@ -6,17 +6,26 @@ import Discipline from "../../types/Discipline";
 
 interface CardDisciplineListProps {
   category: "optativa" | "livre";
-  programCategories: string[];       // ← categorias vindas de Course/DisciplineSelection
+  programCategories: string[];
+  selectedOptativas: Discipline[];
+  setSelectedOptativas: React.Dispatch<React.SetStateAction<Discipline[]>>;
+  selectedLivres: Discipline[];
+  setSelectedLivres: React.Dispatch<React.SetStateAction<Discipline[]>>;
+
 }
 
 export default function CardDisciplineList({
   category,
   programCategories,                // ← destruture aqui
+  setSelectedOptativas,
+  setSelectedLivres,
+  selectedOptativas,
+  selectedLivres,
 }: CardDisciplineListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<Discipline[]>([]);
-  const [selectedOptativas, setSelectedOptativas] = useState<Discipline[]>([]);
-  const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
+
+
 
   // define categorias optativas (todas as programCategories que terminam em "(OL)")
   const optativeCategories = useMemo(
@@ -38,11 +47,12 @@ export default function CardDisciplineList({
     () =>
       (disciplines as Discipline[]).filter(
         (d) =>
-          !d.courseCategory?.some((cat) =>
-            programCategories.includes(cat)
-          )
+          // Não é optativa do curso
+          !d.courseCategory?.some((cat) => optativeCategories.includes(cat)) &&
+          // Não é obrigatória do curso
+          !d.courseCategory?.some((cat) => programCategories.includes(cat) && cat.endsWith("(OBR)"))
       ),
-    [programCategories]
+    [programCategories, optativeCategories]
   );
 
   useEffect(() => {
@@ -61,16 +71,15 @@ export default function CardDisciplineList({
     }
   }, [searchQuery, category, optativeDisciplines, freeDisciplines]);
 
-  const handleSelect = (disc: Discipline) => {
-    if (category === "optativa") {
-      if (!selectedOptativas.some((d) => d.id === disc.id))
-        setSelectedOptativas((prev) => [...prev, disc]);
-    } else {
-      if (!selectedLivres.some((d) => d.id === disc.id))
-        setSelectedLivres((prev) => [...prev, disc]);
-    }
-    setSearchQuery("");
+  const handleSelectOptativa = (disciplina: Discipline) => {
+    setSelectedOptativas((prev) =>
+      prev.some((d) => d.id === disciplina.id)
+        ? prev.filter((d) => d.id !== disciplina.id)
+        : [...prev, disciplina]
+    );
   };
+
+  // Removed unused handleSelectLivre function
 
   const remove = (id: number) => {
     if (category === "optativa")
@@ -96,9 +105,8 @@ export default function CardDisciplineList({
 
       <input
         type="text"
-        placeholder={`Pesquisar ${
-          category === "optativa" ? "optativas" : "livres"
-        }...`}
+        placeholder={`Pesquisar ${category === "optativa" ? "optativas" : "livres"
+          }...`}
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="p-2 border rounded w-full mb-2"
@@ -110,7 +118,7 @@ export default function CardDisciplineList({
             <div
               key={result.id}
               className="p-2 cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSelect(result)}
+              onClick={() => handleSelectOptativa(result)}
             >
               {result.name} ({result.credits} créditos)
             </div>
@@ -120,28 +128,28 @@ export default function CardDisciplineList({
 
       {(category === "optativa" ? selectedOptativas : selectedLivres)
         .length > 0 && (
-        <div className="mt-4">
-          <h4 className="font-semibold">Selecionadas:</h4>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {(category === "optativa" ? selectedOptativas : selectedLivres).map(
-              (item) => (
-                <div
-                  key={item.id}
-                  className={`${chipClass} px-2 py-1 rounded flex items-center`}
-                >
-                  <span>{item.name}</span>
-                  <button
-                    onClick={() => remove(item.id)}
-                    className="ml-2 hover:text-red-600"
+          <div className="mt-4">
+            <h4 className="font-semibold">Selecionadas:</h4>
+            <div className="flex flex-wrap gap-2 mt-2">
+              {(category === "optativa" ? selectedOptativas : selectedLivres).map(
+                (item) => (
+                  <div
+                    key={item.id}
+                    className={`${chipClass} px-2 py-1 rounded flex items-center`}
                   >
-                    <FontAwesomeIcon icon={faX} />
-                  </button>
-                </div>
-              )
-            )}
+                    <span>{item.name}</span>
+                    <button
+                      onClick={() => remove(item.id)}
+                      className="ml-2 hover:text-red-600"
+                    >
+                      <FontAwesomeIcon icon={faX} />
+                    </button>
+                  </div>
+                )
+              )}
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 }

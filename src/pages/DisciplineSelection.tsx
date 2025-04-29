@@ -12,14 +12,12 @@ import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
 import Course from "./Course";// ou, se for exportação default:
 // import type Course from "../types/Course";
 
-const HUMANITIES_QUARTERS = [1, 5, 6];
-const OPTATIVES_QUARTERS = [8, 9, 10, 11, 12, 13];
-const LIVRES_QUARTERS = [10, 14, 15];
-
 // categorias OBR que devem usar “Obrigatórias Ingresso”
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+  "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+  "LCH - Licenciatura em Ciências Humanas (OBR)",
 ];
 
 export default function DisciplineSelection() {
@@ -31,6 +29,11 @@ export default function DisciplineSelection() {
   const COURSE_CATEGORIES = courseData.courseCategory ?? [];
   const COURSE_COLORS = courseData.course_color ?? [];
 
+  // Aqui, vai definir onde vai ficar e quantos serão os cards de optativas.
+  const OPTATIVES_QUARTERS = courseData.quarter_categories?.OPTATIVES_QUARTERS ?? [];
+  const LIVRES_QUARTERS = courseData.quarter_categories?.LIVRES_QUARTERS ?? [];
+  const HUMANITIES_QUARTERS = courseData.quarter_categories?.HUMANITIES_QUARTERS ?? [];
+
   const [disciplinesSelected, setDisciplinesSelected] = useState<Set<number>>(
     new Set()
   );
@@ -38,6 +41,8 @@ export default function DisciplineSelection() {
     Record<number, number | null>
   >({});
   const [openHumanitiesDropdown, setOpenHumanitiesDropdown] = useState<Record<number, boolean>>({});
+  const [selectedOptativas, setSelectedOptativas] = useState<Discipline[]>([]);
+  const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
 
   const toggleDropdown = (quarter: number) => {
     setOpenHumanitiesDropdown((prev) => ({
@@ -63,7 +68,7 @@ export default function DisciplineSelection() {
       return "Obrigatórias Ingresso";
     }
 
-    // 3) modalidades obrigatórias genéricas
+    // 3) modalidades obrigatórias genéricas 
     const cat = d.courseCategory?.find((c) => c.endsWith("(OBR)"));
     if (cat) return "Obrigatória";
 
@@ -88,7 +93,7 @@ export default function DisciplineSelection() {
   ): string =>
     COURSE_COLORS.find(
       (c) => c.name === getClassificationName(d, quarter, selected)
-    )?.color ?? "";
+    )?.bgColor ?? "";
 
   const toggleDisciplineSelection = (id: number) =>
     setDisciplinesSelected((prev) => {
@@ -133,27 +138,34 @@ export default function DisciplineSelection() {
   }, {});
 
   const handleConfirmSelection = () => {
-    
     // Códigos das disciplinas normais selecionadas
     const completedDisciplineCodes = Array.from(disciplinesSelected)
-    .map((id) => (disciplines as Discipline[]).find((d) => d.id === id)?.code)
-    .filter((c): c is string => !!c);
-    
+      .map((disciplineId: number) => (disciplines as Discipline[]).find((d) => d.id === disciplineId)?.code)
+      .filter((c): c is string => !!c);
+
     // Códigos das humanidades selecionadas
     const completedHumanitiesCodes = Object.values(humanitiesSelected)
-    .filter((h): h is number => h !== null)
-    .map((optId) => {
-      return (disciplines as Discipline[]).find((d) => d.id === optId)?.code;
-    })
-    .filter((c): c is string => !!c);
-    
+      .filter((h): h is number => h !== null)
+      .map((optId) => {
+        return (disciplines as Discipline[]).find((d) => d.id === optId)?.code;
+      })
+      .filter((c): c is string => !!c);
+
+    // Códigos das optativas e livres selecionadas
+    const completedOptativasCodes = Array.from(selectedOptativas)
+      .map((discipline) => discipline.code)
+      .filter((c): c is string => !!c);
+    const completedLivresCodes = selectedLivres.map((d) => d.code);
+
     const completedCodes = [
       ...completedDisciplineCodes,
       ...completedHumanitiesCodes,
+      ...completedOptativasCodes,
+      ...completedLivresCodes,
     ];
-    
+
     // Navegar para a página de matrícula com os dados necessários
-    console.log("Botão 'Confirmar seleção' clicado ", completedDisciplineCodes, completedHumanitiesCodes, completedCodes, state.selectedCourse);
+    console.log("Botão 'Confirmar seleção' clicado ", completedCodes, state.selectedCourse);
     navigate("/disciplinas-matricula", {
       state: {
         selectedCourse: state.selectedCourse,
@@ -161,7 +173,7 @@ export default function DisciplineSelection() {
       },
     });
   };
-  
+
   // Qualquer redirecionamento antes de usar logicas que dependem de state:
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
@@ -189,7 +201,7 @@ export default function DisciplineSelection() {
                     {isHumanitiesQuarter(quarter) && (
                       <CardHumanidade
                         quarter={quarter}
-                        courses={HUMANITIES_COURSES}               // ← aqui, use `courses` e não `humanities`
+                        courses={HUMANITIES_COURSES}
                         selected={humanitiesSelected[quarter] ?? null}
                         open={openHumanitiesDropdown[quarter] ?? false}
                         toggleDropdown={() => toggleDropdown(quarter)}
@@ -212,15 +224,15 @@ export default function DisciplineSelection() {
 
                     {(OPTATIVES_QUARTERS.includes(quarter) ||
                       LIVRES_QUARTERS.includes(quarter)) && (
-                      <CardDisciplineList
-                        category={
-                          OPTATIVES_QUARTERS.includes(quarter)
-                            ? "optativa"
-                            : "livre"
-                        }
-                        programCategories={COURSE_CATEGORIES}    // ← passe aqui
-                      />
-                    )}
+                        <CardDisciplineList
+                          category={OPTATIVES_QUARTERS.includes(quarter) ? "optativa" : "livre"}
+                          programCategories={COURSE_CATEGORIES}
+                          selectedOptativas={selectedOptativas}
+                          setSelectedOptativas={setSelectedOptativas}
+                          selectedLivres={selectedLivres}
+                          setSelectedLivres={setSelectedLivres}
+                        />
+                      )}
                   </div>
                 </div>
               );
@@ -234,11 +246,10 @@ export default function DisciplineSelection() {
                 console.log("Botão 'Confirmar seleção' clicado");
                 handleConfirmSelection();
               }}
-              className={`bg-green-800 text-white text-sm ${
-                disciplinesSelected.size === 0
+              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0
                   ? "opacity-25 cursor-not-allowed"
                   : ""
-              }`}
+                }`}
             />
           </div>
         </div>

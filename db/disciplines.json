@@ -606,12 +606,12 @@
   },
   {
     "id": 46,
-    "code": "BCC1201",
+    "code": "MCCC011-23",
     "name": "Metodologia e Escrita Científica p/ Computação",
     "credits": 2,
     "period": "12º quadrimestre",
     "quarter": 12,
-    "courseCategory": []
+    "courseCategory": ["BCC - Bacharelado em Ciências da Computação (OBR)"]
   },
   {
     "id": 47,

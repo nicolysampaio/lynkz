@@ -1,9 +1,14 @@
 export interface Course {
-    id: string;
-    name: string;
-    campus: string[];
-    type: string;
-    disabled: boolean;
-    courseCategory: string[];
-    course_color?: { id: number; name: string; color: string }[];
-  }
+  id: string;
+  name: string;
+  campus: string[];
+  type: string;
+  disabled: boolean;
+  courseCategory: string[];
+  course_color?: { id: number; name: string; bgColor: string }[];
+  quarter_categories?: {
+    OPTATIVES_QUARTERS: number[];
+    LIVRES_QUARTERS: number[];
+    HUMANITIES_QUARTERS: number[];
+  };
+}

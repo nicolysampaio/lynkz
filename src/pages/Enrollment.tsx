@@ -40,7 +40,9 @@ type Timeslot = {
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
-];
+  "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
+  "LCH - Licenciatura em Ciências Humanas (OBR)",
+]; // Extremamente hardcoded, vai ser mudado.
 
 export default function Enrollment() {
   const location = useLocation();
@@ -63,7 +65,7 @@ export default function Enrollment() {
   // 3) retorna bg‐class do course_color
   const getCategoryColor = (cat: string, completed: boolean): string =>
     COURSE_COLORS.find((c) => c.name === classifyCategoryName(cat, completed))
-      ?.color ?? "";
+      ?.bgColor ?? "";
 
   // 4) retorna ícone + text‐class
   const getCategoryIcon = (cat: string, completed: boolean) => {
@@ -76,8 +78,10 @@ export default function Enrollment() {
         : name === "Livre"
         ? faUnlock
         : faCheckCircle;
-    const color = COURSE_COLORS.find((c) => c.name === name)
-      ?.color.replace("bg-", "text-") ?? "";
+    const color =
+      COURSE_COLORS.find((c) => c.name === name)?.bgColor?.replace("bg-", "text-") ??
+      COURSE_COLORS.find((c) => c.name === name)?.bgColor?.replace("bg-", "text-") ??
+      "";
     return { icon, color };
   };
 
@@ -215,11 +219,9 @@ export default function Enrollment() {
     )
   ).sort();
 
-  // ...existing code...
-const byCourse = allDisciplines.filter(d =>
-  Array.isArray(COURSE_CATEGORIES) && d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
-);
-// ...existing code...
+  const byCourse = allDisciplines.filter(d =>
+    Array.isArray(COURSE_CATEGORIES) && d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
+  );
   const remaining = byCourse.filter(d => !completedDisciplineCodes?.includes(d.code));
 
   const filteredDisciplines = remaining.filter(d => {
@@ -493,7 +495,7 @@ const byCourse = allDisciplines.filter(d =>
                       <div className="flex flex-wrap gap-3">
                         {COURSE_COLORS.map((cat) => (
                           <div key={cat.name} className="flex items-center gap-1.5">
-                            <div className={`w-4 h-4 rounded ${cat.color}`}></div>
+                            <div className={`w-4 h-4 rounded ${cat.bgColor}`}></div>
                             <span className="text-xs">{cat.name}</span>
                           </div>
                         ))}
