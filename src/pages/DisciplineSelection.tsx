@@ -118,7 +118,7 @@ export default function DisciplineSelection() {
       d.quarter !== null &&
       d.credits !== null &&
       d.courseCategory?.some((cat) =>
-        COURSE_CATEGORIES.includes(cat)
+        COURSE_CATEGORIES.includes(cat) && cat.endsWith("(OBR)")
       )
   );
 
