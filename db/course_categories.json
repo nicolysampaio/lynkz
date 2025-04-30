@@ -1349,22 +1349,22 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-green-300"
+        "bgColor": "bg-green-400"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
-      },
-      {
-        "id": 2,
-        "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
       {
         "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-blue-200"
+      },
+      {
+        "id": 4,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-blue-200"
       },
       {
         "id": 5,
@@ -1376,28 +1376,16 @@
       "OPTATIVES_QUARTERS": [
         6,
         7,
-        7,
-        7,
-        8,
-        8,
         8,
         9,
-        9,
-        10,
         10,
         11
       ],
       "LIVRES_QUARTERS": [
         6,
         7,
-        7,
-        7,
-        8,
-        8,
         8,
         9,
-        9,
-        10,
         10,
         11
       ],
