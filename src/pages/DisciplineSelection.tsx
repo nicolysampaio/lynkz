@@ -192,6 +192,11 @@ export default function DisciplineSelection() {
           <div className="grid grid-cols-1 gap-8 mb-8">
             {Object.entries(groupedDisciplines).map(([key, list]) => {
               const quarter = parseInt(key, 10);
+
+              // Conta quantas vezes o quarter aparece nas listas
+              const optativaCount = OPTATIVES_QUARTERS.filter(q => q === quarter).length;
+              const livreCount = LIVRES_QUARTERS.filter(q => q === quarter).length;
+
               return (
                 <div key={key}>
                   <h3 className="text-lg font-semibold mb-4">
@@ -221,18 +226,36 @@ export default function DisciplineSelection() {
                       />
                     ))}
 
+                    {/* Renderiza CardDisciplineList para optativas conforme a contagem */}
+                    {Array.from({ length: optativaCount }).map((_, idx) => (
+                      <CardDisciplineList
+                        key={`optativa-${quarter}-${idx}`}
+                        id={`${quarter}-optativa-${idx}`}
+                        colorClass={getCardColor({} as Discipline, quarter, false)}
+                        category="optativa"
+                        programCategories={COURSE_CATEGORIES}
+                        selectedOptativas={selectedOptativas}
+                        setSelectedOptativas={setSelectedOptativas}
+                        selectedLivres={selectedLivres}
+                        setSelectedLivres={setSelectedLivres}
+                        courseColor={courseData.course_color ?? []}
+                      />
+                    ))}
 
-                    {(OPTATIVES_QUARTERS.includes(quarter) ||
-                      LIVRES_QUARTERS.includes(quarter)) && (
-                        <CardDisciplineList
-                          category={OPTATIVES_QUARTERS.includes(quarter) ? "optativa" : "livre"}
-                          programCategories={COURSE_CATEGORIES}
-                          selectedOptativas={selectedOptativas}
-                          setSelectedOptativas={setSelectedOptativas}
-                          selectedLivres={selectedLivres}
-                          setSelectedLivres={setSelectedLivres}
-                        />
-                      )}
+                    {Array.from({ length: livreCount }).map((_, idx) => (
+                      <CardDisciplineList
+                        key={`livre-${quarter}-${idx}`}
+                        id={`${quarter}-livre-${idx}`}
+                        colorClass={getCardColor({} as Discipline, quarter, false)}
+                        category="livre"
+                        programCategories={COURSE_CATEGORIES}
+                        selectedOptativas={selectedOptativas}
+                        setSelectedOptativas={setSelectedOptativas}
+                        selectedLivres={selectedLivres}
+                        setSelectedLivres={setSelectedLivres}
+                        courseColor={courseData.course_color ?? []}
+                      />
+                    ))}
                   </div>
                 </div>
               );
@@ -247,8 +270,8 @@ export default function DisciplineSelection() {
                 handleConfirmSelection();
               }}
               className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0
-                  ? "opacity-25 cursor-not-allowed"
-                  : ""
+                ? "opacity-25 cursor-not-allowed"
+                : ""
                 }`}
             />
           </div>

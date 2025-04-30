@@ -113,7 +113,28 @@
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        10,
+        14,
+        15
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "EAU",
@@ -132,7 +153,7 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-green-100"
+        "bgColor": "bg-orange-100"
       },
       {
         "id": 2,
@@ -140,21 +161,42 @@
         "bgColor": "bg-gray-200"
       },
       {
-        "id": 2,
-        "name": "Optativa",
-        "bgColor": "bg-yellow-200"
-      },
-      {
         "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-pink-100"
+      },  
+      {
+        "id": 4,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-gray-200"
       },
       {
         "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        10,
+        14,
+        15
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "LM",
@@ -209,7 +251,28 @@
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        10,
+        14,
+        15
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "EENE",
@@ -250,7 +313,28 @@
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        10,
+        14,
+        15
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "BFIS",
@@ -340,39 +424,8 @@
       },
       {
         "id": 2,
-        "name": "Optativa",
-        "bgColor": "bg-yellow-200"
-      },
-      {
-        "id": 3,
-        "name": "Livre",
-        "bgColor": "bg-red-200"
-      },
-      {
-        "id": 4,
-        "name": "Concluída",
-        "bgColor": "bg-green-500"
-      }
-    ]
-  },
-  {
-    "id": "BCE",
-    "name": "Bacharelado em Ciências Econômicas",
-    "campus": [
-      "São Bernardo do Campo"
-    ],
-    "type": "Bacharelados",
-    "disabled": true,
-    "courseCategory": [
-      "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
-      "BCE - Bacharelado em Ciências Econômicas (OBR)",
-      "BCE - Bacharelado em Ciências Econômicas (OL)"
-    ],
-    "course_color": [
-      {
-        "id": 1,
-        "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
       },
       {
         "id": 2,
@@ -385,11 +438,89 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        10,
+        14,
+        15
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "id": "BCE",
+    "name": "Bacharelado em Ciências Econômicas",
+    "campus": [
+      "São Bernardo do Campo"
+    ],
+    "type": "Bacharelados",
+    "disabled": false,
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+      "BCE - Bacharelado em Ciências Econômicas (OBR)",
+      "BCE - Bacharelado em Ciências Econômicas (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "bgColor": "bg-orange-200"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-blue-200"
+      },
+      {
+        "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-pink-100"
+      },
+      {
+        "id": 4,
+        "name": "Livre",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "bgColor": "bg-green-500"
+      }
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        7,
+        8,
+        11,
+        11,
+        12
+      ],
+      "LIVRES_QUARTERS": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "HUMANITIES_QUARTERS": []
+    }
   },
   {
     "id": "LQ",
@@ -615,6 +746,33 @@
       "EAER - Engenharia Aeroespacial (OBR)",
       "EAER - Engenharia Aeroespacial (OL)"
     ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "bgColor": "bg-lime-700"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
+        "name": "Optativa",
+        "bgColor": "bg-yellow-200"
+      },
+      {
+        "id": 3,
+        "name": "Livre",
+        "bgColor": "bg-red-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "bgColor": "bg-green-500"
+      }
+    ],
     "quarter_categories": {
       "OPTATIVES_QUARTERS": [
         3,
@@ -647,34 +805,7 @@
         5,
         6
       ]
-    },
-    "course_color": [
-      {
-        "id": 1,
-        "name": "Obrigatória",
-        "bgColor": "bg-lime-700"
-      },
-      {
-        "id": 2,
-        "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
-      },
-      {
-        "id": 2,
-        "name": "Optativa",
-        "bgColor": "bg-yellow-200"
-      },
-      {
-        "id": 3,
-        "name": "Livre",
-        "bgColor": "bg-red-200"
-      },
-      {
-        "id": 5,
-        "name": "Concluída",
-        "bgColor": "bg-green-500"
-      }
-    ]
+    }
   },
   {
     "id": "BQ",
@@ -697,6 +828,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -706,11 +842,44 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "LIVRES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "BPT",
@@ -733,6 +902,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -742,11 +916,44 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "LIVRES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "EBIO",
@@ -769,6 +976,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -778,11 +990,44 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "LIVRES_QUARTERS": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        14
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "EIAR",
@@ -805,39 +1050,8 @@
       },
       {
         "id": 2,
-        "name": "Optativa",
-        "bgColor": "bg-yellow-200"
-      },
-      {
-        "id": 3,
-        "name": "Livre",
-        "bgColor": "bg-red-200"
-      },
-      {
-        "id": 4,
-        "name": "Concluída",
-        "bgColor": "bg-green-500"
-      }
-    ]
-  },
-  {
-    "id": "EGES",
-    "name": "Engenharia de Gestão",
-    "campus": [
-      "São Bernardo do Campo"
-    ],
-    "type": "Engenharias",
-    "disabled": true,
-    "courseCategory": [
-      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
-      "EGES - Engenharia de Gestão (OBR)",
-      "EGES - Engenharia de Gestão (OL)"
-    ],
-    "course_color": [
-      {
-        "id": 1,
-        "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
       },
       {
         "id": 2,
@@ -850,11 +1064,109 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11
+      ],
+      "LIVRES_QUARTERS": [
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "id": "EGES",
+    "name": "Engenharia de Gestão",
+    "campus": [
+      "São Bernardo do Campo"
+    ],
+    "type": "Engenharias",
+    "disabled": false,
+    "courseCategory": [
+      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+      "EGES - Engenharia de Gestão (OBR)",
+      "EGES - Engenharia de Gestão (OL)"
+    ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "bgColor": "bg-orange-200"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-pink-100"
+      },
+      {
+        "id": 4,
+        "name": "Livre",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "bgColor": "bg-green-500"
+      }
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        7,
+        7,
+        8,
+        8,
+        9,
+        10,
+        15
+      ],
+      "LIVRES_QUARTERS": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "EINF",
@@ -877,6 +1189,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -886,7 +1203,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
@@ -913,6 +1230,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -922,7 +1244,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
@@ -949,6 +1271,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -958,7 +1285,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
@@ -1044,7 +1371,42 @@
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11
+      ],
+      "LIVRES_QUARTERS": [
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11
+      ],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "BM",
@@ -1067,6 +1429,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -1076,7 +1443,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
@@ -1101,6 +1468,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -1110,7 +1482,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }
@@ -1137,6 +1509,11 @@
       },
       {
         "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 2,
         "name": "Optativa",
         "bgColor": "bg-yellow-200"
       },
@@ -1146,7 +1523,7 @@
         "bgColor": "bg-red-200"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Concluída",
         "bgColor": "bg-green-500"
       }

@@ -74,12 +74,11 @@ export default function Enrollment() {
       name === "Concluída"
         ? faMedal
         : name === "Optativa"
-        ? faLock
-        : name === "Livre"
-        ? faUnlock
-        : faCheckCircle;
+          ? faLock
+          : name === "Livre"
+            ? faUnlock
+            : faCheckCircle;
     const color =
-      COURSE_COLORS.find((c) => c.name === name)?.bgColor?.replace("bg-", "text-") ??
       COURSE_COLORS.find((c) => c.name === name)?.bgColor?.replace("bg-", "text-") ??
       "";
     return { icon, color };
@@ -684,7 +683,7 @@ export default function Enrollment() {
                         : completed
                           ? "bg-green-50 border-2 border-green-500"
                           : bg // Cor de fundo do card
-                      }`}
+                        }`}
                       onClick={() =>
                         !isDisciplineUnavailable(discipline) && handleDisciplineClick(discipline)
                       }

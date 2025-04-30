@@ -35,10 +35,20 @@
     "quarter": 1,
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
-      "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LCH - Licenciatura em Ciências Humanas (OL)",
       "LFIL - Licenciatura em Filosofia (OL)"
+    ]
+  },
+  {
+    "id": 2000,
+    "code": "BIS0003-15",
+    "name": "Bases Matemáticas",
+    "credits": 4,
+    "period": "1º quadrimestre",
+    "quarter": 3,
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
     ]
   },
   {
@@ -110,9 +120,19 @@
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-      "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
+    ]
+  },
+  {
+    "id": 9000,
+    "code": "BCN0402-15",
+    "name": "Funções de uma Variável",
+    "credits": 4,
+    "period": "2º quadrimestre",
+    "quarter": 5,
+    "courseCategory": [
+      "BCE - Bacharelado em Ciências Econômicas (OBR)"
     ]
   },
   {
@@ -176,11 +196,21 @@
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
-      "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "LFIS - Licenciatura em Física (OBR)",
       "LM - Licenciatura em Matemática (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
+    ]
+  },
+  {
+    "id": 111111,
+    "code": "BCN0407-15",
+    "name": "Funções de Várias Variáveis",
+    "credits": 4,
+    "period": "3º quadrimestre",
+    "quarter": 6,
+    "courseCategory": [
+      "BCE - Bacharelado em Ciências Econômicas (OBR)"
     ]
   },
   {
@@ -611,7 +641,9 @@
     "credits": 2,
     "period": "12º quadrimestre",
     "quarter": 12,
-    "courseCategory": ["BCC - Bacharelado em Ciências da Computação (OBR)"]
+    "courseCategory": [
+      "BCC - Bacharelado em Ciências da Computação (OBR)"
+    ]
   },
   {
     "id": 47,
@@ -1658,7 +1690,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 137
@@ -1783,6 +1815,17 @@
     "id": 146
   },
   {
+    "code": "BIR0004-15",
+    "name": "Bases Epistemológicas da Ciência Moderna",
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
+    ],
+    "quarter": 4,
+    "period": "",
+    "credits": 3,
+    "id": 1464
+  },
+  {
     "code": "MCZC002-15",
     "name": "Bases Neurais da Motricidade",
     "courseCategory": [
@@ -1825,13 +1868,24 @@
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-      "LCH - Licenciatura em Ciências Humanas (OBR)",
-      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
+      "LCH - Licenciatura em Ciências Humanas (OBR)"
+    
     ],
     "quarter": 2,
     "period": "",
     "credits": 3,
     "id": 150
+  },
+  {
+    "code": "BCL0306-15",
+    "name": "Biodiversidade: Interações entre organismos e ambiente",
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
+    ],
+    "quarter": 3,
+    "period": "",
+    "credits": 3,
+    "id": 15044
   },
   {
     "code": "ESTB019-17",
@@ -2578,6 +2632,17 @@
     "id": 204
   },
   {
+    "code": "BIR0603-15",
+    "name": "Ciência, Tecnologia e Sociedade",
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
+    ],
+    "quarter": 2,
+    "period": "",
+    "credits": 3,
+    "id": 2042
+  },
+  {
     "code": "ESZU022-17",
     "name": "Ciências Atmosféricas",
     "courseCategory": [
@@ -3047,7 +3112,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 241
@@ -3171,7 +3236,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 6,
     "id": 251
@@ -3271,7 +3336,7 @@
       "BCB - Bacharelado em Ciências Biológicas (OL)",
       "LFIS - Licenciatura em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 4,
     "id": 258
@@ -3323,7 +3388,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 14,
     "period": "",
     "credits": 4,
     "id": 262
@@ -3376,7 +3441,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 266
@@ -3825,7 +3890,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 302
@@ -3890,7 +3955,7 @@
       "BRI - Bacharelado em Relações Internacionais (OL)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 307
@@ -3953,7 +4018,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 2,
     "id": 312
@@ -3998,7 +4063,7 @@
       "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 316
@@ -4073,7 +4138,7 @@
       "BRI - Bacharelado em Relações Internacionais (OL)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 322
@@ -4085,7 +4150,7 @@
       "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 323
@@ -4122,7 +4187,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 326
@@ -4851,7 +4916,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "EMAT - Engenharia de Materiais (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 383
@@ -4925,7 +4990,6 @@
       "EIAR - Engenharia de Instrumentação, Automação e Robótica (OBR)",
       "EINF - Engenharia de Informação (OBR)",
       "EMAT - Engenharia de Materiais (OBR)",
-      "BCE - Bacharelado em Ciências Econômicas (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)",
@@ -4937,12 +5001,23 @@
     "id": 389
   },
   {
+    "code": "ESTO013-17",
+    "name": "Engenharia Econômica",
+    "courseCategory": [
+      "BCE - Bacharelado em Ciências Econômicas (OBR)"
+    ],
+    "quarter": 6,
+    "period": "",
+    "credits": 4,
+    "id": 389389389
+  },
+  {
     "code": "ESTG005-17",
     "name": "Engenharia Econômica Aplicada a Sistemas de Gestão",
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 390
@@ -4975,7 +5050,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 393
@@ -5331,7 +5406,7 @@
       "BFIS - Bacharelado em Física (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 2,
     "period": "",
     "credits": 4,
     "id": 421
@@ -5356,7 +5431,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 423
@@ -5443,7 +5518,6 @@
     "name": "Estrutura e Dinâmica Social",
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
-      "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LCH - Licenciatura em Ciências Humanas (OBR)"
     ],
@@ -5451,6 +5525,17 @@
     "period": "",
     "credits": 3,
     "id": 430
+  },
+  {
+    "code": "BIQ0602-15",
+    "name": "Estrutura e Dinâmica Social",
+    "courseCategory": [
+      "BC&H - Bacharelado em Ciências e Humanidades (OBR)"
+    ],
+    "quarter": 1,
+    "period": "",
+    "credits": 3,
+    "id": 4344
   },
   {
     "code": "NHZ2129-18",
@@ -5478,7 +5563,7 @@
       "LCB - Licenciatura em Ciências Biológicas (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 3,
     "id": 432
@@ -5521,7 +5606,7 @@
       "LCH - Licenciatura em Ciências Humanas (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 3,
     "period": "",
     "credits": 3,
     "id": 435
@@ -5597,7 +5682,7 @@
       "LFIS - Licenciatura em Física (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 3,
     "period": "",
     "credits": 4,
     "id": 440
@@ -6503,7 +6588,7 @@
       "LCH - Licenciatura em Ciências Humanas (OL)",
       "LFIL - Licenciatura em Filosofia (OL)"
     ],
-    "quarter": null,
+    "quarter": 2,
     "period": "",
     "credits": 4,
     "id": 507
@@ -6520,7 +6605,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 508
@@ -7135,7 +7220,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 2,
     "id": 556
@@ -7216,7 +7301,7 @@
       "EGES - Engenharia de Gestão (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 563
@@ -7793,7 +7878,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 606
@@ -7957,7 +8042,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 618
@@ -8017,7 +8102,7 @@
       "LH - Licenciatura em História (OBR)",
       "LEC - Licenciatura em Educação do Campo (OBR)"
     ],
-    "quarter": null,
+    "quarter": 1,
     "period": "",
     "credits": 3,
     "id": 622
@@ -8288,7 +8373,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 643
@@ -8437,7 +8522,7 @@
       "LCH - Licenciatura em Ciências Humanas (OBR)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 1,
     "period": "",
     "credits": 4,
     "id": 655
@@ -8590,7 +8675,7 @@
       "LFIL - Licenciatura em Filosofia (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 3,
     "id": 667
@@ -8728,6 +8813,17 @@
     "period": "",
     "credits": 4,
     "id": 677
+  },
+  {
+    "code": "MCTC014-13",
+    "name": "Introdução à Inferência Estatística",
+    "courseCategory": [
+      "BCE - Bacharelado em Ciências Econômicas (OBR)"
+    ],
+    "quarter": 7,
+    "period": "",
+    "credits": 4,
+    "id": 677677677
   },
   {
     "code": "ESZI045-17",
@@ -8972,7 +9068,7 @@
       "LCH - Licenciatura em Ciências Humanas (OL)",
       "LFIL - Licenciatura em Filosofia (OL)"
     ],
-    "quarter": null,
+    "quarter": 2,
     "period": "",
     "credits": 3,
     "id": 697
@@ -9032,7 +9128,7 @@
       "EGES - Engenharia de Gestão (OBR)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 6,
     "id": 702
@@ -9128,7 +9224,7 @@
       "LFIL - Licenciatura em Filosofia (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 1,
     "period": "",
     "credits": 2,
     "id": 709
@@ -9533,7 +9629,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 741
@@ -9546,7 +9642,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 742
@@ -9559,7 +9655,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 743
@@ -9572,7 +9668,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 744
@@ -10365,7 +10461,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 807
@@ -10378,7 +10474,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 808
@@ -10391,7 +10487,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 809
@@ -11251,7 +11347,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 2,
     "id": 879
@@ -11408,7 +11504,7 @@
       "LM - Licenciatura em Matemática (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 2,
     "period": "",
     "credits": 4,
     "id": 891
@@ -11566,7 +11662,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 6,
     "id": 904
@@ -11636,7 +11732,7 @@
       "BQ - Bacharelado em Química (OL)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 6,
     "id": 910
@@ -11648,7 +11744,7 @@
       "EGES - Engenharia de Gestão (OBR)",
       "BCD - Bacharelado em Ciência de Dados (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 911
@@ -12593,7 +12689,7 @@
       "LH - Licenciatura em História (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 3,
     "id": 982
@@ -13461,7 +13557,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 14,
     "period": "",
     "credits": 4,
     "id": 1054
@@ -13487,7 +13583,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 15,
     "period": "",
     "credits": 4,
     "id": 1056
@@ -13726,7 +13822,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 1075
@@ -14287,7 +14383,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 1119
@@ -14325,7 +14421,7 @@
       "BRI - Bacharelado em Relações Internacionais (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 1122
@@ -14911,7 +15007,7 @@
       "EGES - Engenharia de Gestão (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 1170
@@ -14934,7 +15030,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 1172
@@ -15033,7 +15129,7 @@
     "courseCategory": [
       "EGES - Engenharia de Gestão (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 1180
@@ -15113,7 +15209,7 @@
       "EGES - Engenharia de Gestão (OBR)",
       "BQ - Bacharelado em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 1187
@@ -15677,7 +15773,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 1,
     "period": "",
     "credits": 3,
     "id": 1233
@@ -15701,7 +15797,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 1235
@@ -16290,7 +16386,7 @@
       "EAU - Engenharia Ambiental e Urbana (OL)",
       "LCB - Licenciatura em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 3,
     "period": "",
     "credits": 4,
     "id": 1282
@@ -16360,7 +16456,7 @@
     "courseCategory": [
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 1288

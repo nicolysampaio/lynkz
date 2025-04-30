@@ -1,17 +1,19 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, Dispatch, SetStateAction } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import disciplines from "../../../db/disciplines.json";
 import Discipline from "../../types/Discipline";
 
-interface CardDisciplineListProps {
+export interface CardDisciplineListProps {
+  id: string; // Added the missing 'id' property
+  colorClass: string;
   category: "optativa" | "livre";
   programCategories: string[];
   selectedOptativas: Discipline[];
-  setSelectedOptativas: React.Dispatch<React.SetStateAction<Discipline[]>>;
+  setSelectedOptativas: Dispatch<SetStateAction<Discipline[]>>;
   selectedLivres: Discipline[];
-  setSelectedLivres: React.Dispatch<React.SetStateAction<Discipline[]>>;
-
+  setSelectedLivres: Dispatch<SetStateAction<Discipline[]>>;
+  courseColor: { name: string; bgColor: string }[];
 }
 
 export default function CardDisciplineList({
@@ -21,6 +23,7 @@ export default function CardDisciplineList({
   setSelectedLivres,
   selectedOptativas,
   selectedLivres,
+  courseColor,
 }: CardDisciplineListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<Discipline[]>([]);
@@ -47,12 +50,11 @@ export default function CardDisciplineList({
     () =>
       (disciplines as Discipline[]).filter(
         (d) =>
-          // Não é optativa do curso
-          !d.courseCategory?.some((cat) => optativeCategories.includes(cat)) &&
-          // Não é obrigatória do curso
-          !d.courseCategory?.some((cat) => programCategories.includes(cat) && cat.endsWith("(OBR)"))
+          !d.courseCategory?.some((cat) =>
+            programCategories.includes(cat)
+          )
       ),
-    [programCategories, optativeCategories]
+    [programCategories]
   );
 
   useEffect(() => {
@@ -88,14 +90,21 @@ export default function CardDisciplineList({
       setSelectedLivres((prev) => prev.filter((d) => d.id !== id));
   };
 
+  
+  const getColorClass = (type: "Optativa" | "Livre") => {
+    const colorObj = courseColor.find((c) => c.name === type);
+    return colorObj?.bgColor || "";
+  };
+
   const containerClass =
     category === "optativa"
-      ? "bg-yellow-100 text-yellow-800 border-yellow-200"
-      : "bg-red-100 text-red-800 border-red-200";
+      ? `${getColorClass("Optativa")} text-yellow-800 border-yellow-200`
+      : `${getColorClass("Livre")} text-red-800 border-red-200`;
+
   const chipClass =
     category === "optativa"
-      ? "bg-yellow-200 text-yellow-900"
-      : "bg-red-200 text-red-900";
+      ? `${getColorClass("Optativa")} text-yellow-900`
+      : `${getColorClass("Livre")} text-red-900`;
 
   return (
     <div className={`p-4 border rounded-lg relative ${containerClass}`}>
