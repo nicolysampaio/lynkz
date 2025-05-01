@@ -269,12 +269,12 @@ export default function Enrollment() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
-      <main className="flex-1 mx-2 sm:mx-4 md:mx-8 lg:mx-16 py-4 sm:py-8">
+      <main className="flex-1 mx-2 sm:mx-4 md:mx-2 lg:mx-16 py-4 sm:py-8">
         <Button
-                  label="Voltar"
-                  onClick={() => navigate(-1)}
-                  className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
-                />
+          label="Voltar"
+          onClick={() => navigate(-1)}
+          className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
+        />
         <div className="flex flex-col sm:flex-row sm:justify-between mb-4 sm:mb-8 items-center gap-2">
           <div className="flex items-center gap-4">
             <h3 className="text-green-800 font-bold text-xl sm:text-2xl">
@@ -321,7 +321,7 @@ export default function Enrollment() {
         </div>
 
         {/* Filtros e Grade de Horários */}
-        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-1">
           <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-2 sm:p-4">
             <h4 className="mb-6 font-semibold text-lg flex items-center">
               <FontAwesomeIcon icon={faFilter} className="mr-2" />
@@ -478,20 +478,18 @@ export default function Enrollment() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-4 mt-4 w-full">
                 <button
                   onClick={() => setViewMode("list")}
-                  className={`flex items-center justify-center cursor-pointer px-4 py-2 rounded w-full sm:w-auto ${
-                    viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex items-center justify-center cursor-pointer px-2 py-2 rounded w-full sm:w-auto ${viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
-                  <FontAwesomeIcon icon={faList} className="mr-2" />
+                  <FontAwesomeIcon icon={faList} className="sm:mr-2 lx:mr-2" />
                   Lista
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`flex items-center justify-center cursor-pointer px-4 py-2 rounded w-full sm:w-auto ${
-                    viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
-                  }`}
+                  className={`flex items-center justify-center cursor-pointer px-4 py-2 rounded w-full sm:w-auto ${viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
+                    }`}
                 >
-                  <FontAwesomeIcon icon={faTable} className="mr-2" />
+                  <FontAwesomeIcon icon={faTable} className="mx-1" />
                   Grade
                 </button>
               </div>
@@ -532,7 +530,7 @@ export default function Enrollment() {
 
           </section>
           {/* → Schedule (quadro de horários) fica **antes** de Disciplinas Disponíveis */}
-          <section className="md:col-span-2 lg:col-span-3">
+          <section className="md:col-span-3 lg:col-span-3">
 
             {selectedDisciplines.length > 0 && (
               <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
@@ -673,11 +671,10 @@ export default function Enrollment() {
                 Selecione as disciplinas para sua matrícula
               </p>
 
-              <div className={`grid ${
-                viewMode === "grid"
+              <div className={`grid ${viewMode === "grid"
                   ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                   : "grid-cols-1 gap-2"
-              }`}>
+                }`}>
                 {filteredDisciplines.map((discipline) => {
                   // escolhe a courseCategory que pertence ao curso atual
                   const matchCat = discipline.courseCategory.find((c) =>

@@ -21,6 +21,7 @@ const PRIORITY_INGRESS_OBR = [
 
 export default function DisciplineSelection() {
   // Hooks sempre no topo:
+  
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { selectedCourse: Course };
@@ -178,15 +179,19 @@ export default function DisciplineSelection() {
     });
   };
 
+  // State para controlar quais Accordions estão abertos
+  const [openAccordions, setOpenAccordions] = useState<string[]>([]);
+
   // Qualquer redirecionamento antes de usar logicas que dependem de state:
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
 
+  
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
-
       <main className="container mx-auto px-2 sm:px-4 md:px-8 py-4 sm:py-8 flex-1">
         <Button
           label="Voltar"
@@ -216,7 +221,12 @@ export default function DisciplineSelection() {
           </h4>
           <h4 className="mb-1 font-semibold text-lg">
             Obs: Clique para expandir          </h4>
-          <Accordion type="multiple" className="mb-8">
+          <Accordion
+            type="multiple"
+            className="mb-8"
+            value={openAccordions.length > 0 ? openAccordions : undefined}
+            onValueChange={setOpenAccordions}
+          >
             {Object.entries(groupedDisciplines).map(([key, list]) => {
               const quarter = parseInt(key, 10);
               const optativaCount = OPTATIVES_QUARTERS.filter(q => q === quarter).length;
