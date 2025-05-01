@@ -14,11 +14,12 @@ export interface CardDisciplineListProps {
   selectedLivres: Discipline[];
   setSelectedLivres: Dispatch<SetStateAction<Discipline[]>>;
   courseColor: { name: string; bgColor: string }[];
+  toggleDiscipline?: (id: number) => void; 
 }
 
 export default function CardDisciplineList({
   category,
-  programCategories,                // ← destruture aqui
+  programCategories, 
   setSelectedOptativas,
   setSelectedLivres,
   selectedOptativas,

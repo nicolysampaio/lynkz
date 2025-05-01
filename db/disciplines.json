@@ -2674,7 +2674,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OBR)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 3,
     "id": 207
@@ -4554,7 +4554,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 5,
     "id": 353
@@ -4678,7 +4678,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 3,
     "id": 363
@@ -5348,7 +5348,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 6,
     "id": 417
@@ -5508,7 +5508,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 6,
     "id": 429
@@ -6546,7 +6546,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 504
@@ -6877,7 +6877,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 2,
     "id": 529
@@ -6894,7 +6894,7 @@
       "EMAT - Engenharia de Materiais (OBR)",
       "EENE - Engenharia de Energia (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 530
@@ -9472,7 +9472,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 729
@@ -10013,7 +10013,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 771
@@ -10219,7 +10219,7 @@
       "LQ - Licenciatura em Química (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 788
@@ -12987,7 +12987,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 1005
@@ -13920,7 +13920,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 6,
     "id": 1082
@@ -13935,7 +13935,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 6,
     "id": 1083
@@ -13960,7 +13960,7 @@
       "LQ - Licenciatura em Química (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 8,
     "id": 1085
@@ -13975,7 +13975,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 8,
     "id": 1086
@@ -14003,7 +14003,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 8,
     "id": 1088
@@ -14078,7 +14078,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 1094
@@ -15439,7 +15439,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 5,
     "id": 1205
@@ -16349,7 +16349,7 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
       "BFIS - Bacharelado em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 1279
@@ -16845,7 +16845,7 @@
       "BQ - Bacharelado em Química (OBR)",
       "LQ - Licenciatura em Química (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 2,
     "id": 1322
