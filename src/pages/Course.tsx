@@ -53,7 +53,7 @@ function Course() {
                           className="w-4"
                         />
                         <label className="flex-1">
-                          <div className="flex flex-row justify-between">
+                         <div className="flex flex-row justify-between">
                             <p className="font-semibold">{course.name}</p>
                             <p className="text-gray-400">({course.campus.join(", ")})</p>
                           </div>
