@@ -962,7 +962,7 @@
       "São Bernardo do Campo"
     ],
     "type": "Engenharias",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "EBIO - Engenharia Biomédica (OBR)",
@@ -1010,7 +1010,7 @@
         14
       ],
       "LIVRES_QUARTERS": [
-        3,
+        4,
         5,
         6,
         7,

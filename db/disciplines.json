@@ -1183,7 +1183,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 96
@@ -2075,7 +2075,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 163
@@ -2086,7 +2086,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 164
@@ -2153,7 +2153,7 @@
       "BQ - Bacharelado em Química (OL)",
       "BCB - Bacharelado em Ciências Biológicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 169
@@ -5283,7 +5283,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 13,
     "period": "",
     "credits": 4,
     "id": 412
@@ -6759,7 +6759,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "LFIS - Licenciatura em Física (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 519
@@ -6770,7 +6770,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 2,
     "id": 520
@@ -6781,7 +6781,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 521
@@ -6792,7 +6792,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 522
@@ -6916,7 +6916,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 2,
     "id": 532
@@ -8264,7 +8264,7 @@
       "EBIO - Engenharia Biomédica (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 2,
     "id": 635
@@ -8343,7 +8343,7 @@
     "courseCategory": [
       "EBIO - Engenharia Biomédica (OBR)"
     ],
-    "quarter": null,
+    "quarter": 12,
     "period": "",
     "credits": 4,
     "id": 641
