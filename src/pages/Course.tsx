@@ -31,19 +31,18 @@ function Course() {
       <main className="container flex flex-col flex-1 mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-xs w-full border border-gray-200 p-4">
           <h4 className="mb-4 font-semibold text-lg">Selecione o seu curso</h4>
-          <div className="grid grid-cols-2 gap-2 mb-8">
+          <div className="mb-4 grid grid-cols-2 gap-2 mb-8">
             {["Bacharelados", "Engenharias", "Licenciaturas", "Interdisciplinares"].map((courseType) => (
               <div key={courseType}>
                 <h5 className="font-semibold text-xl">{courseType}</h5>
-                <div className="grid text-sm gap-2">
+                <div className="p-4 grid text-sm gap-2">
                   {courses
-                    .filter((course) => course.type === courseType)
+                    .filter((course) => course.type === courseType && course.disabled == false)
                     .map((course) => (
                       <span
                         key={course.id}
                         onClick={() => toggleCourse(course)}
-                        className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2 ${
-                          course.disabled ? "opacity-25 cursor-not-allowed" : "cursor-pointer"
+                        className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2
                         }`}
                       >
                         <input
