@@ -28,7 +28,7 @@ function Button({ label, className = "", route, icon = fa.faRightToBracket, onCl
       onClick={handleClick}
       {...props}
     >
-      <FontAwesomeIcon icon={icon} style={{ color:g"#ffffff" }} />
+      <FontAwesomeIcon icon={icon} style={{ color: "#ffffff" }} />
       {label}
     </button>
   );
