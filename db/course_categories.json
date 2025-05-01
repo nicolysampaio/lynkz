@@ -164,7 +164,7 @@
         "id": 3,
         "name": "Optativa",
         "bgColor": "bg-pink-100"
-      },  
+      },
       {
         "id": 4,
         "name": "Livre",
@@ -824,27 +824,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-orange-300"
+        "bgColor": "bg-orange-300",
+        "textColor": "text-orange-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-cyan-100"
+        "bgColor": "bg-cyan-100",
+        "textColor": "text-cyan-800"
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 3,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-cyan-600"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {

@@ -5,7 +5,8 @@ export interface Course {
   type: string;
   disabled: boolean;
   courseCategory: string[];
-  course_color?: { id: number; name: string; bgColor: string }[];
+  course_color?: { id: number; name: string; bgColor: string; textColor: string }[];
+  quarter?: number,
   quarter_categories?: {
     OPTATIVES_QUARTERS: number[];
     LIVRES_QUARTERS: number[];

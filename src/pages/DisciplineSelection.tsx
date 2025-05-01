@@ -10,7 +10,7 @@ import CardHumanidade from "../components/Subjects/CardHumanidade";
 import CardDisciplineList from "../components/Subjects/CardDisciplineList";
 import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
 import Course from "./Course";
-
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../components/ui/accordion";
 
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
@@ -85,14 +85,19 @@ export default function DisciplineSelection() {
    * Retorna a classe de cor do card a partir da classificação
    * encontrada em course_color do courseData.
    */
-  const getCardColor = (
+  function getCardColors(
     d: Discipline,
     quarter: number,
     selected: boolean
-  ): string =>
-    COURSE_COLORS.find(
+  ) {
+    const colorObj = COURSE_COLORS.find(
       (c) => c.name === getClassificationName(d, quarter, selected)
-    )?.bgColor ?? "";
+    );
+    return {
+      bgColor: colorObj?.bgColor ?? "",
+      textColor: colorObj?.textColor ?? "text-gray-400",
+    };
+  }
 
   const toggleDisciplineSelection = (id: number) =>
     setDisciplinesSelected((prev) => {
@@ -182,108 +187,111 @@ export default function DisciplineSelection() {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
 
-      <main className="container mx-auto p-8 flex-1">
-      <Button
+      <main className="container mx-auto px-2 sm:px-4 md:px-8 py-4 sm:py-8 flex-1">
+        <Button
           label="Voltar"
           onClick={() => navigate(-1)}
           className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
         />
-         <Button
-              label="Confirmar seleção"
-              onClick={() => {
-                console.log("Botão 'Confirmar seleção' clicado");
-                handleConfirmSelection();
-              }}
-              className={`bg-green-800 text-white text-sm ${
-                disciplinesSelected.size === 0 &&
-                Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
-                selectedOptativas.length === 0 &&
-                selectedLivres.length === 0
-                  ? "opacity-25 cursor-not-allowed"
-                  : ""
-              }`}
-            />
-         <div className="flex justify-center">
-           
-          </div>
+        <Button
+          label="Confirmar seleção"
+          onClick={() => {
+            console.log("Botão 'Confirmar seleção' clicado");
+            handleConfirmSelection();
+          }}
+          className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
+              Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+              selectedOptativas.length === 0 &&
+              selectedLivres.length === 0
+              ? "opacity-25 cursor-not-allowed"
+              : ""
+            }`}
+        />
+        <div className="flex justify-center">
+
+        </div>
         <div className="bg-white rounded-xl shadow-xs border border-gray-200 p-4">
           <h4 className="mb-4 font-semibold text-lg">
             Selecione as disciplinas que você já cursou
           </h4>
-
-          <div className="grid grid-cols-1 gap-8 mb-8">
+          <h4 className="mb-1 font-semibold text-lg">
+            Obs: Clique para expandir          </h4>
+          <Accordion type="multiple" className="mb-8">
             {Object.entries(groupedDisciplines).map(([key, list]) => {
               const quarter = parseInt(key, 10);
-
-              // Conta quantas vezes o quarter aparece nas listas
               const optativaCount = OPTATIVES_QUARTERS.filter(q => q === quarter).length;
               const livreCount = LIVRES_QUARTERS.filter(q => q === quarter).length;
 
               return (
-                <div key={key}>
-                  <h3 className="text-lg font-semibold mb-4">
-                    {quarter}º Quadrimestre
-                  </h3>
-                  <div className="grid grid-cols-4 gap-4">
-                    {isHumanitiesQuarter(quarter) && (
-                      <CardHumanidade
-                        quarter={quarter}
-                        courses={HUMANITIES_COURSES}
-                        selected={humanitiesSelected[quarter] ?? null}
-                        open={openHumanitiesDropdown[quarter] ?? false}
-                        toggleDropdown={() => toggleDropdown(quarter)}
-                        handleSelect={(id) => handleHumanitiesSelection(quarter, id)}
-                        allSelected={humanitiesSelected}
-                      />
-                    )}
-                    {list.map((d) => (
-                      <CardDiscipline
-                        key={d.id}
-                        id={d.id}
-                        discipline={d.name}
-                        credits={d.credits}
-                        selected={disciplinesSelected.has(d.id)}
-                        colorClass={getCardColor(d, quarter, disciplinesSelected.has(d.id))}
-                        toggleDiscipline={toggleDisciplineSelection}
-                      />
-                    ))}
+                <AccordionItem value={key} key={key}>
+                  <AccordionTrigger>
+                    <span className="text-lg font-semibold">{quarter}º Quadrimestre</span>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                      {isHumanitiesQuarter(quarter) && (
+                        <CardHumanidade
+                          quarter={quarter}
+                          courses={HUMANITIES_COURSES}
+                          selected={humanitiesSelected[quarter] ?? null}
+                          open={openHumanitiesDropdown[quarter] ?? false}
+                          toggleDropdown={() => toggleDropdown(quarter)}
+                          handleSelect={(id) => handleHumanitiesSelection(quarter, id)}
+                          allSelected={humanitiesSelected}
+                        />
+                      )}
+                      {list.map((d) => {
+                        const { bgColor, textColor } = getCardColors(d, quarter, disciplinesSelected.has(d.id));
+                        return (
+                          <CardDiscipline
+                            key={d.id}
+                            id={d.id}
+                            discipline={d.name}
+                            credits={d.credits}
+                            selected={disciplinesSelected.has(d.id)}
+                            colorClass={bgColor}
+                            textColor={textColor}
+                            toggleDiscipline={toggleDisciplineSelection}
+                            courseColor={courseData.course_color ?? []}
 
-                    {/* Renderiza CardDisciplineList para optativas conforme a contagem */}
-                    {Array.from({ length: optativaCount }).map((_, idx) => (
-                      <CardDisciplineList
-                        key={`optativa-${quarter}-${idx}`}
-                        id={`${quarter}-optativa-${idx}`}
-                        colorClass={getCardColor({} as Discipline, quarter, false)}
-                        category="optativa"
-                        programCategories={COURSE_CATEGORIES}
-                        selectedOptativas={selectedOptativas}
-                        courseColor={courseData.course_color ?? []}
-                        toggleDiscipline={toggleDisciplineSelection}
-                        setSelectedOptativas={setSelectedOptativas}
-                        selectedLivres={selectedLivres}
-                        setSelectedLivres={setSelectedLivres}
-                      />
-                    ))}
-
-                    {Array.from({ length: livreCount }).map((_, idx) => (
-                      <CardDisciplineList
-                        key={`livre-${quarter}-${idx}`}
-                        id={`${quarter}-livre-${idx}`}
-                        colorClass={getCardColor({} as Discipline, quarter, false)}
-                        category="livre"
-                        programCategories={COURSE_CATEGORIES}
-                        selectedOptativas={selectedOptativas}
-                        setSelectedOptativas={setSelectedOptativas}
-                        selectedLivres={selectedLivres}
-                        setSelectedLivres={setSelectedLivres}
-                        courseColor={courseData.course_color ?? []}
-                      />
-                    ))}
-                  </div>
-                </div>
+                          />
+                        );
+                      })}
+                      {Array.from({ length: optativaCount }).map((_, idx) => (
+                        <CardDisciplineList
+                          key={`optativa-${quarter}-${idx}`}
+                          id={`${quarter}-optativa-${idx}`}
+                          colorClass={getCardColors({} as Discipline, quarter, false).bgColor}
+                          category="optativa"
+                          programCategories={COURSE_CATEGORIES}
+                          selectedOptativas={selectedOptativas}
+                          courseColor={courseData.course_color ?? []}
+                          toggleDiscipline={toggleDisciplineSelection}
+                          setSelectedOptativas={setSelectedOptativas}
+                          selectedLivres={selectedLivres}
+                          setSelectedLivres={setSelectedLivres}
+                        />
+                      ))}
+                      {Array.from({ length: livreCount }).map((_, idx) => (
+                        <CardDisciplineList
+                          key={`livre-${quarter}-${idx}`}
+                          id={`${quarter}-livre-${idx}`}
+                          colorClass={getCardColors({} as Discipline, quarter, false).bgColor}
+                          category="livre"
+                          programCategories={COURSE_CATEGORIES}
+                          selectedOptativas={selectedOptativas}
+                          setSelectedOptativas={setSelectedOptativas}
+                          selectedLivres={selectedLivres}
+                          setSelectedLivres={setSelectedLivres}
+                          courseColor={courseData.course_color ?? []}
+                        />
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               );
             })}
-          </div>
+          </Accordion>
 
           <div className="flex justify-center">
             <Button
@@ -292,14 +300,13 @@ export default function DisciplineSelection() {
                 console.log("Botão 'Confirmar seleção' clicado");
                 handleConfirmSelection();
               }}
-              className={`bg-green-800 text-white text-sm ${
-                disciplinesSelected.size === 0 &&
-                Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
-                selectedOptativas.length === 0 &&
-                selectedLivres.length === 0
+              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
+                  Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+                  selectedOptativas.length === 0 &&
+                  selectedLivres.length === 0
                   ? "opacity-25 cursor-not-allowed"
                   : ""
-              }`}
+                }`}
             />
           </div>
         </div>

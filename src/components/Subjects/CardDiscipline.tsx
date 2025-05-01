@@ -1,10 +1,13 @@
-interface CardDisciplineProps {
+
+export interface CardDisciplineProps {
     id: number;
     discipline: string;
     credits: number;
-    selected?: boolean;
-    colorClass?: string;           // só isso
+    selected: boolean;
+    colorClass: string;
     toggleDiscipline: (id: number) => void;
+    courseColor: { id: number; name: string; bgColor: string; textColor: string }[];
+    textColor?: string;
 }
 
 export default function CardDiscipline({
@@ -13,6 +16,7 @@ export default function CardDiscipline({
     credits,
     selected = false,
     colorClass,
+    textColor,
     toggleDiscipline,
 }: CardDisciplineProps) {
     const bgClass = selected
@@ -26,8 +30,10 @@ export default function CardDiscipline({
             role="button"
             aria-pressed={selected}
         >
-            <h4 className="font-bold">{discipline}</h4>
-            <p className="text-xs text-gray-400">
+            <h4 className={`font-bold break-words max-w-[20ch] ${textColor ?? "text-gray-400"}`}>
+                {discipline}
+            </h4>
+            <p className={`text-xs ${textColor ?? "text-black-400"}`}>
                 {credits !== null ? `${credits} créditos` : "Sem créditos"}
             </p>
         </div>

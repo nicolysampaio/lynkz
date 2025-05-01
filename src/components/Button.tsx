@@ -12,6 +12,7 @@ interface ButtonProps {
 
 function Button({ label, className = "", route, icon = fa.faRightToBracket, onClick, ...props }: ButtonProps) {
   const navigate = useNavigate();
+  
 
   const handleClick = () => {
     if (route) {
@@ -27,10 +28,11 @@ function Button({ label, className = "", route, icon = fa.faRightToBracket, onCl
       onClick={handleClick}
       {...props}
     >
-      <FontAwesomeIcon icon={icon} style={{ color: "#ffffff" }} />
+      <FontAwesomeIcon icon={icon} style={{ color:g"#ffffff" }} />
       {label}
     </button>
   );
 }
+
 
 export default Button;
