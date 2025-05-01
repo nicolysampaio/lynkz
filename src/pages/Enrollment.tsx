@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
-import { useLocation, Navigate } from "react-router-dom";
+import { useLocation, Navigate, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
@@ -23,6 +23,7 @@ import courseCategoriesData from "../../db/course_categories.json";
 import DisciplineEnrollment from "../types/DisciplineEnrollment";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Button from "../components/Button";
 import { Course } from "../types/Course";
 
 type LocationState = {
@@ -45,7 +46,9 @@ const PRIORITY_INGRESS_OBR = [
 ]; // Extremamente hardcoded, vai ser mudado.
 
 export default function Enrollment() {
+  const navigate = useNavigate();
   const location = useLocation();
+
   const { selectedCourse } = location.state as { selectedCourse: Course };
 
   const COURSE_COLORS = selectedCourse.course_color ?? [];
@@ -266,10 +269,15 @@ export default function Enrollment() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
-      <main className="flex-1 mx-16 py-8">
-        <div className="flex justify-between mb-8 items-center">
+      <main className="flex-1 mx-2 sm:mx-4 md:mx-8 lg:mx-16 py-4 sm:py-8">
+        <Button
+                  label="Voltar"
+                  onClick={() => navigate(-1)}
+                  className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
+                />
+        <div className="flex flex-col sm:flex-row sm:justify-between mb-4 sm:mb-8 items-center gap-2">
           <div className="flex items-center gap-4">
-            <h3 className="text-green-800 font-bold text-2xl">
+            <h3 className="text-green-800 font-bold text-xl sm:text-2xl">
               <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />
               Matrícula em Disciplinas
             </h3>
@@ -280,7 +288,7 @@ export default function Enrollment() {
         </div>
 
         {/* Card de Confirmar disciplinas */}
-        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="mt-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {selectedDisciplines.length > 0 && (
             <div
               className={`mt-4 border rounded-lg p-4  ${selectedDisciplines.some((d) =>
@@ -311,9 +319,10 @@ export default function Enrollment() {
             </div>
           )}
         </div>
+
         {/* Filtros e Grade de Horários */}
-        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-6">
-          <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-4">
+        <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+          <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-2 sm:p-4">
             <h4 className="mb-6 font-semibold text-lg flex items-center">
               <FontAwesomeIcon icon={faFilter} className="mr-2" />
               Filtros
@@ -466,19 +475,21 @@ export default function Enrollment() {
                 Limpar Filtros
               </button>
 
-              <div className="flex items-center justify-center gap-2 pt-4 mt-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-4 mt-4 w-full">
                 <button
                   onClick={() => setViewMode("list")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
-                    }`}
+                  className={`flex items-center justify-center cursor-pointer px-4 py-2 rounded w-full sm:w-auto ${
+                    viewMode === "list" ? "bg-gray-100" : "hover:bg-gray-50"
+                  }`}
                 >
                   <FontAwesomeIcon icon={faList} className="mr-2" />
                   Lista
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`flex w-full items-center justify-center cursor-pointer px-4 py-2 rounded ${viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
-                    }`}
+                  className={`flex items-center justify-center cursor-pointer px-4 py-2 rounded w-full sm:w-auto ${
+                    viewMode === "grid" ? "bg-gray-100" : "hover:bg-gray-50"
+                  }`}
                 >
                   <FontAwesomeIcon icon={faTable} className="mr-2" />
                   Grade
@@ -521,7 +532,7 @@ export default function Enrollment() {
 
           </section>
           {/* → Schedule (quadro de horários) fica **antes** de Disciplinas Disponíveis */}
-          <section className="md:col-span-3">
+          <section className="md:col-span-2 lg:col-span-3">
 
             {selectedDisciplines.length > 0 && (
               <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
@@ -577,7 +588,7 @@ export default function Enrollment() {
                                   .map((s) => ({ disc, week: s.week, start: s.time }))
                               );
                               if (slots.length === 0) {
-                                return <td key={day.id} className="p-0 border grey align-top" />;
+                                return <td key={day.id} className="p-1 border border-gray-200 align-top" />;
                               }
                               // calcula span para cada bloco
                               const spans = slots.map(({ disc, week, start }) => {
@@ -600,7 +611,7 @@ export default function Enrollment() {
                                 <td
                                   key={day.id}
                                   rowSpan={maxSpan}
-                                  className="p-1 border align-top whitespace-normal"
+                                  className="p-1 border border-gray-200 align-top whitespace-normal"
                                 >
                                   <div className="flex flex-col items-start justify-start gap-px">
                                     {slots.map(({ disc, week, start }, i) => {
@@ -654,18 +665,19 @@ export default function Enrollment() {
             )}
 
             {/* Disciplinas Disponíveis */}
-            <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-              <h2 className="text-2xl font-bold mb-2">
+            <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-2 sm:p-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-2">
                 Disciplinas Disponíveis
               </h2>
-              <p className="text-gray-500 mb-6">
+              <p className="text-gray-500 mb-4 sm:mb-6">
                 Selecione as disciplinas para sua matrícula
               </p>
 
-              <div className={`grid ${viewMode === "grid"
-                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-                : "grid-cols-1 gap-2"
-                }`}>
+              <div className={`grid ${
+                viewMode === "grid"
+                  ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+                  : "grid-cols-1 gap-2"
+              }`}>
                 {filteredDisciplines.map((discipline) => {
                   // escolhe a courseCategory que pertence ao curso atual
                   const matchCat = discipline.courseCategory.find((c) =>
