@@ -9,10 +9,9 @@ import CardDiscipline from "../components/Subjects/CardDiscipline";
 import CardHumanidade from "../components/Subjects/CardHumanidade";
 import CardDisciplineList from "../components/Subjects/CardDisciplineList";
 import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
-import Course from "./Course";// ou, se for exportação default:
-// import type Course from "../types/Course";
+import Course from "./Course";
 
-// categorias OBR que devem usar “Obrigatórias Ingresso”
+
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
@@ -184,6 +183,29 @@ export default function DisciplineSelection() {
       <Header />
 
       <main className="container mx-auto p-8 flex-1">
+      <Button
+          label="Voltar"
+          onClick={() => navigate(-1)}
+          className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
+        />
+         <Button
+              label="Confirmar seleção"
+              onClick={() => {
+                console.log("Botão 'Confirmar seleção' clicado");
+                handleConfirmSelection();
+              }}
+              className={`bg-green-800 text-white text-sm ${
+                disciplinesSelected.size === 0 &&
+                Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+                selectedOptativas.length === 0 &&
+                selectedLivres.length === 0
+                  ? "opacity-25 cursor-not-allowed"
+                  : ""
+              }`}
+            />
+         <div className="flex justify-center">
+           
+          </div>
         <div className="bg-white rounded-xl shadow-xs border border-gray-200 p-4">
           <h4 className="mb-4 font-semibold text-lg">
             Selecione as disciplinas que você já cursou
@@ -235,10 +257,11 @@ export default function DisciplineSelection() {
                         category="optativa"
                         programCategories={COURSE_CATEGORIES}
                         selectedOptativas={selectedOptativas}
+                        courseColor={courseData.course_color ?? []}
+                        toggleDiscipline={toggleDisciplineSelection}
                         setSelectedOptativas={setSelectedOptativas}
                         selectedLivres={selectedLivres}
                         setSelectedLivres={setSelectedLivres}
-                        courseColor={courseData.course_color ?? []}
                       />
                     ))}
 
@@ -269,10 +292,14 @@ export default function DisciplineSelection() {
                 console.log("Botão 'Confirmar seleção' clicado");
                 handleConfirmSelection();
               }}
-              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0
-                ? "opacity-25 cursor-not-allowed"
-                : ""
-                }`}
+              className={`bg-green-800 text-white text-sm ${
+                disciplinesSelected.size === 0 &&
+                Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+                selectedOptativas.length === 0 &&
+                selectedLivres.length === 0
+                  ? "opacity-25 cursor-not-allowed"
+                  : ""
+              }`}
             />
           </div>
         </div>
