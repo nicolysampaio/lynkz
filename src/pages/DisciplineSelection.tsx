@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate, Navigate } from "react-router-dom";
 import disciplines from "../../db/disciplines.json";
 import Discipline from "../types/Discipline";
@@ -21,7 +21,7 @@ const PRIORITY_INGRESS_OBR = [
 
 export default function DisciplineSelection() {
   // Hooks sempre no topo:
-  
+
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { selectedCourse: Course };
@@ -178,7 +178,20 @@ export default function DisciplineSelection() {
       },
     });
   };
-
+  // Pega todas as chaves dos quadrimestres
+  const allQuarters = Object.keys(groupedDisciplines);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1024) {
+        setOpenAccordions(allQuarters);
+      } else {
+        setOpenAccordions([]);
+      }
+    }
+    handleResize(); // Executa ao montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [allQuarters]);
   // State para controlar quais Accordions estão abertos
   const [openAccordions, setOpenAccordions] = useState<string[]>([]);
 
@@ -187,7 +200,7 @@ export default function DisciplineSelection() {
     return <Navigate to="/pageCourse" replace />;
   }
 
-  
+
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -205,11 +218,11 @@ export default function DisciplineSelection() {
             handleConfirmSelection();
           }}
           className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
-              Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
-              selectedOptativas.length === 0 &&
-              selectedLivres.length === 0
-              ? "opacity-25 cursor-not-allowed"
-              : ""
+            Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+            selectedOptativas.length === 0 &&
+            selectedLivres.length === 0
+            ? "opacity-25 cursor-not-allowed"
+            : ""
             }`}
         />
         <div className="flex justify-center">
@@ -224,7 +237,7 @@ export default function DisciplineSelection() {
           <Accordion
             type="multiple"
             className="mb-8"
-            value={openAccordions.length > 0 ? openAccordions : undefined}
+            value={openAccordions}
             onValueChange={setOpenAccordions}
           >
             {Object.entries(groupedDisciplines).map(([key, list]) => {
@@ -311,11 +324,11 @@ export default function DisciplineSelection() {
                 handleConfirmSelection();
               }}
               className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
-                  Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
-                  selectedOptativas.length === 0 &&
-                  selectedLivres.length === 0
-                  ? "opacity-25 cursor-not-allowed"
-                  : ""
+                Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
+                selectedOptativas.length === 0 &&
+                selectedLivres.length === 0
+                ? "opacity-25 cursor-not-allowed"
+                : ""
                 }`}
             />
           </div>
