@@ -5,10 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
   faGraduationCap,
-  faCheckCircle,
-  faLock,
-  faUnlock,
-  faMedal,
+ 
   faUser,
   faLocationDot,
   faClock,
@@ -71,22 +68,7 @@ export default function Enrollment() {
       ?.bgColor ?? "";
 
   // 4) retorna ícone + text‐class
-  const getCategoryIcon = (cat: string, completed: boolean) => {
-    const name = classifyCategoryName(cat, completed);
-    const icon =
-      name === "Concluída"
-        ? faMedal
-        : name === "Optativa"
-          ? faLock
-          : name === "Livre"
-            ? faUnlock
-            : faCheckCircle;
-    const color =
-      COURSE_COLORS.find((c) => c.name === name)?.bgColor?.replace("bg-", "text-") ??
-      "";
-    return { icon, color };
-  };
-
+ 
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
@@ -509,20 +491,7 @@ export default function Enrollment() {
                         ))}
                       </div>
                     </div>
-                    <div>
-                      <h5 className="text-xs font-medium mb-2">Ícones:</h5>
-                      <div className="grid grid-cols-1 gap-2.5 text-xs">
-                        {COURSE_COLORS.map((cat) => {
-                          const { icon, color } = getCategoryIcon(cat.name, false);
-                          return (
-                            <div key={cat.id} className="flex items-center gap-2">
-                              <FontAwesomeIcon icon={icon} className={`${color} w-4 h-4`} />
-                              <span>{cat.name}</span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
+               
                   </div>
                 </div>
               )}
@@ -676,23 +645,29 @@ export default function Enrollment() {
                   : "grid-cols-1 gap-2"
                 }`}>
                 {filteredDisciplines.map((discipline) => {
-                  // escolhe a courseCategory que pertence ao curso atual
+                  // Encontra a categoria do curso que pertence ao curso atual
                   const matchCat = discipline.courseCategory.find((c) =>
                     COURSE_CATEGORIES.includes(c)
                   )!;
                   const completed = selectedDisciplines.some((s) => s.section === discipline.section);
-                  const bg = getCategoryColor(matchCat, completed);
-                  const { icon, color } = getCategoryIcon(matchCat, completed);
+
+                  // Aqui você garante que "(OBR)" vira "Obrigatória"
+                  const categoria = classifyCategoryName(matchCat, completed);
+
+                  // Usa a categoria para buscar cor, ícone, etc.
+                  const bg = COURSE_COLORS.find((c) => c.name === categoria)?.bgColor ?? "";
+                 
 
                   return (
                     <div
                       key={discipline.section}
-                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isDisciplineUnavailable(discipline)
-                        ? "bg-gray-100 opacity-50 cursor-not-allowed"
-                        : completed
-                          ? "bg-green-50 border-2 border-green-500"
-                          : bg // Cor de fundo do card
-                        }`}
+                      className={`p-4 rounded-lg cursor-pointer transition-colors ${
+                        isDisciplineUnavailable(discipline)
+                          ? "bg-gray-100 opacity-50 cursor-not-allowed"
+                          : completed
+                            ? "bg-green-50 border-2 border-green-500"
+                            : bg
+                      }`}
                       onClick={() =>
                         !isDisciplineUnavailable(discipline) && handleDisciplineClick(discipline)
                       }
@@ -701,7 +676,7 @@ export default function Enrollment() {
                         <div>
                           <div className="flex items-center justify-between">
                             <h5 className="text-xs">{discipline.section}</h5>
-                            <FontAwesomeIcon icon={icon} className={`${color} w-4 h-4`} />
+                          
                           </div>
                           <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
                             {discipline.name}

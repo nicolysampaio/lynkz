@@ -12,6 +12,7 @@ import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
 import Course from "./Course";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../components/ui/accordion";
 
+
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
@@ -22,7 +23,7 @@ const PRIORITY_INGRESS_OBR = [
 export default function DisciplineSelection() {
   // Hooks sempre no topo:
 
-  
+
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { selectedCourse: Course };
@@ -44,6 +45,7 @@ export default function DisciplineSelection() {
   const [openHumanitiesDropdown, setOpenHumanitiesDropdown] = useState<Record<number, boolean>>({});
   const [selectedOptativas, setSelectedOptativas] = useState<Discipline[]>([]);
   const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
+  const [openAccordions, setOpenAccordions] = useState<string[]>([]);
 
   const toggleDropdown = (quarter: number) => {
     setOpenHumanitiesDropdown((prev) => ({
@@ -185,11 +187,13 @@ export default function DisciplineSelection() {
     return <Navigate to="/pageCourse" replace />;
   }
 
+  const allKeys = Object.keys(groupedDisciplines); // ou os valores dos AccordionItem
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
 
-      <main className="container mx-auto px-2 sm:px-4 md:px-8 py-4 sm:py-8 flex-1">
+      <main className="container mx-auto px-2 sm:px-2 md:px-4 py-4 sm:py-8 flex-1">
         <Button
           label="Voltar"
           onClick={() => navigate(-1)}
@@ -218,10 +222,25 @@ export default function DisciplineSelection() {
           </h4>
           <h4 className="mb-1 font-semibold text-lg">
             Obs: Clique para recolher          </h4>
+          <div className="flex gap-2 mb-2">
+            <button
+              className="px-2 py-1 bg-green-700 text-white rounded"
+              onClick={() => setOpenAccordions(allKeys)}
+            >
+              Expandir tudo
+            </button>
+            <button
+              className="px-2 py-1 bg-gray-400 text-white rounded"
+              onClick={() => setOpenAccordions([])}
+            >
+              Recolher tudo
+            </button>
+          </div>
           <Accordion
             type="multiple"
+            value={openAccordions}
+            onValueChange={setOpenAccordions}
             className="mb-8"
-            defaultValue={Object.keys(groupedDisciplines)}
           >
             {Object.entries(groupedDisciplines).map(([key, list]) => {
               const quarter = parseInt(key, 10);

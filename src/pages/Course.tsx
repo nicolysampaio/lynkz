@@ -8,7 +8,6 @@ import courseCategories from "../../db/course_categories.json";
 
 import type { Course } from "../types/Course.tsx";
 
-
 // usa JSON como fonte
 const courses: Course[] = courseCategories.map((course) => ({
   ...course,
@@ -48,7 +47,6 @@ function Course() {
                     .map((course) => (
                       <span
                         key={course.id}
-                        onClick={() => toggleCourse(course)}
                         className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2 ${
                           course.disabled ? "opacity-25 cursor-not-allowed" : "cursor-pointer"
                         }`}
@@ -59,8 +57,12 @@ function Course() {
                           checked={selectedCourse?.id === course.id}
                           disabled={course.disabled}
                           className="w-4"
+                          onChange={() => toggleCourse(course)}
                         />
-                        <label className="flex-1">
+                        <label
+                          htmlFor={`course-${course.id}`}
+                          className="flex-1 cursor-pointer"
+                        >
                           <div className="flex flex-row justify-between">
                             <p className="font-semibold">{course.name}</p>
                             <p className="text-gray-400">({course.campus.join(", ")})</p>
