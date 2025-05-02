@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocation, useNavigate, Navigate } from "react-router-dom";
 import disciplines from "../../db/disciplines.json";
 import Discipline from "../types/Discipline";
@@ -22,6 +22,7 @@ const PRIORITY_INGRESS_OBR = [
 export default function DisciplineSelection() {
   // Hooks sempre no topo:
 
+  
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { selectedCourse: Course };
@@ -178,33 +179,16 @@ export default function DisciplineSelection() {
       },
     });
   };
-  // Pega todas as chaves dos quadrimestres
-  const allQuarters = Object.keys(groupedDisciplines);
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1024) {
-        setOpenAccordions(allQuarters);
-      } else {
-        setOpenAccordions([]);
-      }
-    }
-    handleResize(); // Executa ao montar
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [allQuarters]);
-  // State para controlar quais Accordions estão abertos
-  const [openAccordions, setOpenAccordions] = useState<string[]>([]);
 
   // Qualquer redirecionamento antes de usar logicas que dependem de state:
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
 
-
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
+
       <main className="container mx-auto px-2 sm:px-4 md:px-8 py-4 sm:py-8 flex-1">
         <Button
           label="Voltar"
@@ -233,12 +217,11 @@ export default function DisciplineSelection() {
             Selecione as disciplinas que você já cursou
           </h4>
           <h4 className="mb-1 font-semibold text-lg">
-            Obs: Clique para expandir          </h4>
+            Obs: Clique para recolher          </h4>
           <Accordion
             type="multiple"
             className="mb-8"
-            value={openAccordions}
-            onValueChange={setOpenAccordions}
+            defaultValue={Object.keys(groupedDisciplines)}
           >
             {Object.entries(groupedDisciplines).map(([key, list]) => {
               const quarter = parseInt(key, 10);
