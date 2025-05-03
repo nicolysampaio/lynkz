@@ -10,10 +10,10 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerClose,
-} from "../ui/drawer"; // ajuste o caminho conforme seu projeto
+} from "../ui/drawer";
 
 export interface CardDisciplineListProps {
-  id: string; // Added the missing 'id' property
+  id: string;
   colorClass: string;
   category: "optativa" | "livre";
   programCategories: string[];
@@ -35,15 +35,17 @@ export default function CardDisciplineList({
   courseColor,
 }: CardDisciplineListProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState<Discipline[]>([]);
+  const [searchResults, setSearchResults] = useState<Discipline[]>(
+    []
+  );
 
-  // define categorias optativas (todas as programCategories que terminam em "(OL)")
+  // Filtra as categorias optativas do programa (terminam com "(OL)")
   const optativeCategories = useMemo(
     () => programCategories.filter((c) => c.endsWith("(OL)")),
     [programCategories]
   );
 
-  // disciplinas optativas do programa
+  // Disciplinas optativas do programa
   const optativeDisciplines = useMemo(
     () =>
       (disciplines as Discipline[]).filter((d) =>
@@ -52,7 +54,7 @@ export default function CardDisciplineList({
     [optativeCategories]
   );
 
-  // disciplinas livres: que não pertencem a nenhuma category do programa
+  // Disciplinas livres: não pertencem a nenhuma categoria do programa
   const freeDisciplines = useMemo(
     () =>
       (disciplines as Discipline[]).filter(
@@ -64,6 +66,7 @@ export default function CardDisciplineList({
     [programCategories]
   );
 
+  // Atualiza os resultados da busca conforme o texto digitado e a categoria
   useEffect(() => {
     if (!searchQuery.trim()) {
       setSearchResults([]);
@@ -80,6 +83,7 @@ export default function CardDisciplineList({
     }
   }, [searchQuery, category, optativeDisciplines, freeDisciplines]);
 
+  // Adiciona ou remove disciplina selecionada conforme a categoria
   const handleSelect = (disciplina: Discipline) => {
     if (category === "optativa") {
       setSelectedOptativas((prev) =>
@@ -96,6 +100,7 @@ export default function CardDisciplineList({
     }
   };
 
+  // Remove disciplina selecionada
   const remove = (id: number) => {
     if (category === "optativa")
       setSelectedOptativas((prev) => prev.filter((d) => d.id !== id));
@@ -103,16 +108,19 @@ export default function CardDisciplineList({
       setSelectedLivres((prev) => prev.filter((d) => d.id !== id));
   };
 
+  // Retorna a cor de fundo do card conforme o tipo
   const getColorClass = (type: "Optativa" | "Livre") => {
     const colorObj = courseColor.find((c) => c.name === type);
     return colorObj?.bgColor || "";
   };
 
+  // Classe do container do card conforme a categoria
   const containerClass =
     category === "optativa"
       ? `${getColorClass("Optativa")} text-yellow-800 border-yellow-200`
       : `${getColorClass("Livre")} text-red-800 border-red-200`;
 
+  // Classe dos chips de disciplinas selecionadas
   const chipClass =
     category === "optativa"
       ? `${getColorClass("Optativa")} text-yellow-900`
@@ -124,7 +132,7 @@ export default function CardDisciplineList({
         {category === "optativa" ? "Optativas" : "Livres"}
       </h3>
 
-      {/* Botão para abrir o Drawer */}
+      {/* Drawer para busca de disciplinas */}
       <Drawer>
         <DrawerTrigger asChild>
           <button className="w-full p-2 mb-2 bg-green-700 text-white rounded">
@@ -146,6 +154,7 @@ export default function CardDisciplineList({
               className="p-1 border rounded w-full mb-2"
             />
 
+            {/* Resultados da busca (limitado a 3 se busca curta) */}
             {searchResults.length > 0 && (
               <div className="max-h-48 overflow-auto bg-white border rounded mt-1 shadow-lg">
                 {(searchQuery.length < 3
@@ -170,7 +179,7 @@ export default function CardDisciplineList({
         </DrawerContent>
       </Drawer>
 
-      {/* Chips de selecionadas continuam fora do Drawer */}
+      {/* Chips das disciplinas selecionadas */}
       {(category === "optativa" ? selectedOptativas : selectedLivres).length > 0 && (
         <div className="mt-4">
           <h4 className="font-semibold">Selecionadas:</h4>

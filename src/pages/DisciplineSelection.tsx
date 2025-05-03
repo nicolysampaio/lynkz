@@ -12,7 +12,6 @@ import HUMANITIES_COURSES from "../components/Subjects/CardConstantes";
 import Course from "./Course";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../components/ui/accordion";
 
-
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
@@ -21,32 +20,25 @@ const PRIORITY_INGRESS_OBR = [
 ];
 
 export default function DisciplineSelection() {
-  // Hooks sempre no topo:
-
-
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { selectedCourse: Course };
   const courseData = state.selectedCourse;
   const COURSE_CATEGORIES = courseData.courseCategory ?? [];
   const COURSE_COLORS = courseData.course_color ?? [];
-
-  // Aqui, vai definir onde vai ficar e quantos serão os cards de optativas.
   const OPTATIVES_QUARTERS = courseData.quarter_categories?.OPTATIVES_QUARTERS ?? [];
   const LIVRES_QUARTERS = courseData.quarter_categories?.LIVRES_QUARTERS ?? [];
   const HUMANITIES_QUARTERS = courseData.quarter_categories?.HUMANITIES_QUARTERS ?? [];
 
-  const [disciplinesSelected, setDisciplinesSelected] = useState<Set<number>>(
-    new Set()
-  );
-  const [humanitiesSelected, setHumanitiesSelected] = useState<
-    Record<number, number | null>
-  >({});
+  // Estados principais da seleção de disciplinas
+  const [disciplinesSelected, setDisciplinesSelected] = useState<Set<number>>(new Set());
+  const [humanitiesSelected, setHumanitiesSelected] = useState<Record<number, number | null>>({});
   const [openHumanitiesDropdown, setOpenHumanitiesDropdown] = useState<Record<number, boolean>>({});
   const [selectedOptativas, setSelectedOptativas] = useState<Discipline[]>([]);
   const [selectedLivres, setSelectedLivres] = useState<Discipline[]>([]);
   const [openAccordions, setOpenAccordions] = useState<string[]>([]);
 
+  // Alterna o dropdown de humanidades por quadrimestre
   const toggleDropdown = (quarter: number) => {
     setOpenHumanitiesDropdown((prev) => ({
       ...prev,
@@ -54,41 +46,24 @@ export default function DisciplineSelection() {
     }));
   };
 
-  /**
-   * Define o nome da classificação da disciplina
-   * (Obrigatória, Obrigatória BC&T, Optativa, Livre, Concluída)
-   * baseado na courseCategory do JSON e no selectedCourse.
-   */
+  // Retorna o nome da classificação da disciplina (Obrigatória, Optativa, Livre, etc)
   const getClassificationName = (
     d: Discipline,
     quarter: number,
     selected: boolean
   ): string => {
     if (selected) return "Concluída";
-
-    // 2) prioridade para “Obrigatórias Ingresso”
     if (d.courseCategory?.some((c) => PRIORITY_INGRESS_OBR.includes(c))) {
       return "Obrigatórias Ingresso";
     }
-
-    // 3) modalidades obrigatórias genéricas 
     const cat = d.courseCategory?.find((c) => c.endsWith("(OBR)"));
     if (cat) return "Obrigatória";
-
-    // 4) optativas
     if (OPTATIVES_QUARTERS.includes(quarter)) return "Optativa";
-
-    // 5) livres
     if (LIVRES_QUARTERS.includes(quarter)) return "Livre";
-
-    // fallback
     return "Obrigatória";
   };
 
-  /**
-   * Retorna a classe de cor do card a partir da classificação
-   * encontrada em course_color do courseData.
-   */
+  // Retorna as classes de cor do card conforme a classificação
   function getCardColors(
     d: Discipline,
     quarter: number,
@@ -103,6 +78,7 @@ export default function DisciplineSelection() {
     };
   }
 
+  // Alterna seleção de disciplina obrigatória
   const toggleDisciplineSelection = (id: number) =>
     setDisciplinesSelected((prev) => {
       const newSet = new Set(prev);
@@ -114,6 +90,7 @@ export default function DisciplineSelection() {
       return newSet;
     });
 
+  // Seleciona disciplina de humanidades por quadrimestre
   const handleHumanitiesSelection = (
     quarter: number,
     disciplineId: number | null
@@ -123,9 +100,11 @@ export default function DisciplineSelection() {
       [quarter]: disciplineId,
     }));
 
+  // Verifica se o quadrimestre é de humanidades
   const isHumanitiesQuarter = (quarter: number) =>
     HUMANITIES_QUARTERS.includes(quarter);
-  // filtra disciplinas do JSON por curso e requisitos básicos
+
+  // Filtra disciplinas obrigatórias do JSON para o curso selecionado
   const filteredDisciplines = (disciplines as Discipline[]).filter(
     (d) =>
       d.quarter !== null &&
@@ -135,7 +114,7 @@ export default function DisciplineSelection() {
       )
   );
 
-  // agrupa por quadrimestre
+  // Agrupa disciplinas obrigatórias por quadrimestre
   const groupedDisciplines = filteredDisciplines.reduce<
     Record<number, Discipline[]>
   >((acc, d) => {
@@ -145,13 +124,12 @@ export default function DisciplineSelection() {
     return acc;
   }, {});
 
+  // Confirma seleção e navega para a próxima página levando os códigos das disciplinas selecionadas
   const handleConfirmSelection = () => {
-    // Códigos das disciplinas normais selecionadas
     const completedDisciplineCodes = Array.from(disciplinesSelected)
       .map((disciplineId: number) => (disciplines as Discipline[]).find((d) => d.id === disciplineId)?.code)
       .filter((c): c is string => !!c);
 
-    // Códigos das humanidades selecionadas
     const completedHumanitiesCodes = Object.values(humanitiesSelected)
       .filter((h): h is number => h !== null)
       .map((optId) => {
@@ -159,7 +137,6 @@ export default function DisciplineSelection() {
       })
       .filter((c): c is string => !!c);
 
-    // Códigos das optativas e livres selecionadas
     const completedOptativasCodes = Array.from(selectedOptativas)
       .map((discipline) => discipline.code)
       .filter((c): c is string => !!c);
@@ -172,8 +149,6 @@ export default function DisciplineSelection() {
       ...completedLivresCodes,
     ];
 
-    // Navegar para a página de matrícula com os dados necessários
-    console.log("Botão 'Confirmar seleção' clicado ", completedCodes, state.selectedCourse);
     navigate("/disciplinas-matricula", {
       state: {
         selectedCourse: state.selectedCourse,
@@ -182,12 +157,13 @@ export default function DisciplineSelection() {
     });
   };
 
-  // Qualquer redirecionamento antes de usar logicas que dependem de state:
+  // Redireciona se não houver curso selecionado
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
 
-  const allKeys = Object.keys(groupedDisciplines); // ou os valores dos AccordionItem
+  // Todas as chaves dos quadrimestres para expandir/recolher tudo
+  const allKeys = Object.keys(groupedDisciplines);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -201,27 +177,25 @@ export default function DisciplineSelection() {
         />
         <Button
           label="Confirmar seleção"
-          onClick={() => {
-            console.log("Botão 'Confirmar seleção' clicado");
-            handleConfirmSelection();
-          }}
-          className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
+          onClick={handleConfirmSelection}
+          className={`bg-green-800 text-white text-sm ${
+            disciplinesSelected.size === 0 &&
             Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
             selectedOptativas.length === 0 &&
             selectedLivres.length === 0
-            ? "opacity-25 cursor-not-allowed"
-            : ""
-            }`}
+              ? "opacity-25 cursor-not-allowed"
+              : ""
+          }`}
         />
-        <div className="flex justify-center">
-
-        </div>
+        <div className="flex justify-center"></div>
         <div className="bg-white rounded-xl shadow-xs border border-gray-200 p-4">
           <h4 className="mb-4 font-semibold text-lg">
             Selecione as disciplinas que você já cursou
           </h4>
           <h4 className="mb-1 font-semibold text-lg">
-            Obs: Clique para recolher          </h4>
+            Obs: Clique para recolher
+          </h4>
+          {/* Botões para expandir/recolher todos os quadrimestres */}
           <div className="flex gap-2 mb-2">
             <button
               className="px-2 py-1 bg-green-700 text-white rounded"
@@ -236,6 +210,7 @@ export default function DisciplineSelection() {
               Recolher tudo
             </button>
           </div>
+          {/* Accordion dos quadrimestres */}
           <Accordion
             type="multiple"
             value={openAccordions}
@@ -254,6 +229,7 @@ export default function DisciplineSelection() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                      {/* Card de humanidades se for quadrimestre de humanidades */}
                       {isHumanitiesQuarter(quarter) && (
                         <CardHumanidade
                           quarter={quarter}
@@ -265,6 +241,7 @@ export default function DisciplineSelection() {
                           allSelected={humanitiesSelected}
                         />
                       )}
+                      {/* Cards de disciplinas obrigatórias */}
                       {list.map((d) => {
                         const { bgColor, textColor } = getCardColors(d, quarter, disciplinesSelected.has(d.id));
                         return (
@@ -278,10 +255,10 @@ export default function DisciplineSelection() {
                             textColor={textColor}
                             toggleDiscipline={toggleDisciplineSelection}
                             courseColor={courseData.course_color ?? []}
-
                           />
                         );
                       })}
+                      {/* Cards de optativas do quadrimestre */}
                       {Array.from({ length: optativaCount }).map((_, idx) => (
                         <CardDisciplineList
                           key={`optativa-${quarter}-${idx}`}
@@ -297,6 +274,7 @@ export default function DisciplineSelection() {
                           setSelectedLivres={setSelectedLivres}
                         />
                       ))}
+                      {/* Cards de livres do quadrimestre */}
                       {Array.from({ length: livreCount }).map((_, idx) => (
                         <CardDisciplineList
                           key={`livre-${quarter}-${idx}`}
@@ -318,20 +296,19 @@ export default function DisciplineSelection() {
             })}
           </Accordion>
 
+          {/* Botão para confirmar seleção das disciplinas */}
           <div className="flex justify-center">
             <Button
               label="Confirmar seleção"
-              onClick={() => {
-                console.log("Botão 'Confirmar seleção' clicado");
-                handleConfirmSelection();
-              }}
-              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
+              onClick={handleConfirmSelection}
+              className={`bg-green-800 text-white text-sm ${
+                disciplinesSelected.size === 0 &&
                 Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
                 selectedOptativas.length === 0 &&
                 selectedLivres.length === 0
-                ? "opacity-25 cursor-not-allowed"
-                : ""
-                }`}
+                  ? "opacity-25 cursor-not-allowed"
+                  : ""
+              }`}
             />
           </div>
         </div>
