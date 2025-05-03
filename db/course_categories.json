@@ -29,27 +29,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-black-900"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-red-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -153,27 +158,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-orange-100"
+        "bgColor": "bg-orange-100",
+        "textColor": "text-orange-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-pink-100"
+        "bgColor": "bg-pink-100",
+        "textColor": "text-pink-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -353,27 +363,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-red-100"
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-blue-400"
+        "bgColor": "bg-blue-300",
+        "textColor": "text-white-800"
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-orange-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-orange-800"
       },
       {
         "id": 3,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-red-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ]
   },
@@ -420,27 +435,33 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-white-800"
+
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 3,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-red-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -482,27 +503,33 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-orange-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
+
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-pink-100"
+        "bgColor": "bg-pink-100",
+        "textColor": "text-pink-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -703,27 +730,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-red-100"
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-orange-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-orange-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }],
     "quarter_categories": {
       "OPTATIVES_QUARTERS": [
@@ -776,27 +808,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-lime-700"
+        "bgColor": "bg-lime-600",
+        "textColor": "text-black"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 3,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-red-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -1082,27 +1119,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-orange-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 3,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-red-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -1158,27 +1200,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-orange-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-orange-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-pink-100"
+        "bgColor": "bg-pink-100",
+        "textColor": "text-pink-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
@@ -1221,27 +1268,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-orange-200"
+        "bgColor": "bg-orange-200",
+        "textColor": "text-orange-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-pink-100"
+        "bgColor": "bg-pink-100",
+        "textColor": "text-pink-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-gray-200",
+        "textColor": "text-gray-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ]
   },
@@ -1385,27 +1437,32 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-green-400"
+        "bgColor": "bg-green-400",
+        "textColor": "text-green-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
       },
       {
         "id": 3,
         "name": "Optativa",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 4,
         "name": "Livre",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
     ],
     "quarter_categories": {
