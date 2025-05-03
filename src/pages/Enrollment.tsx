@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
   faGraduationCap,
- 
+
   faUser,
   faLocationDot,
   faClock,
@@ -68,7 +68,7 @@ export default function Enrollment() {
       ?.bgColor ?? "";
 
   // 4) retorna ícone + text‐class
- 
+
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
@@ -419,7 +419,10 @@ export default function Enrollment() {
                 />
                 {searchProfessorResults.length > 0 && (
                   <div className="absolute z-10 w-full bg-white border rounded shadow-lg">
-                    {searchProfessorResults.map(p => (
+                    {(professorSearch.length < 3
+                      ? searchProfessorResults.slice(0, 3)
+                      : searchProfessorResults
+                    ).map(p => (
                       <div
                         key={p}
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -491,7 +494,7 @@ export default function Enrollment() {
                         ))}
                       </div>
                     </div>
-               
+
                   </div>
                 </div>
               )}
@@ -641,8 +644,8 @@ export default function Enrollment() {
               </p>
 
               <div className={`grid ${viewMode === "grid"
-                  ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-                  : "grid-cols-1 gap-2"
+                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+                : "grid-cols-2 gap-2"
                 }`}>
                 {filteredDisciplines.map((discipline) => {
                   // Encontra a categoria do curso que pertence ao curso atual
@@ -656,18 +659,17 @@ export default function Enrollment() {
 
                   // Usa a categoria para buscar cor, ícone, etc.
                   const bg = COURSE_COLORS.find((c) => c.name === categoria)?.bgColor ?? "";
-                 
+
 
                   return (
                     <div
                       key={discipline.section}
-                      className={`p-4 rounded-lg cursor-pointer transition-colors ${
-                        isDisciplineUnavailable(discipline)
+                      className={`p-4 rounded-lg cursor-pointer transition-colors ${isDisciplineUnavailable(discipline)
                           ? "bg-gray-100 opacity-50 cursor-not-allowed"
                           : completed
                             ? "bg-green-50 border-2 border-green-500"
                             : bg
-                      }`}
+                        }`}
                       onClick={() =>
                         !isDisciplineUnavailable(discipline) && handleDisciplineClick(discipline)
                       }
@@ -676,7 +678,7 @@ export default function Enrollment() {
                         <div>
                           <div className="flex items-center justify-between">
                             <h5 className="text-xs">{discipline.section}</h5>
-                          
+
                           </div>
                           <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
                             {discipline.name}

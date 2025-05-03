@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
@@ -20,9 +20,9 @@ const courses: Course[] = courseCategories.map((course) => ({
 function Course() {
   const navigate = useNavigate();
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
-  const toggleCourse = (course: Course) => {
+  const toggleCourse = useCallback((course: Course) => {
     setSelectedCourse((prev) => (prev?.id === course.id ? null : course));
-  };
+  }, []);
 
   const handleConfirm = () => {
     if (selectedCourse) {

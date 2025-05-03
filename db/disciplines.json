@@ -366,7 +366,6 @@
     "period": "6º quadrimestre",
     "quarter": 6,
     "courseCategory": [
-      "BFIS - Bacharelado em Física (OBR)",
       "EGES - Engenharia de Gestão (OBR)",
       "EBIO - Engenharia Biomédica (OBR)",
       "EENE - Engenharia de Energia (OBR)",
@@ -384,6 +383,17 @@
       "BCE - Bacharelado em Ciências Econômicas (OL)",
       "BN - Bacharelado em Neurociência (OL)",
       "BCD - Bacharelado em Ciência de Dados (OBR)"
+    ]
+  },
+  {
+    "id": 212121,
+    "code": "MCTB001-17",
+    "name": "Álgebra Linear",
+    "credits": 6,
+    "period": "6º quadrimestre",
+    "quarter": 5,
+    "courseCategory": [
+      "BFIS - Bacharelado em Física (OBR)"
     ]
   },
   {
@@ -923,7 +933,7 @@
       "LQ - Licenciatura em Química (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 74
@@ -1055,7 +1065,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BM - Bacharelado em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 85
@@ -1090,7 +1100,7 @@
       "BPP - Bacharelado em Políticas Públicas (OL)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 88
@@ -1657,7 +1667,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 134
@@ -1869,7 +1879,6 @@
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LCH - Licenciatura em Ciências Humanas (OBR)"
-    
     ],
     "quarter": 2,
     "period": "",
@@ -2128,6 +2137,22 @@
     "period": "",
     "credits": 6,
     "id": 167
+  },
+  {
+    "code": "BCL0308-15",
+    "name": "Bioquímica: estrutura, propriedade e funções de biomoléculas",
+    "courseCategory": [
+      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
+      "BC&H - Bacharelado em Ciências e Humanidades (OL)",
+      "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
+      "LQ - Licenciatura em Química (OBR)",
+      "LCB - Licenciatura em Ciências Biológicas (OBR)",
+      "LM - Licenciatura em Matemática (OL)"
+    ],
+    "quarter": 5,
+    "period": "",
+    "credits": 5,
+    "id": 168
   },
   {
     "code": "BCL0308-15",
@@ -2534,7 +2559,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 10,
     "period": "",
     "credits": 4,
     "id": 198
@@ -4199,7 +4224,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 327
@@ -4214,7 +4239,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 328
@@ -4228,7 +4253,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 11,
     "period": "",
     "credits": 4,
     "id": 329
@@ -4591,7 +4616,7 @@
       "BFIS - Bacharelado em Física (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 356
@@ -5390,7 +5415,7 @@
       "LCH - Licenciatura em Ciências Humanas (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 420
@@ -5591,7 +5616,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BC&H - Bacharelado em Ciências e Humanidades (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 434
@@ -6441,7 +6466,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 496
@@ -6456,7 +6481,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 497
@@ -6471,7 +6496,7 @@
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
       "LM - Licenciatura em Matemática (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 498
@@ -6482,7 +6507,7 @@
     "courseCategory": [
       "BFIS - Bacharelado em Física (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 499
@@ -6622,7 +6647,7 @@
       "LH - Licenciatura em História (OBR)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 509
@@ -7151,7 +7176,7 @@
       "BCE - Bacharelado em Ciências Econômicas (OL)",
       "LEC - Licenciatura em Educação do Campo (OL)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 550
@@ -7803,7 +7828,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 601
@@ -7906,7 +7931,7 @@
       "BCE - Bacharelado em Ciências Econômicas (OL)",
       "LH - Licenciatura em História (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 608
@@ -8445,7 +8470,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 649
@@ -9054,7 +9079,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 696
@@ -9831,7 +9856,7 @@
       "BM - Bacharelado em Matemática (OL)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 757
@@ -9965,7 +9990,7 @@
       "BFIS - Bacharelado em Física (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 767
@@ -9976,7 +10001,7 @@
     "courseCategory": [
       "BFIS - Bacharelado em Física (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 768
@@ -11308,7 +11333,7 @@
       "BFIS - Bacharelado em Física (OBR)",
       "LFIS - Licenciatura em Física (OBR)"
     ],
-    "quarter": null,
+    "quarter": 4,
     "period": "",
     "credits": 4,
     "id": 876
@@ -11359,7 +11384,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 880
@@ -11900,7 +11925,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 8,
     "period": "",
     "credits": 4,
     "id": 923
@@ -11945,7 +11970,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 9,
     "period": "",
     "credits": 4,
     "id": 927
@@ -14272,7 +14297,7 @@
       "LFIL - Licenciatura em Filosofia (OL)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 1110
@@ -14397,7 +14422,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 1120
@@ -14730,7 +14755,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 1147
@@ -14995,7 +15020,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BCE - Bacharelado em Ciências Econômicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 1169
@@ -15671,7 +15696,7 @@
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BPP - Bacharelado em Políticas Públicas (OL)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 1225
@@ -16232,7 +16257,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 5,
     "period": "",
     "credits": 4,
     "id": 1270
@@ -16244,7 +16269,7 @@
       "BC&H - Bacharelado em Ciências e Humanidades (OL)",
       "BRI - Bacharelado em Relações Internacionais (OBR)"
     ],
-    "quarter": null,
+    "quarter": 6,
     "period": "",
     "credits": 4,
     "id": 1271
@@ -17233,7 +17258,7 @@
       "BM - Bacharelado em Matemática (OBR)",
       "BC&T - Bacharelado em Ciência e Tecnologia (OL)"
     ],
-    "quarter": null,
+    "quarter": 7,
     "period": "",
     "credits": 4,
     "id": 1354

@@ -338,12 +338,12 @@
   },
   {
     "id": "BFIS",
-    "name": "Física",
+    "name": "Bacharelado em Física",
     "campus": [
       "Santo André"
     ],
     "type": "Bacharelados",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
       "BFIS - Bacharelado em Física (OBR)",
@@ -353,17 +353,17 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-red-100"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
+        "bgColor": "bg-blue-400"
       },
       {
         "id": 2,
         "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-orange-200"
       },
       {
         "id": 3,
@@ -693,12 +693,38 @@
       "São Bernardo do Campo"
     ],
     "type": "Bacharelados",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
       "BRI - Bacharelado em Relações Internacionais (OBR)",
       "BRI - Bacharelado em Relações Internacionais (OL)"
     ],
+    "course_color": [
+      {
+        "id": 1,
+        "name": "Obrigatória",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "id": 2,
+        "name": "Obrigatórias Ingresso",
+        "bgColor": "bg-blue-200"
+      },
+      {
+        "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-orange-200"
+      },
+      {
+        "id": 4,
+        "name": "Livre",
+        "bgColor": "bg-gray-200"
+      },
+      {
+        "id": 5,
+        "name": "Concluída",
+        "bgColor": "bg-green-500"
+      }],
     "quarter_categories": {
       "OPTATIVES_QUARTERS": [
         3,

@@ -6,6 +6,7 @@ interface Discipline {
   period: string;
   quarter: number;
   courseCategory: string[];
+  
 }
 
 export default Discipline;
