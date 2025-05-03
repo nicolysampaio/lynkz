@@ -2155,22 +2155,6 @@
     "id": 168
   },
   {
-    "code": "BCL0308-15",
-    "name": "Bioquímica: estrutura, propriedade e funções de biomoléculas",
-    "courseCategory": [
-      "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
-      "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-      "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
-      "LQ - Licenciatura em Química (OBR)",
-      "LCB - Licenciatura em Ciências Biológicas (OBR)",
-      "LM - Licenciatura em Matemática (OL)"
-    ],
-    "quarter": 5,
-    "period": "",
-    "credits": 5,
-    "id": 168
-  },
-  {
     "code": "ESTB013-17",
     "name": "Biossegurança",
     "courseCategory": [
