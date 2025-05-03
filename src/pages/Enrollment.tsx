@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilter,
   faGraduationCap,
-
   faUser,
   faLocationDot,
   faClock,
@@ -23,37 +22,38 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import { Course } from "../types/Course";
 
+// Tipos para o estado de navegação e horários
 type LocationState = {
   selectedCourse?: string;
   completedDisciplineCodes?: string[];
 };
-
 type Timeslot = {
   day: string;
   time: number;
   week: string;
 };
 
-// categorias OBR que devem usar “Obrigatórias Ingresso”
+// Categorias obrigatórias de ingresso (hardcoded)
 const PRIORITY_INGRESS_OBR = [
   "BC&T - Bacharelado em Ciência e Tecnologia (OBR)",
   "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
   "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
   "LCH - Licenciatura em Ciências Humanas (OBR)",
-]; // Extremamente hardcoded, vai ser mudado.
+];
 
 export default function Enrollment() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Recupera o curso selecionado da navegação
   const { selectedCourse } = location.state as { selectedCourse: Course };
 
+  // Cores das categorias do curso selecionado
   const COURSE_COLORS = selectedCourse.course_color ?? [];
 
-  // classificação com prioridade a “Obrigatórias Ingresso”
+  // Função para classificar a categoria da disciplina
   const classifyCategoryName = (cat: string, completed: boolean): string => {
     if (completed) return "Concluída";
-
     if (PRIORITY_INGRESS_OBR.includes(cat)) {
       return "Obrigatórias Ingresso";
     }
@@ -62,27 +62,27 @@ export default function Enrollment() {
     return "Livre";
   };
 
-  // 3) retorna bg‐class do course_color
+  // Retorna a cor de fundo da categoria
   const getCategoryColor = (cat: string, completed: boolean): string =>
     COURSE_COLORS.find((c) => c.name === classifyCategoryName(cat, completed))
       ?.bgColor ?? "";
 
-  // 4) retorna ícone + text‐class
-
+  // Estados dos filtros de campus, turno e dropdowns
   const [selectedCampus, setSelectedCampus] = useState("Todos");
   const [selectedTurno, setSelectedTurno] = useState("Todos");
   const [showCampusDropdown, setShowCampusDropdown] = useState(false);
   const [showTurnoDropdown, setShowTurnoDropdown] = useState(false);
 
-  // → Novo estado para o filtro de viagens
+  // Estado para permitir ou não viagens próximas entre campus
   const [allowTravelConflict, setAllowTravelConflict] = useState<"Sim" | "Não">("Não");
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
 
-  // → novo estado para bloqueio de múltiplos professores
+  // Estado para filtro de professores bloqueados
   const [selectedProfessors, setSelectedProfessors] = useState<string[]>([]);
   const [professorSearch, setProfessorSearch] = useState("");
   const [searchProfessorResults, setSearchProfessorResults] = useState<string[]>([]);
 
+  // Atualiza sugestões de professores conforme busca
   useEffect(() => {
     if (!professorSearch.trim()) {
       setSearchProfessorResults([]);
@@ -96,9 +96,11 @@ export default function Enrollment() {
     }
   }, [professorSearch, selectedProfessors]);
 
+  // Estado para modo de visualização (grade ou lista) e disciplinas selecionadas
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [selectedDisciplines, setSelectedDisciplines] = useState<DisciplineEnrollment[]>([]);
 
+  // Alterna seleção de disciplina na grade/lista
   const handleDisciplineClick = (discipline: DisciplineEnrollment) => {
     setSelectedDisciplines(prev =>
       prev.some(d => d.section === discipline.section)
@@ -107,16 +109,20 @@ export default function Enrollment() {
     );
   };
 
+  // Recupera disciplinas já cursadas da navegação
   const state = (location.state ?? {}) as LocationState;
   const { completedDisciplineCodes = [] } = location.state as LocationState;
 
+  // Redireciona se não houver curso selecionado
   if (!state.selectedCourse) {
     return <Navigate to="/pageCourse" replace />;
   }
 
+  // Categorias do curso selecionado
   const COURSE_CATEGORIES =
     courseCategoriesData.find((c) => c.id === selectedCourse.id)?.courseCategory ?? [];
 
+  // Lista de campi e turnos disponíveis
   const campi = [
     { id: 0, name: "Santo André" },
     { id: 1, name: "São Bernardo do Campo" },
@@ -128,6 +134,7 @@ export default function Enrollment() {
     "São Bernardo do Campo": "SB",
   };
 
+  // Limpa todos os filtros
   const clearFilters = () => {
     setSelectedCampus("Todos");
     setSelectedTurno("Todos");
@@ -136,6 +143,7 @@ export default function Enrollment() {
     setProfessorSearch("");
   };
 
+  // Funções auxiliares para checar conflitos de horário e viagem
   const isSlotConflict = (a: Timeslot, b: Timeslot): boolean => {
     if (a.day !== b.day || a.time !== b.time) return false;
     if (a.week === "Semanal" || b.week === "Semanal") return true;
@@ -156,6 +164,7 @@ export default function Enrollment() {
         .some(ts2 => !isTravelAllowed(ts1, ts2)));
   };
 
+  // Verifica se há conflito de horário com disciplinas já selecionadas
   const checkTimeConflict = (disc: DisciplineEnrollment) => {
     return selectedDisciplines.some((sel) =>
       [...disc.timeslots, ...disc.practiceTimeslots].some((slot) =>
@@ -166,11 +175,13 @@ export default function Enrollment() {
     );
   };
 
+  // Verifica se disciplina está indisponível por conflito de horário
   const isDisciplineUnavailable = (d: DisciplineEnrollment) => {
     if (selectedDisciplines.some(x => x.section === d.section)) return false;
     return selectedDisciplines.length > 0 && checkTimeConflict(d);
   };
 
+  // Monta lista de todas as disciplinas disponíveis para matrícula
   const allDisciplines: DisciplineEnrollment[] = enrollmentData.disciplines.map(d => ({
     id: d.id!,
     code: d.sigla_disciplina!,
@@ -194,7 +205,7 @@ export default function Enrollment() {
     courseCategory: (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
   }));
 
-  // → monta lista única de professores
+  // Gera lista única de professores para o filtro
   const professorList = Array.from(
     new Set(
       allDisciplines
@@ -203,11 +214,13 @@ export default function Enrollment() {
     )
   ).sort();
 
+  // Filtra disciplinas do curso selecionado e remove as já cursadas
   const byCourse = allDisciplines.filter(d =>
     Array.isArray(COURSE_CATEGORIES) && d.courseCategory.some(cat => COURSE_CATEGORIES.includes(cat))
   );
   const remaining = byCourse.filter(d => !completedDisciplineCodes?.includes(d.code));
 
+  // Aplica todos os filtros selecionados pelo usuário
   const filteredDisciplines = remaining.filter(d => {
     const matchesCampus = selectedCampus === "Todos" || d.campus === campusMap[selectedCampus];
     const matchesTurn = selectedTurno === "Todos" || d.turn === selectedTurno;
@@ -222,6 +235,7 @@ export default function Enrollment() {
     return matchesCampus && matchesTurn && matchesProfessor && isAvailable && noTravelConflict;
   });
 
+  // Slots de horários e dias da semana para montar a grade
   const timeSlots = [
     "8:00 às 9:00",
     "9:00 às 10:00",
@@ -252,11 +266,13 @@ export default function Enrollment() {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
       <main className="flex-1 mx-2 sm:mx-4 md:mx-2 lg:mx-16 py-4 sm:py-8">
+        {/* Botão para voltar */}
         <Button
           label="Voltar"
           onClick={() => navigate(-1)}
           className="mb-4 bg-orange-800 text-white text-sm border border-gray text-gray-800 w-fit"
         />
+        {/* Título e período */}
         <div className="flex flex-col sm:flex-row sm:justify-between mb-4 sm:mb-8 items-center gap-2">
           <div className="flex items-center gap-4">
             <h3 className="text-green-800 font-bold text-xl sm:text-2xl">
@@ -269,7 +285,7 @@ export default function Enrollment() {
           </p>
         </div>
 
-        {/* Card de Confirmar disciplinas */}
+        {/* Card de confirmação de disciplinas selecionadas */}
         <div className="mt-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {selectedDisciplines.length > 0 && (
             <div
@@ -304,6 +320,7 @@ export default function Enrollment() {
 
         {/* Filtros e Grade de Horários */}
         <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-1">
+          {/* Coluna de filtros */}
           <section className="md:col-span-1 bg-white rounded-xl shadow-sm border border-gray-200 p-2 sm:p-4">
             <h4 className="mb-6 font-semibold text-lg flex items-center">
               <FontAwesomeIcon icon={faFilter} className="mr-2" />
@@ -311,6 +328,7 @@ export default function Enrollment() {
             </h4>
 
             <div className="flex flex-col gap-4">
+              {/* Filtro de campus */}
               <div>
                 <label className="text-sm font-medium mb-2 block">Campus</label>
                 <div className="relative">
@@ -342,6 +360,7 @@ export default function Enrollment() {
                 </div>
               </div>
 
+              {/* Filtro de turno */}
               <div>
                 <label className="text-sm font-medium mb-2 block">Turno</label>
                 <div className="relative">
@@ -373,7 +392,7 @@ export default function Enrollment() {
                 </div>
               </div>
 
-              {/* → filtro Viagens próximas entre campus */}
+              {/* Filtro de viagens próximas entre campus */}
               <div>
                 <label className="text-sm font-medium mb-2 block">
                   Viagens próximas entre campus
@@ -407,7 +426,7 @@ export default function Enrollment() {
                 </div>
               </div>
 
-              {/* → filtro de bloqueio de professor */}
+              {/* Filtro de professores não desejados */}
               <div className="mt-4">
                 <label className="text-sm font-medium mb-2 block">Professores não desejados</label>
                 <input
@@ -417,6 +436,7 @@ export default function Enrollment() {
                   onChange={e => setProfessorSearch(e.target.value)}
                   className="p-2 border rounded w-full mb-2"
                 />
+                {/* Sugestões de professores para bloqueio */}
                 {searchProfessorResults.length > 0 && (
                   <div className="absolute z-10 w-full bg-white border rounded shadow-lg">
                     {(professorSearch.length < 3
@@ -436,6 +456,7 @@ export default function Enrollment() {
                     ))}
                   </div>
                 )}
+                {/* Chips de professores bloqueados */}
                 {selectedProfessors.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-2">
                     {selectedProfessors.map(p => (
@@ -453,6 +474,7 @@ export default function Enrollment() {
                 )}
               </div>
 
+              {/* Botão para limpar todos os filtros */}
               <button
                 onClick={clearFilters}
                 className="w-full mt-4 px-4 py-2 text-center rounded border border-gray-200 hover:bg-gray-50"
@@ -460,6 +482,7 @@ export default function Enrollment() {
                 Limpar Filtros
               </button>
 
+              {/* Botões para alternar visualização entre lista e grade */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-4 mt-4 w-full">
                 <button
                   onClick={() => setViewMode("list")}
@@ -479,6 +502,7 @@ export default function Enrollment() {
                 </button>
               </div>
 
+              {/* Legenda das categorias e cores */}
               {viewMode === "grid" && (
                 <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-md">
                   <h4 className="font-semibold text-sm mb-4">Legenda:</h4>
@@ -494,24 +518,20 @@ export default function Enrollment() {
                         ))}
                       </div>
                     </div>
-
                   </div>
                 </div>
               )}
             </div>
-
           </section>
-          {/* → Schedule (quadro de horários) fica **antes** de Disciplinas Disponíveis */}
-          <section className="md:col-span-3 lg:col-span-3">
 
+          {/* Coluna da grade de horários e disciplinas disponíveis */}
+          <section className="md:col-span-3 lg:col-span-3">
+            {/* Quadro de horários das disciplinas selecionadas */}
             {selectedDisciplines.length > 0 && (
               <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-
                 <h2 className="text-2xl font-bold mb-4">Quadro de Horários</h2>
-
                 <div className="overflow-x-auto">
-
-
+                  {/* Tabela de horários */}
                   <table className="w-auto table-auto border-collapse">
                     <thead>
                       <tr>
@@ -529,13 +549,13 @@ export default function Enrollment() {
                       </tr>
                     </thead>
                     <tbody>
+                      {/* Renderiza apenas os horários usados */}
                       {(() => {
                         const skip: Record<string, number> = {};
-
                         const used = new Set<number>();
                         selectedDisciplines.forEach((disc) =>
                           [...disc.timeslots, ...disc.practiceTimeslots].forEach((s) =>
-                            used.add(s.time - 8) // converte hora em índice (8h → slotIdx 0)
+                            used.add(s.time - 8)
                           )
                         );
                         const visibleSlotIndexes = Array.from(used)
@@ -560,7 +580,7 @@ export default function Enrollment() {
                               if (slots.length === 0) {
                                 return <td key={day.id} className="p-1 border border-gray-200 align-top" />;
                               }
-                              // calcula span para cada bloco
+                              // Calcula o span de cada bloco de horário
                               const spans = slots.map(({ disc, week, start }) => {
                                 let span = 1;
                                 while (
@@ -585,7 +605,7 @@ export default function Enrollment() {
                                 >
                                   <div className="flex flex-col items-start justify-start gap-px">
                                     {slots.map(({ disc, week, start }, i) => {
-                                      // escolhe a categoria da disciplina e aplica cor correta
+                                      // Aplica cor da categoria da disciplina
                                       const matchCat = disc.courseCategory.find(c =>
                                         COURSE_CATEGORIES.includes(c)
                                       )!;
@@ -595,22 +615,19 @@ export default function Enrollment() {
                                           key={disc.code + week}
                                           className={`inline-block p-2 rounded-lg shadow-sm border border-gray-200 text-left max-w-max ${color}`}
                                         >
-                                          {/* Código */}
+                                          {/* Código da turma */}
                                           <div className="font-mono text-sm mb-1">{disc.section}</div>
-
-                                          {/* Nome */}
+                                          {/* Nome da disciplina */}
                                           <div className="text-base font-medium mb-2 truncate max-w-[12ch]">
                                             {disc.name}
                                           </div>
                                           {/* Professor */}
                                           <div className="text-xs text-gray-700 mb-1 truncate max-w-[12ch]"> {disc.professor}</div>
-
                                           {/* Campus */}
                                           <div className="text-xs text-gray-700 mb-1"><FontAwesomeIcon
                                             icon={faLocationDot}
                                             className="text-gray-600 w-3.5"
                                           />{disc.campus}</div>
-
                                           {/* Horário e Semana */}
                                           <div className="text-xs text-gray-500 mb-1 truncate max-w-[20ch]">
                                             {`${start}:00 às ${start + spans[i]}:00`}
@@ -634,7 +651,7 @@ export default function Enrollment() {
               </div>
             )}
 
-            {/* Disciplinas Disponíveis */}
+            {/* Lista de disciplinas disponíveis para matrícula */}
             <div className="mt-1 bg-white rounded-xl shadow-sm border border-gray-200 p-2 sm:p-6">
               <h2 className="text-xl sm:text-2xl font-bold mb-2">
                 Disciplinas Disponíveis
@@ -643,6 +660,7 @@ export default function Enrollment() {
                 Selecione as disciplinas para sua matrícula
               </p>
 
+              {/* Renderiza disciplinas em grid ou lista */}
               <div className={`grid ${viewMode === "grid"
                 ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 : "grid-cols-2 gap-2"
@@ -654,36 +672,40 @@ export default function Enrollment() {
                   )!;
                   const completed = selectedDisciplines.some((s) => s.section === discipline.section);
 
-                  // Aqui você garante que "(OBR)" vira "Obrigatória"
+                  // Classifica a categoria para exibir nome correto
                   const categoria = classifyCategoryName(matchCat, completed);
 
-                  // Usa a categoria para buscar cor, ícone, etc.
+                  // Busca cor da categoria
                   const bg = COURSE_COLORS.find((c) => c.name === categoria)?.bgColor ?? "";
 
-
                   return (
+                    // Card de disciplina disponível para matrícula
                     <div
                       key={discipline.section}
+                      // Define cor e estilo do card conforme disponibilidade e seleção
                       className={`p-4 rounded-lg cursor-pointer transition-colors ${isDisciplineUnavailable(discipline)
-                          ? "bg-gray-100 opacity-50 cursor-not-allowed"
-                          : completed
-                            ? "bg-green-50 border-2 border-green-500"
-                            : bg
+                        ? "bg-gray-100 opacity-50 cursor-not-allowed"
+                        : completed
+                          ? "bg-green-50 border-2 border-green-500"
+                          : bg
                         }`}
+                      // Só permite clicar se a disciplina estiver disponível
                       onClick={() =>
                         !isDisciplineUnavailable(discipline) && handleDisciplineClick(discipline)
                       }
                     >
                       <div className="flex flex-col gap-3">
                         <div>
+                          {/* Código da turma */}
                           <div className="flex items-center justify-between">
                             <h5 className="text-xs">{discipline.section}</h5>
-
                           </div>
+                          {/* Nome da disciplina */}
                           <h4 className="text-base font-medium mt-1 break-words max-w-[20ch]">
                             {discipline.name}
                           </h4>
                         </div>
+                        {/* Informações do professor, campus e turno */}
                         <div className="flex flex-col gap-2">
                           <div className="flex items-center gap-2">
                             <FontAwesomeIcon
@@ -713,6 +735,7 @@ export default function Enrollment() {
                             </span>
                           </div>
                         </div>
+                        {/* Créditos da disciplina */}
                         <div className="text-sm text-gray-800">
                           Créditos: {discipline.credits}
                         </div>
@@ -722,7 +745,6 @@ export default function Enrollment() {
                 })}
               </div>
             </div>
-
           </section>
         </div>
       </main>

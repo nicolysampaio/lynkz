@@ -7,7 +7,7 @@ interface Timeslot {
 export default interface DisciplineEnrollment {
   id: number; 
   code: string;           // corresponde a sigla_disciplina
-  section: string;        // adiciona sigla_turma
+  section: string;        // corresponde sigla_turma
   name: string;
   professor: string;
   campus: string;

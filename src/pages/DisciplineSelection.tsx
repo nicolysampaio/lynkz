@@ -19,6 +19,8 @@ const PRIORITY_INGRESS_OBR = [
   "LCH - Licenciatura em Ciências Humanas (OBR)",
 ];
 
+// Obtém dados do curso selecionado vindos da página anterior
+// Extrai categorias, cores e configurações de quadrimestres do curso
 export default function DisciplineSelection() {
   const navigate = useNavigate();
   const location = useLocation();

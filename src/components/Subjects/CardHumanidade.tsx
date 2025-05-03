@@ -7,7 +7,7 @@ export interface CardHumanidadeProps {
   handleSelect: (id: number|null) => void;
   allSelected: Record<number, number|null>;
 }
-
+// Componente responsável por exibir e selecionar disciplinas de humanidades em um quadrimestre
 export default function CardHumanidade({
   courses,
   quarter,
@@ -17,7 +17,7 @@ export default function CardHumanidade({
   handleSelect,
   allSelected,
 }: CardHumanidadeProps) {
-  // usa `courses` aqui
+  // Filtra os IDs já usados em outros quadrimestres (exceto o atual)
   const usedIds = Object.entries(allSelected)
     .filter(([q, id]) => +q !== quarter && id != null)
     .map(([, id]) => id!) as number[];
@@ -27,7 +27,7 @@ export default function CardHumanidade({
     toggleDropdown();
     if (selected) handleSelect(null);
   };
-
+// Nome da disciplina selecionada (se houver)
   const selectedName = courses.find((d) => d.id === selected)?.name ?? null;
 
   return (
@@ -39,6 +39,7 @@ export default function CardHumanidade({
       <p className="text-xs text-gray-500">
         {selectedName || "Clique para selecionar"}
       </p>
+      {/* Dropdown de seleção de disciplinas de humanidades */}
 
       {open && (
         <div className="absolute top-full left-0 z-10 bg-white border rounded mt-1 shadow-lg">

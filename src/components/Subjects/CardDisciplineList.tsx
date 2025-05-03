@@ -11,7 +11,7 @@ import {
   DrawerTitle,
   DrawerClose,
 } from "../ui/drawer";
-
+// Define as propriedades esperadas pelo componente de lista de disciplinas optativas/livres
 export interface CardDisciplineListProps {
   id: string;
   colorClass: string;
@@ -24,7 +24,7 @@ export interface CardDisciplineListProps {
   courseColor: { name: string; bgColor: string }[];
   toggleDiscipline?: (id: number) => void;
 }
-
+// Componente responsável por exibir e gerenciar a seleção de disciplinas optativas ou livres
 export default function CardDisciplineList({
   category,
   programCategories,
