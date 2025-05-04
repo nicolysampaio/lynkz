@@ -704,7 +704,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 6
+        "quarter": 5
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -3144,7 +3144,7 @@
     "disciplineCategory": [
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
@@ -7922,7 +7922,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 7
+        "quarter": 6
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -9422,7 +9422,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "EENE - Engenharia de Energia (OL)",
@@ -10860,7 +10860,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 7
+        "quarter": 5
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -13367,7 +13367,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 13
+        "quarter": 14
       },
       {
         "name": "EENE - Engenharia de Energia (OL)",
@@ -14808,7 +14808,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 7
+        "quarter": 4
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -15659,7 +15659,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 4
+        "quarter": 7
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -15914,7 +15914,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 8
+        "quarter": 7
       },
       {
         "name": "EENE - Engenharia de Energia (OBR)",
@@ -24265,7 +24265,7 @@
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 12
+        "quarter": 13
       },
       {
         "name": "EENE - Engenharia de Energia (OL)",
@@ -26615,7 +26615,7 @@
     "disciplineCategory": [
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
-        "quarter": 8
+        "quarter": 7
       },
       {
         "name": "EAER - Engenharia Aeroespacial (OBR)",
