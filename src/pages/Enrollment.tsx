@@ -202,7 +202,7 @@ export default function Enrollment() {
     schedulePractice: d.schedule_practice,
     timeslots: d.timeslots as Timeslot[],
     practiceTimeslots: [],
-    courseCategory: (disciplinesData.find(x => x.code === d.sigla_disciplina)?.courseCategory) ?? []
+    courseCategory: (disciplinesData.find(x => x.code === d.sigla_disciplina)?.disciplineCategory.map(cat => cat.name)) ?? []
   }));
 
   // Gera lista única de professores para o filtro

@@ -55,10 +55,10 @@ export default function DisciplineSelection() {
     selected: boolean
   ): string => {
     if (selected) return "Concluída";
-    if (d.courseCategory?.some((c) => PRIORITY_INGRESS_OBR.includes(c))) {
+    if (d.disciplineCategory?.some((c) => PRIORITY_INGRESS_OBR.includes(c.name))) {
       return "Obrigatórias Ingresso";
     }
-    const cat = d.courseCategory?.find((c) => c.endsWith("(OBR)"));
+    const cat = d.disciplineCategory?.find((c) => c.name.endsWith("(OBR)"));
     if (cat) return "Obrigatória";
     if (OPTATIVES_QUARTERS.includes(quarter)) return "Optativa";
     if (LIVRES_QUARTERS.includes(quarter)) return "Livre";
@@ -109,20 +109,28 @@ export default function DisciplineSelection() {
   // Filtra disciplinas obrigatórias do JSON para o curso selecionado
   const filteredDisciplines = (disciplines as Discipline[]).filter(
     (d) =>
-      d.quarter !== null &&
       d.credits !== null &&
-      d.courseCategory?.some((cat) =>
-        COURSE_CATEGORIES.includes(cat) && cat.endsWith("(OBR)")
+      d.disciplineCategory?.some(
+        (cat) =>
+          typeof cat === "object" &&
+          cat.name.endsWith("(OBR)") &&
+          COURSE_CATEGORIES.includes(cat.name)
       )
   );
-
   // Agrupa disciplinas obrigatórias por quadrimestre
-  const groupedDisciplines = filteredDisciplines.reduce<
-    Record<number, Discipline[]>
-  >((acc, d) => {
-    const q = d.quarter!;
-    if (!acc[q]) acc[q] = [];
-    acc[q].push(d);
+  const groupedDisciplines = filteredDisciplines.reduce<Record<number, Discipline[]>>((acc, d) => {
+    // Para cada categoria da disciplina, se for obrigatória, agrupe pelo quarter
+    d.disciplineCategory.forEach(cat => {
+      if (
+        typeof cat === "object" &&
+        cat.name.endsWith("(OBR)") &&
+        COURSE_CATEGORIES.some((c: string) => c === cat.name) &&
+        cat.quarter != null
+      ) {
+        if (!acc[cat.quarter]) acc[cat.quarter] = [];
+        acc[cat.quarter].push(d);
+      }
+    });
     return acc;
   }, {});
 
@@ -151,6 +159,7 @@ export default function DisciplineSelection() {
       ...completedLivresCodes,
     ];
 
+    console.log("Disciplinas selecionadas:", completedCodes);
     navigate("/disciplinas-matricula", {
       state: {
         selectedCourse: state.selectedCourse,
@@ -180,14 +189,13 @@ export default function DisciplineSelection() {
         <Button
           label="Confirmar seleção"
           onClick={handleConfirmSelection}
-          className={`bg-green-800 text-white text-sm ${
-            disciplinesSelected.size === 0 &&
+          className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
             Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
             selectedOptativas.length === 0 &&
             selectedLivres.length === 0
-              ? "opacity-25 cursor-not-allowed"
-              : ""
-          }`}
+            ? "opacity-25 cursor-not-allowed"
+            : ""
+            }`}
         />
         <div className="flex justify-center"></div>
         <div className="bg-white rounded-xl shadow-xs border border-gray-200 p-4">
@@ -257,6 +265,7 @@ export default function DisciplineSelection() {
                             textColor={textColor}
                             toggleDiscipline={toggleDisciplineSelection}
                             courseColor={courseData.course_color ?? []}
+                            
                           />
                         );
                       })}
@@ -274,6 +283,7 @@ export default function DisciplineSelection() {
                           setSelectedOptativas={setSelectedOptativas}
                           selectedLivres={selectedLivres}
                           setSelectedLivres={setSelectedLivres}
+                          
                         />
                       ))}
                       {/* Cards de livres do quadrimestre */}
@@ -303,14 +313,13 @@ export default function DisciplineSelection() {
             <Button
               label="Confirmar seleção"
               onClick={handleConfirmSelection}
-              className={`bg-green-800 text-white text-sm ${
-                disciplinesSelected.size === 0 &&
+              className={`bg-green-800 text-white text-sm ${disciplinesSelected.size === 0 &&
                 Object.values(humanitiesSelected).filter((v) => v !== null).length === 0 &&
                 selectedOptativas.length === 0 &&
                 selectedLivres.length === 0
-                  ? "opacity-25 cursor-not-allowed"
-                  : ""
-              }`}
+                ? "opacity-25 cursor-not-allowed"
+                : ""
+                }`}
             />
           </div>
         </div>

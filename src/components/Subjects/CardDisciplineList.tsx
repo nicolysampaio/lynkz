@@ -49,7 +49,7 @@ export default function CardDisciplineList({
   const optativeDisciplines = useMemo(
     () =>
       (disciplines as Discipline[]).filter((d) =>
-        d.courseCategory?.some((cat) => optativeCategories.includes(cat))
+        d.disciplineCategory?.some((cat) => optativeCategories.includes(cat.name))
       ),
     [optativeCategories]
   );
@@ -59,8 +59,8 @@ export default function CardDisciplineList({
     () =>
       (disciplines as Discipline[]).filter(
         (d) =>
-          !d.courseCategory?.some((cat) =>
-            programCategories.includes(cat)
+          !d.disciplineCategory?.some((cat) =>
+            programCategories.includes(cat.name)
           )
       ),
     [programCategories]

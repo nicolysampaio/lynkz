@@ -5,7 +5,7 @@ interface Discipline {
   credits: number;
   period: string;
   quarter: number;
-  courseCategory: string[];
+  disciplineCategory: { name: string; quarter: number | null }[];
   
 }
 

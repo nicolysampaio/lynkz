@@ -5,7 +5,7 @@ import Footer from "../components/Footer.tsx";
 import Button from "../components/Button.tsx";
 import courseCategories from "../../db/course_categories.json";
 import type { Course } from "../types/Course.tsx";
-
+import { useMemo } from "react";
 // Lista de cursos carregada do JSON
 const courses: Course[] = courseCategories as Course[];
 
@@ -22,10 +22,13 @@ function Course() {
   // Confirma seleção e navega para a próxima página, levando o curso selecionado
   const handleConfirm = () => {
     if (selectedCourse) {
+      console.log("Curso selecionado:", selectedCourse);
       navigate("/disciplinas-cursadas", { state: { selectedCourse } });
     }
   };
-
+  const filteredCoursesByType = useMemo(() => {
+    return (type: string) => courses.filter((course) => course.type === type && !course.disabled);
+  }, []);
   return (
     <div className="min-h-screen flex flex-col flex-1 bg-gray-50">
       <Header />
@@ -40,9 +43,8 @@ function Course() {
                 <h5 className="font-semibold text-xl">{courseType}</h5>
                 <div className="grid text-sm gap-2">
                   {/* Lista os cursos de cada tipo */}
-                  {courses
-                    .filter((course) => course.type === courseType && course.disabled === false)
-                    .map((course) => (
+              
+                  {filteredCoursesByType(courseType).map((course) => (
                       <span
                         key={course.id}
                         className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2 ${
