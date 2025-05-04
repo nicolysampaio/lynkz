@@ -41,13 +41,13 @@ function Course() {
             {["Bacharelados", "Engenharias", "Licenciaturas", "Interdisciplinares"].map((courseType) => (
               <div key={courseType}>
                 <h5 className="font-semibold text-xl">{courseType}</h5>
-                <div className="grid text-sm gap-2">
+                <div className="py-4 grid text-sm gap-2">
                   {/* Lista os cursos de cada tipo */}
               
                   {filteredCoursesByType(courseType).map((course) => (
                       <span
                         key={course.id}
-                        className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2 ${
+                        className={`flex flex-row items-center gap-2 justify-between border rounded-md border-gray-200 p-2  ${
                           course.disabled ? "opacity-25 cursor-not-allowed" : "cursor-pointer"
                         }`}
                       >

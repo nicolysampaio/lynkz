@@ -760,7 +760,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 6
+        "quarter": null
       },
       {
         "name": "BCD - Bacharelado em Ciência de Dados (OBR)",
@@ -810,7 +810,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 6
+        "quarter": null
       },
       {
         "name": "BFIS - Bacharelado em Física (OL)",
@@ -924,7 +924,7 @@
     "disciplineCategory": [
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 8
+        "quarter": null
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -1169,7 +1169,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 11
+        "quarter": null
       },
       {
         "name": "BFIS - Bacharelado em Física (OL)",
@@ -1203,7 +1203,7 @@
     "disciplineCategory": [
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 11
+        "quarter": null
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -1266,7 +1266,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 12
+        "quarter": null
       }
     ]
   },
@@ -3760,7 +3760,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 6
+        "quarter": null
       },
       {
         "name": "BCD - Bacharelado em Ciência de Dados (OBR)",
@@ -4727,7 +4727,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 8
+        "quarter": null
       }
     ],
     "period": "",
@@ -16957,7 +16957,7 @@
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": 9
+        "quarter": null
       }
     ],
     "period": "",
