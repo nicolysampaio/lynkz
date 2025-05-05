@@ -55,13 +55,43 @@ export default function DisciplineSelection() {
     selected: boolean
   ): string => {
     if (selected) return "Concluída";
-    if (d.disciplineCategory?.some((c) => PRIORITY_INGRESS_OBR.includes(c.name))) {
+
+    // Categorias da disciplina que estão no COURSE_CATEGORIES
+    const matchingCategories = d.disciplineCategory
+      ?.map(cat => cat.name)
+      .filter(name => COURSE_CATEGORIES.includes(name)) ?? [];
+
+    // Conta quantas vezes cada categoria aparece no COURSE_CATEGORIES
+    const categoryCount: Record<string, number> = {};
+    COURSE_CATEGORIES.forEach(name => {
+      categoryCount[name] = (categoryCount[name] || 0) + 1;
+    });
+
+    // O que sobra: categorias que aparecem só uma vez no COURSE_CATEGORIES
+    const ingressos = matchingCategories.filter(name => categoryCount[name] === 1);
+
+    // Se sobrou só uma e ela está em PRIORITY_INGRESS_OBR, é de ingresso
+    if (ingressos.length === 1 && PRIORITY_INGRESS_OBR.includes(ingressos[0])) {
       return "Obrigatórias Ingresso";
     }
-    const cat = d.disciplineCategory?.find((c) => c.name.endsWith("(OBR)"));
-    if (cat) return "Obrigatória";
+
+    // Se tem mais de uma, a que bate com o curso principal é "Obrigatória"
+    const mainCourseName = COURSE_CATEGORIES.find(name =>
+      name.includes(courseData.name)
+    );
+    if (mainCourseName && matchingCategories.includes(mainCourseName)) {
+      return "Obrigatória";
+    }
+
+    // Se não encontrou, mas tem mais de uma, prioriza obrigatória
+    if (matchingCategories.length > 1) {
+      return "Obrigatória";
+    }
+
+    // Se não bateu nada, verifica optativa/livre
     if (OPTATIVES_QUARTERS.includes(quarter)) return "Optativa";
     if (LIVRES_QUARTERS.includes(quarter)) return "Livre";
+
     return "Obrigatória";
   };
 
@@ -159,11 +189,12 @@ export default function DisciplineSelection() {
       ...completedLivresCodes,
     ];
 
-    console.log("Disciplinas selecionadas:", completedCodes);
     navigate("/disciplinas-matricula", {
+      
       state: {
         selectedCourse: state.selectedCourse,
         completedDisciplineCodes: completedCodes,
+      
       },
     });
   };

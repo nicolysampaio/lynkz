@@ -373,13 +373,13 @@
         "textColor": "text-white-800"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Optativa",
         "bgColor": "bg-orange-200",
         "textColor": "text-orange-800"
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "Livre",
         "bgColor": "bg-red-200",
         "textColor": "text-red-800"
@@ -425,7 +425,7 @@
       "São Bernardo do Campo"
     ],
     "type": "Licenciaturas",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
       "LCB - Licenciatura em Ciências Biológicas (OBR)",
@@ -441,17 +441,17 @@
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200",
+        "bgColor": "bg-green-200",
         "textColor": "text-white-800"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Optativa",
         "bgColor": "bg-yellow-200",
         "textColor": "text-yellow-800"
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "Livre",
         "bgColor": "bg-red-200",
         "textColor": "text-red-800"
@@ -465,23 +465,15 @@
     ],
     "quarter_categories": {
       "OPTATIVES_QUARTERS": [
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
+      
       ],
       "LIVRES_QUARTERS": [
-        5,
-        10,
-        14,
-        15
+      
       ],
       "HUMANITIES_QUARTERS": [
         1,
-        5,
-        6
+        2,
+        3
       ]
     }
   },
@@ -1297,7 +1289,7 @@
       "São Bernardo do Campo"
     ],
     "type": "Licenciaturas",
-    "disabled": true,
+    "disabled": false,
     "courseCategory": [
       "LCH - Licenciatura em Ciências Humanas (OBR)",
       "LFIL - Licenciatura em Filosofia (OBR)",
@@ -1307,29 +1299,43 @@
       {
         "id": 1,
         "name": "Obrigatória",
-        "bgColor": "bg-blue-200"
+        "bgColor": "bg-purple-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 2,
         "name": "Obrigatórias Ingresso",
-        "bgColor": "bg-gray-200"
-      },
-      {
-        "id": 2,
-        "name": "Optativa",
-        "bgColor": "bg-yellow-200"
+        "bgColor": "bg-blue-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 3,
+        "name": "Optativa",
+        "bgColor": "bg-yellow-200",
+        "textColor": "text-yellow-800"
+      },
+      {
+        "id": 4,
         "name": "Livre",
-        "bgColor": "bg-red-200"
+        "bgColor": "bg-red-200",
+        "textColor": "text-white-800"
       },
       {
         "id": 5,
         "name": "Concluída",
-        "bgColor": "bg-green-500"
+        "bgColor": "bg-green-500",
+        "textColor": "text-white-900"
       }
-    ]
+    ],
+    "quarter_categories": {
+      "OPTATIVES_QUARTERS": [],
+      "LIVRES_QUARTERS": [],
+      "HUMANITIES_QUARTERS": [
+        1,
+        5,
+        6
+      ]
+    }
   },
   {
     "id": "LFIS",

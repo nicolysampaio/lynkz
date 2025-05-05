@@ -12,7 +12,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -33,7 +33,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
@@ -58,7 +58,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
@@ -96,7 +96,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
@@ -129,15 +129,15 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OL)",
-        "quarter": 1
+        "quarter": null
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": 1
+        "quarter": null
       }
     ]
   },
@@ -187,7 +187,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 2
+        "quarter": 5
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -208,7 +208,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 2
+        "quarter": 5
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -403,7 +403,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": 3
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -1321,7 +1321,7 @@
       }
     ]
   },
-    {
+  {
     "code": "ESZR007-21",
     "name": "A questão nuclear nas Relações Internacionais",
     "disciplineCategory": [
@@ -2341,7 +2341,7 @@
     "disciplineCategory": [
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 3
       }
     ],
     "period": "",
@@ -2826,31 +2826,31 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BRI - Bacharelado em Relações Internacionais (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BCB - Bacharelado em Ciências Biológicas (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "EINF - Engenharia de Informação (OL)",
-        "quarter": null
+        "quarter": 1
       }
     ],
     "period": "",
@@ -2965,24 +2965,15 @@
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
         "quarter": 2
+      },
+      {
+        "name": "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
+        "quarter": 2
       }
     ],
     "period": "",
     "credits": 3,
     "id": 150
-  },
-  {
-    "code": "BCL0306-15",
-    "name": "Biodiversidade: Interações entre organismos e ambiente",
-    "disciplineCategory": [
-      {
-        "name": "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
-        "quarter": 3
-      }
-    ],
-    "period": "",
-    "credits": 3,
-    "id": 15044
   },
   {
     "code": "ESTB019-17",
@@ -3160,7 +3151,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BBT - Bacharelado em Biotecnologia (OBR)",
@@ -3416,8 +3407,9 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": 5
+        "quarter": 8
       },
+     
       {
         "name": "LM - Licenciatura em Matemática (OL)",
         "quarter": 5
@@ -5313,11 +5305,11 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL))",
@@ -5666,19 +5658,19 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 3
       }
     ],
     "period": "",
@@ -6071,20 +6063,20 @@
     "name": "Diversidade de gênero e formação de professor",
     "disciplineCategory": [
       {
+        "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
+        "quarter": 12
+      },
+      {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
-      },
-      {
-        "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 3
       }
     ],
     "period": "",
@@ -8630,23 +8622,23 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LEC - Licenciatura em Educação do Campo (OL)",
-        "quarter": null
+        "quarter": 6
       }
     ],
     "period": "",
@@ -8831,7 +8823,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 4
+        "quarter": null
       },
       {
         "name": "LEC - Licenciatura em Educação do Campo (OL)",
@@ -8848,15 +8840,15 @@
     "disciplineCategory": [
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BPT - Bacharelado em Planejamento Territorial (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR))",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
@@ -8864,11 +8856,11 @@
       },
       {
         "name": "BCB - Bacharelado em Ciências Biológicas (OL)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 5
       }
     ],
     "period": "",
@@ -8956,11 +8948,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -9047,11 +9039,11 @@
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": 3
+        "quarter": 5
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 3
+        "quarter": null
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
@@ -9151,7 +9143,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 12
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -9259,7 +9251,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -9288,7 +9280,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -9539,11 +9531,11 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -9605,15 +9597,15 @@
     "disciplineCategory": [
       {
         "name": "LQ - Licenciatura em Química (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
@@ -9621,31 +9613,31 @@
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LFIS - Licenciatura em Física (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LH - Licenciatura em História (OL)",
-        "quarter": null
+        "quarter": 6
       }
     ],
     "period": "",
@@ -9863,7 +9855,7 @@
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -9935,7 +9927,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -9951,7 +9943,7 @@
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "LH - Licenciatura em História (OL)",
@@ -9959,7 +9951,7 @@
       },
       {
         "name": "LEC - Licenciatura em Educação do Campo (OBR)",
-        "quarter": null
+        "quarter": 7
       }
     ],
     "period": "",
@@ -9989,11 +9981,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OL)",
@@ -10552,7 +10544,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 10
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -11248,14 +11240,18 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
-        "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)LM - Licenciatura em Matemática (OL)",
+        "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
         "quarter": null
       },
       {
         "name": "BBT - Bacharelado em Biotecnologia (OBR)",
+        "quarter": null
+      },
+      {
+        "name": "LM - Licenciatura em Matemática (OL)",
         "quarter": null
       }
     ],
@@ -12149,19 +12145,19 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 2
       }
     ],
     "period": "",
@@ -12174,23 +12170,23 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LH - Licenciatura em História (OL)",
-        "quarter": null
+        "quarter": 6
       }
     ],
     "period": "",
@@ -12203,11 +12199,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -12232,11 +12228,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -12265,11 +12261,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OL)",
@@ -12336,23 +12332,23 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LH - Licenciatura em História (OL)",
-        "quarter": null
+        "quarter": 6
       }
     ],
     "period": "",
@@ -12365,7 +12361,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -12377,7 +12373,7 @@
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LH - Licenciatura em História (OL)",
@@ -12411,11 +12407,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -12440,23 +12436,23 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LH - Licenciatura em História (OL)",
-        "quarter": null
+        "quarter": 5
       }
     ],
     "period": "",
@@ -12998,15 +12994,15 @@
     "disciplineCategory": [
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 5
       }
     ],
     "period": "",
@@ -13081,7 +13077,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 1
+        "quarter": null
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
@@ -13590,7 +13586,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 12
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -13754,7 +13750,7 @@
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": 1
+        "quarter": 4
       },
       {
         "name": "BFIS - Bacharelado em Física (OL)",
@@ -14304,7 +14300,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 5
+        "quarter": null
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -15103,11 +15099,11 @@
     "disciplineCategory": [
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 4
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 4
       }
     ],
     "period": "",
@@ -15120,11 +15116,11 @@
     "disciplineCategory": [
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 5
       }
     ],
     "period": "",
@@ -15184,31 +15180,31 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BFIS - Bacharelado em Física (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BCB - Bacharelado em Ciências Biológicas (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OL)",
-        "quarter": null
+        "quarter": 2
       }
     ],
     "period": "",
@@ -15339,7 +15335,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
@@ -15359,7 +15355,7 @@
       },
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OL)",
@@ -16342,19 +16338,19 @@
     "disciplineCategory": [
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 3
       }
     ],
     "period": "",
@@ -16700,7 +16696,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "BBT - Bacharelado em Biotecnologia (OBR)",
@@ -17212,7 +17208,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -17245,7 +17241,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 10
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -18253,11 +18249,11 @@
     "disciplineCategory": [
       {
         "name": "LQ - Licenciatura em Química (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LFIS - Licenciatura em Física (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
@@ -18265,15 +18261,15 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 3
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 3
       }
     ],
     "period": "",
@@ -18331,7 +18327,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 2
+        "quarter": null
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
@@ -19189,19 +19185,19 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 2
       }
     ],
     "period": "",
@@ -19450,7 +19446,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -19479,7 +19475,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -19508,7 +19504,7 @@
     "disciplineCategory": [
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 10
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -19604,7 +19600,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 7
       }
     ],
     "period": "",
@@ -19646,7 +19642,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 10
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -19675,7 +19671,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 12
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -19700,7 +19696,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -19725,7 +19721,7 @@
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -20388,19 +20384,19 @@
     "disciplineCategory": [
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 1
       }
     ],
     "period": "",
@@ -21734,7 +21730,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 5
+        "quarter": null
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OL)",
@@ -23354,11 +23350,11 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
@@ -24136,7 +24132,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 5
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -24552,27 +24548,27 @@
     "disciplineCategory": [
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BCC - Bacharelado em Ciências da Computação (OL)",
-        "quarter": null
+        "quarter": 2
       },
       {
         "name": "BN - Bacharelado em Neurociência (OL)",
-        "quarter": null
+        "quarter": 2
       }
     ],
     "period": "",
@@ -24801,7 +24797,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 1
+        "quarter": null
       },
       {
         "name": "LM - Licenciatura em Matemática (OL)",
@@ -25359,19 +25355,19 @@
     "disciplineCategory": [
       {
         "name": "BFIL - Bacharelado em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LFIL - Licenciatura em Filosofia (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OL)",
-        "quarter": null
+        "quarter": 6
       }
     ],
     "period": "",
@@ -25738,7 +25734,7 @@
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": 3
+        "quarter": 5
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OL)",
@@ -25746,7 +25742,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OL)",
-        "quarter": 3
+        "quarter": null
       }
     ],
     "period": "",
@@ -25948,19 +25944,19 @@
     "disciplineCategory": [
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "LCH - Licenciatura em Ciências Humanas (OBR)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": null
+        "quarter": 1
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
-        "quarter": null
+        "quarter": 1
       }
     ],
     "period": "",
@@ -27059,7 +27055,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -27084,7 +27080,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "LCNE - Licenciatura em Ciências Naturais e Exatas (OL)",
@@ -27109,7 +27105,7 @@
       },
       {
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
