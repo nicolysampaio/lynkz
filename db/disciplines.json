@@ -212,21 +212,12 @@
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
-        "quarter": 2
+        "quarter": null
       },
       {
         "name": "BPP - Bacharelado em Políticas Públicas (OL)",
-        "quarter": 2
-      }
-    ]
-  },
-  {
-    "id": 9000,
-    "code": "BCN0402-15",
-    "name": "Funções de uma Variável",
-    "credits": 4,
-    "period": "2º quadrimestre",
-    "disciplineCategory": [
+        "quarter": null
+      },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
         "quarter": 5
@@ -374,16 +365,7 @@
       {
         "name": "BPP - Bacharelado em Políticas Públicas (OL)",
         "quarter": 3
-      }
-    ]
-  },
-  {
-    "id": 111111,
-    "code": "BCN0407-15",
-    "name": "Funções de Várias Variáveis",
-    "credits": 4,
-    "period": "3º quadrimestre",
-    "disciplineCategory": [
+      },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
         "quarter": 6
@@ -732,7 +714,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 6
+        "quarter": 5
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -2968,7 +2950,7 @@
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OBR)",
-        "quarter": 2
+        "quarter": 3
       }
     ],
     "period": "",
@@ -3409,7 +3391,6 @@
         "name": "LCB - Licenciatura em Ciências Biológicas (OBR)",
         "quarter": 8
       },
-     
       {
         "name": "LM - Licenciatura em Matemática (OL)",
         "quarter": 5
@@ -5276,7 +5257,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 8
+        "quarter": 7
       },
       {
         "name": "EENE - Engenharia de Energia (OL)",
@@ -5476,7 +5457,7 @@
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": null
+        "quarter": 11
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -6253,7 +6234,7 @@
     "disciplineCategory": [
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -6278,7 +6259,7 @@
     "disciplineCategory": [
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": null
+        "quarter": 10
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -6345,7 +6326,7 @@
     "disciplineCategory": [
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": null
+        "quarter": 9
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -7951,16 +7932,7 @@
       {
         "name": "BQ - Bacharelado em Química (OL)",
         "quarter": 7
-      }
-    ],
-    "period": "",
-    "credits": 4,
-    "id": 389
-  },
-  {
-    "code": "ESTO013-17",
-    "name": "Engenharia Econômica",
-    "disciplineCategory": [
+      },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
         "quarter": 6
@@ -7968,7 +7940,7 @@
     ],
     "period": "",
     "credits": 4,
-    "id": 389389389
+    "id": 389
   },
   {
     "code": "ESTG005-17",
@@ -9410,7 +9382,7 @@
     "disciplineCategory": [
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": null
+        "quarter": 6
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
@@ -10848,7 +10820,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 7
+        "quarter": 5
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
@@ -13359,7 +13331,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 13
+        "quarter": 14
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
@@ -14196,7 +14168,7 @@
       },
       {
         "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": null
+        "quarter": 7
       },
       {
         "name": "BC&H - Bacharelado em Ciências e Humanidades (OL)",
@@ -14226,19 +14198,6 @@
     "period": "",
     "credits": 4,
     "id": 677
-  },
-  {
-    "code": "MCTC014-13",
-    "name": "Introdução à Inferência Estatística",
-    "disciplineCategory": [
-      {
-        "name": "BCE - Bacharelado em Ciências Econômicas (OBR)",
-        "quarter": 7
-      }
-    ],
-    "period": "",
-    "credits": 4,
-    "id": 677677677
   },
   {
     "code": "ESZI045-17",
@@ -14800,7 +14759,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 7
+        "quarter": 3
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
@@ -15906,7 +15865,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 8
+        "quarter": 6
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
@@ -22893,7 +22852,7 @@
     "disciplineCategory": [
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": null
+        "quarter": 8
       },
       {
         "name": "BC&T - Bacharelado em Ciência e Tecnologia (OL)",
@@ -23817,7 +23776,7 @@
       },
       {
         "name": "BQ - Bacharelado em Química (OL)",
-        "quarter": 10
+        "quarter": null
       }
     ],
     "period": "",
@@ -24257,7 +24216,7 @@
       },
       {
         "name": "EAU - Engenharia Ambiental e Urbana (OBR)",
-        "quarter": 12
+        "quarter": 13
       },
       {
         "name": "EBIO - Engenharia Biomédica (OBR)",
